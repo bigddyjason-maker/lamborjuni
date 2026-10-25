@@ -122,6 +122,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .stills figcaption b{display:block}
 .stills figcaption span{display:block;color:var(--accent);font-size:12px}
 .stills.op{margin:0 0 18px}
+.apv video.pv{flex:none;width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#111}
+.yr-more{margin-top:14px}
+.yr-more>summary{cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);padding:8px 0;list-style:none}
+.yr-more>summary::-webkit-details-marker{display:none}
+.yr-more>summary::before{content:"+ "}
+.yr-more[open]>summary::before{content:"− "}
+.stills h4{grid-column:1/-1;margin:6px 0 0;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
 .apv.bts img{width:120px;aspect-ratio:3/4;object-fit:cover}
 
 .lb{position:fixed;inset:0;z-index:50;background:rgba(10,18,14,.88);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
@@ -195,7 +202,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
   </header>
 
   <nav class="jump" aria-label="바로가기">
-    <a href="#highlights">하이라이트</a><a href="#season">시즌 기록</a><a href="#photos">사진</a><a href="#archive">아카이브</a><a href="#offpitch">경기장 밖</a><a href="#channels">채널</a>
+    <a href="#highlights">하이라이트</a><a href="#season">시즌 기록</a><a href="#photos">사진</a><a href="#offpitch">경기장 밖</a><a href="#archive">스튜디오 작업</a><a href="#channels">채널</a>
   </nav>
 
   <section class="sec" id="highlights">
@@ -357,12 +364,17 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
   <section class="sec" id="photos">
     <div class="sec-head"><h2>사진 기록</h2><span class="label">Stills</span></div>
-    <div class="stills apv-like">
+    <div class="stills">
+      <h4>2026</h4>
       <figure><img src="assets/photo/y2610-beach-s.jpg" data-full="assets/photo/y2610-beach.jpg" alt="2026.10.02 양양 슈퍼리그 2차 바닷가의 팀" loading="lazy" width="420" height="560"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>첫날 저녁, 바다 앞에서</span></figcaption></figure>
       <figure><img src="assets/photo/b2605-boeun-s.jpg" data-full="assets/photo/b2605-boeun.jpg" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>결승 진출 · 주니 동점골</span></figcaption></figure>
       <figure><img src="assets/photo/p2601-pyeongtaek-s.jpg" data-full="assets/photo/p2601-pyeongtaek.jpg" alt="2026.01.24 U9 경기 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>U9 경기</b><span>vs 평택유나이티드</span></figcaption></figure>
       <figure><img src="assets/photo/m2601-mokpo-b-s.jpg" data-full="assets/photo/m2601-mokpo-b.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
       <figure><img src="assets/photo/m2601-mokpo-a-s.jpg" data-full="assets/photo/m2601-mokpo-a.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
+    </div>
+    <details class="yr-more"><summary>2025 시즌 사진 9장 보기 · 태백산배 우승 포함</summary>
+    <div class="stills">
+      <h4>2025</h4>
       <figure><img src="assets/photo/j2509-jincheon-c-s.jpg" data-full="assets/photo/j2509-jincheon-c.jpg" alt="2025.09.21 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.21</time><b>진천 스토브리그</b></figcaption></figure>
       <figure><img src="assets/photo/j2509-jincheon-a-s.jpg" data-full="assets/photo/j2509-jincheon-a.jpg" alt="2025.09.20 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.20</time><b>진천 스토브리그</b></figcaption></figure>
       <figure><img src="assets/photo/j2508-jincheon-s.jpg" data-full="assets/photo/j2508-jincheon.jpg" alt="2025.08.02 진천 스토브리그 8대8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.08.02</time><b>진천 스토브리그 8대8</b></figcaption></figure>
@@ -373,99 +385,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
       <figure><img src="assets/photo/t2505-taebaek-pose-s.jpg" data-full="assets/photo/t2505-taebaek-pose.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>결승 날 아침</span></figcaption></figure>
       <figure><img src="assets/photo/g2505-gangneung-s.jpg" data-full="assets/photo/g2505-gangneung.jpg" alt="2025.05.05 강릉 율곡대기 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.05</time><b>강릉 율곡대기 U8</b><span>결승 진출</span></figcaption></figure>
     </div>
-  </section>
-
-  <section class="sec" id="archive">
-    <div class="sec-head"><h2>아카이브</h2><span class="label">Tape Log</span></div>
-    <ol class="log">
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>Lamborjuni Studio 브랜딩</h3>
-          <p>스튜디오의 얼굴. 이 홈페이지부터 인스타 프로필, 하이라이트 커버, 유튜브 워터마크까지 뷰파인더와 REC 하나로 묶은 정체성</p>
-          <div class="apv sq"><img src="assets/img/113a07e050.jpg" alt="인스타 프로필 사진" loading="lazy"><img src="assets/img/7415ef0aca.jpg" alt="하이라이트 커버 Studio" loading="lazy"><img src="assets/img/786c1d4e6f.jpg" alt="하이라이트 커버 Goals" loading="lazy"><img src="assets/img/26fcb9515c.jpg" alt="하이라이트 커버 Matches" loading="lazy"><img src="assets/img/4ff0d613f9.jpg" alt="유튜브 채널 워터마크" loading="lazy"><img class="wide" src="assets/img/f25119b409.jpg" alt="영상용 워터마크" loading="lazy"></div>
-          <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 리뉴얼 ↗</a></h3>
-          <p>남색 6번에서 경기 장면으로. 실제 장면 위에 남색 제목 띠를 얹어 경기마다 한눈에 구분되게 다시 만든 썸네일</p>
-          <div class="apv ls"><img src="assets/img/fc31746602.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/8c48ea4478.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/61876ba0d1.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/c7324eb702.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/cd549e1852.jpg" alt="리뉴얼 썸네일" loading="lazy"></div>
-          <div class="tags"><span>THUMBNAIL</span><span>RENEWAL</span><span>1280×720</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>양구사과배 드림풋볼 U9</h3>
-          <p>예선부터 결승까지 전 경기 생중계. 대회 기간 매일 찍고 매일 올린 기록, 결승 진출과 주니 4골</p>
-          <div class="tags"><span>TOURNAMENT</span><span>U9</span><span>LIVE</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3><a href="https://anyangafa.co.kr" target="_blank" rel="noopener">안양AFA 축구아카데미 홈페이지 ↗</a></h3>
-          <p>아카데미의 첫 공식 홈페이지. 기획부터 디자인, 개발, 검색 등록까지 혼자 만들고 지금도 직접 운영 중</p>
-          <div class="apv"><img class="web" src="assets/img/e2561515a4.jpg" alt="안양AFA 홈페이지 첫 화면" loading="lazy"></div>
-          <div class="tags"><span>WEBSITE</span><span>ANYANGAFA.CO.KR</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>안양AFA 8기 진학 프로필</h3>
-          <p>선수들의 다음 무대를 위한 첫 프로필. 졸업반 선수들의 진학용 프로필 이미지와 애니메이션을 기획부터 디자인까지 제작</p>
-          <div class="tags"><span>PROFILE</span><span>DESIGN</span><span>MOTION</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>GOAL 모션그래픽</h3>
-          <p>골 순간을 위한 그래픽. 골이 들어가고 1.3초 뒤 대각선 슬래시와 배너, 선수 이름 칩이 차례로 치고 들어오는 모션</p>
-          <div class="apv pt"><img src="assets/img/b40867f780.jpg" alt="GOAL 그래픽이 들어간 숏츠" loading="lazy"></div>
-          <div class="tags"><span>MOTION</span><span>SHORTS</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>숏츠 프레임 템플릿</h3>
-          <p>모든 숏츠의 기본 틀. 1080×1920 세로 프레임에 선수명·번호·날짜·대회명을 얹고, 슛 직전부터 2배 슬로 리플레이</p>
-          <div class="apv pt"><img src="assets/img/47b4b1d88f.jpg" alt="숏츠 프레임 적용 예시" loading="lazy"></div>
-          <div class="tags"><span>TEMPLATE</span><span>1080×1920</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.10</time>
-        <div class="body">
-          <h3>가로 하이라이트 포맷</h3>
-          <p>선수가 잘리지 않는 가로 영상. 전체 화면을 살린 1920×1080 하이라이트에 패스 연결 배지와 자동 썸네일</p>
-          <div class="tags"><span>HIGHLIGHT</span><span>1920×1080</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2026.02</time>
-        <div class="body">
-          <h3><a href="https://cafe.naver.com/asmosa" target="_blank" rel="noopener">XbotGo스포츠AI카메라 카페 ↗</a></h3>
-          <p>XBOTGO 직캠 사용자들의 모임. 네이버 카페를 직접 열고 운영하며 촬영 가이드, 펌웨어 소식, 회원 후기를 모으는 중</p>
-          <div class="apv"><img class="web" src="assets/img/92f20a8e36.jpg" alt="카페 배너" loading="lazy"><img class="web" src="assets/img/5f64af56aa.jpg" alt="팔콘 제휴 배너" loading="lazy"></div>
-          <div class="tags"><span>COMMUNITY</span><span>NAVER CAFE</span></div>
-        </div>
-      </li>
-      <li>
-        <time>2025.06</time>
-        <div class="body">
-          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 시리즈 ↗</a></h3>
-          <p>생중계 화면이 썸네일이 되기까지. 원본에서 장면을 고르고 남색 바탕에 금색 큰 6번과 두 줄 제목을 얹은 첫 썸네일 시리즈</p>
-          <div class="apv prs"><figure class="pair"><img src="assets/img/c4d626b2dc.jpg" alt="PEC 레드 맞불 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e26a18f0a7.jpg" alt="PEC 레드 맞불 완성 썸네일" loading="lazy"><figcaption>PEC 레드 맞불</figcaption></figure><figure class="pair"><img src="assets/img/1b410321cb.jpg" alt="대동초 정면승부 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e75fccc4f8.jpg" alt="대동초 정면승부 완성 썸네일" loading="lazy"><figcaption>대동초 정면승부</figcaption></figure><figure class="pair"><img src="assets/img/8a1e9fc2af.jpg" alt="니케FC 맞대결 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/c94ba2528f.jpg" alt="니케FC 맞대결 완성 썸네일" loading="lazy"><figcaption>니케FC 맞대결</figcaption></figure><figure class="pair"><img src="assets/img/ab3b819612.jpg" alt="진천 원정 3일의 기록 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/76b42a624c.jpg" alt="진천 원정 3일의 기록 완성 썸네일" loading="lazy"><figcaption>진천 원정 3일의 기록</figcaption></figure><figure class="pair"><img src="assets/img/e1c2bb7f28.jpg" alt="8대8 첫 출격 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/a342588c5c.jpg" alt="8대8 첫 출격 완성 썸네일" loading="lazy"><figcaption>8대8 첫 출격</figcaption></figure></div>
-          <div class="tags"><span>THUMBNAIL</span><span>SERIES</span></div>
-        </div>
-      </li>
-    </ol>
+    </details>
   </section>
 
   <section class="sec" id="offpitch">
@@ -546,6 +466,100 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <span class="ttl">평영 2위 은메달</span>
       </a>
     </div>
+  </section>
+
+  <section class="sec" id="archive">
+    <div class="sec-head"><h2>스튜디오 작업</h2><span class="label">Tape Log</span></div>
+    <ol class="log">
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>Lamborjuni Studio 브랜딩</h3>
+          <p>스튜디오의 얼굴. 이 홈페이지부터 인스타 프로필, 하이라이트 커버, 유튜브 워터마크까지 뷰파인더와 REC 하나로 묶은 정체성</p>
+          <div class="apv sq"><img src="assets/img/113a07e050.jpg" alt="인스타 프로필 사진" loading="lazy"><img src="assets/img/7415ef0aca.jpg" alt="하이라이트 커버 Studio" loading="lazy"><img src="assets/img/786c1d4e6f.jpg" alt="하이라이트 커버 Goals" loading="lazy"><img src="assets/img/26fcb9515c.jpg" alt="하이라이트 커버 Matches" loading="lazy"><img src="assets/img/4ff0d613f9.jpg" alt="유튜브 채널 워터마크" loading="lazy"><img class="wide" src="assets/img/f25119b409.jpg" alt="영상용 워터마크" loading="lazy"></div>
+          <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 리뉴얼 ↗</a></h3>
+          <p>남색 6번에서 경기 장면으로. 실제 장면 위에 남색 제목 띠를 얹어 경기마다 한눈에 구분되게 다시 만든 썸네일</p>
+          <div class="apv ls"><img src="assets/img/fc31746602.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/8c48ea4478.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/61876ba0d1.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/c7324eb702.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/cd549e1852.jpg" alt="리뉴얼 썸네일" loading="lazy"></div>
+          <div class="tags"><span>THUMBNAIL</span><span>RENEWAL</span><span>1280×720</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>양구사과배 드림풋볼 U9</h3>
+          <p>예선부터 결승까지 전 경기 생중계. 대회 기간 매일 찍고 매일 올린 기록, 결승 진출과 주니 4골</p>
+          <div class="tags"><span>TOURNAMENT</span><span>U9</span><span>LIVE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr" target="_blank" rel="noopener">안양AFA 축구아카데미 홈페이지 ↗</a></h3>
+          <p>아카데미의 첫 공식 홈페이지. 기획부터 디자인, 개발, 검색 등록까지 혼자 만들고 지금도 직접 운영 중</p>
+          <div class="apv"><img class="web" src="assets/img/e2561515a4.jpg" alt="안양AFA 홈페이지 첫 화면" loading="lazy"></div>
+          <div class="tags"><span>WEBSITE</span><span>ANYANGAFA.CO.KR</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr/alumni/8/" target="_blank" rel="noopener">안양AFA 8기 진학 프로필 ↗</a></h3>
+          <p>선수들의 다음 무대를 위한 첫 프로필. 졸업반 선수들의 진학용 프로필 이미지와 애니메이션을 기획부터 디자인까지 제작</p>
+          <div class="apv ls"><img src="assets/img/afa8-hero.jpg" alt="AFA 8기 진학 현황 페이지" loading="lazy"></div>
+          <div class="tags"><span>PROFILE</span><span>DESIGN</span><span>MOTION</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>GOAL 모션그래픽</h3>
+          <p>골 순간을 위한 그래픽. 골이 들어가고 1.3초 뒤 대각선 슬래시와 배너, 선수 이름 칩이 차례로 치고 들어오는 모션</p>
+          <div class="apv pt"><video class="pv" src="assets/video/goal-motion.mp4" poster="assets/video/goal-motion.jpg" autoplay muted loop playsinline aria-label="GOAL 모션 재생 예시"></video><img src="assets/img/b40867f780.jpg" alt="GOAL 그래픽이 들어간 숏츠" loading="lazy"></div>
+          <div class="tags"><span>MOTION</span><span>SHORTS</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>숏츠 프레임 템플릿</h3>
+          <p>모든 숏츠의 기본 틀. 1080×1920 세로 프레임에 선수명·번호·날짜·대회명을 얹고, 슛 직전부터 2배 슬로 리플레이</p>
+          <div class="apv pt"><img src="assets/img/47b4b1d88f.jpg" alt="숏츠 프레임 적용 예시" loading="lazy"></div>
+          <div class="tags"><span>TEMPLATE</span><span>1080×1920</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>가로 하이라이트 포맷</h3>
+          <p>선수가 잘리지 않는 가로 영상. 전체 화면을 살린 1920×1080 하이라이트에 패스 연결 배지와 자동 썸네일</p>
+          <div class="tags"><span>HIGHLIGHT</span><span>1920×1080</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.02</time>
+        <div class="body">
+          <h3><a href="https://cafe.naver.com/asmosa" target="_blank" rel="noopener">XbotGo스포츠AI카메라 카페 ↗</a></h3>
+          <p>XBOTGO 직캠 사용자들의 모임. 네이버 카페를 직접 열고 운영하며 촬영 가이드, 펌웨어 소식, 회원 후기를 모으는 중</p>
+          <div class="apv"><img class="web" src="assets/img/92f20a8e36.jpg" alt="카페 배너" loading="lazy"><img class="web" src="assets/img/5f64af56aa.jpg" alt="팔콘 제휴 배너" loading="lazy"></div>
+          <div class="tags"><span>COMMUNITY</span><span>NAVER CAFE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2025.06</time>
+        <div class="body">
+          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 시리즈 ↗</a></h3>
+          <p>생중계 화면이 썸네일이 되기까지. 원본에서 장면을 고르고 남색 바탕에 금색 큰 6번과 두 줄 제목을 얹은 첫 썸네일 시리즈</p>
+          <div class="apv prs"><figure class="pair"><img src="assets/img/c4d626b2dc.jpg" alt="PEC 레드 맞불 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e26a18f0a7.jpg" alt="PEC 레드 맞불 완성 썸네일" loading="lazy"><figcaption>PEC 레드 맞불</figcaption></figure><figure class="pair"><img src="assets/img/1b410321cb.jpg" alt="대동초 정면승부 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e75fccc4f8.jpg" alt="대동초 정면승부 완성 썸네일" loading="lazy"><figcaption>대동초 정면승부</figcaption></figure><figure class="pair"><img src="assets/img/8a1e9fc2af.jpg" alt="니케FC 맞대결 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/c94ba2528f.jpg" alt="니케FC 맞대결 완성 썸네일" loading="lazy"><figcaption>니케FC 맞대결</figcaption></figure><figure class="pair"><img src="assets/img/ab3b819612.jpg" alt="진천 원정 3일의 기록 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/76b42a624c.jpg" alt="진천 원정 3일의 기록 완성 썸네일" loading="lazy"><figcaption>진천 원정 3일의 기록</figcaption></figure><figure class="pair"><img src="assets/img/e1c2bb7f28.jpg" alt="8대8 첫 출격 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/a342588c5c.jpg" alt="8대8 첫 출격 완성 썸네일" loading="lazy"><figcaption>8대8 첫 출격</figcaption></figure></div>
+          <div class="tags"><span>THUMBNAIL</span><span>SERIES</span></div>
+        </div>
+      </li>
+    </ol>
   </section>
 
   <section class="sec" id="channels">
