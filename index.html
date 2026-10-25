@@ -116,6 +116,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .apv img{cursor:zoom-in}
 .stills{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
 .stills figure{margin:0}
+.stills figure.wide{grid-column:span 2}
+.stills figure.wide img{aspect-ratio:4/3}
 .stills img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;cursor:zoom-in}
 .stills figcaption{margin-top:6px;font-size:13px;line-height:1.35}
 .stills figcaption time{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
@@ -370,13 +372,14 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
     <div class="sec-head"><h2>사진 기록</h2><span class="label">Stills</span></div>
     <div class="stills">
       <h4>2026</h4>
+      <figure class="wide"><img src="assets/photo/y2610-yanggu-team-s.jpg" data-full="assets/photo/y2610-yanggu-team.jpg" alt="2026.10.11 양구사과배 드림풋볼 U9 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.11</time><b>양구사과배 드림풋볼 U9</b><span>결승 진출 · 주니 4골 · 트로피 든 6번이 주니</span></figcaption></figure>
       <figure><img src="assets/photo/y2610-beach-s.jpg" data-full="assets/photo/y2610-beach.jpg" alt="2026.10.02 양양 슈퍼리그 2차 바닷가의 팀" loading="lazy" width="420" height="560"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>첫날 저녁, 바다 앞에서</span></figcaption></figure>
       <figure><img src="assets/photo/b2605-boeun-s.jpg" data-full="assets/photo/b2605-boeun.jpg" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>결승 진출 · 주니 동점골</span></figcaption></figure>
       <figure><img src="assets/photo/p2601-pyeongtaek-s.jpg" data-full="assets/photo/p2601-pyeongtaek.jpg" alt="2026.01.24 U9 경기 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>U9 경기</b><span>vs 평택유나이티드</span></figcaption></figure>
       <figure><img src="assets/photo/m2601-mokpo-b-s.jpg" data-full="assets/photo/m2601-mokpo-b.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
       <figure><img src="assets/photo/m2601-mokpo-a-s.jpg" data-full="assets/photo/m2601-mokpo-a.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
     </div>
-    <details class="yr-more"><summary>2025 시즌 사진 9장 보기 · 태백산배 우승 포함</summary>
+    <details class="yr-more"><summary>2025 시즌 사진 11장 보기 · 레인보우·태백산배 우승 포함</summary>
     <div class="stills">
       <h4>2025</h4>
       <figure><img src="assets/photo/j2509-jincheon-c-s.jpg" data-full="assets/photo/j2509-jincheon-c.jpg" alt="2025.09.21 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.21</time><b>진천 스토브리그</b></figcaption></figure>
@@ -387,7 +390,9 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
       <figure><img src="assets/photo/j2506-stove-s.jpg" data-full="assets/photo/j2506-stove.jpg" alt="2025.06.27 U9 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.06.27</time><b>U9 스토브리그</b><span>8대8 첫 참가</span></figcaption></figure>
       <figure><img src="assets/photo/t2505-taebaek-trophy-s.jpg" data-full="assets/photo/t2505-taebaek-trophy.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>우승 · 주니 결승골</span></figcaption></figure>
       <figure><img src="assets/photo/t2505-taebaek-pose-s.jpg" data-full="assets/photo/t2505-taebaek-pose.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>결승 날 아침</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2505-gangneung-team-s.jpg" data-full="assets/photo/g2505-gangneung-team.jpg" alt="2025.05.05 강릉 율곡대기 U8 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.05.05</time><b>강릉 율곡대기 U8</b><span>결승 진출 · 시상대 위 6번이 주니</span></figcaption></figure>
       <figure><img src="assets/photo/g2505-gangneung-s.jpg" data-full="assets/photo/g2505-gangneung.jpg" alt="2025.05.05 강릉 율곡대기 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.05</time><b>강릉 율곡대기 U8</b><span>결승 진출</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2503-rainbow-team-s.jpg" data-full="assets/photo/g2503-rainbow-team.jpg" alt="2025.03.22 레인보우 레드컵 U8 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.03.22</time><b>레인보우 레드컵 U8</b><span>우승 · 오른쪽에서 두 번째 6번이 주니</span></figcaption></figure>
     </div>
     </details>
   </section>
