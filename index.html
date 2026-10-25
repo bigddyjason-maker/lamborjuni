@@ -121,9 +121,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .stills figcaption time{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
 .stills figcaption b{display:block}
 .stills figcaption span{display:block;color:var(--accent);font-size:12px}
-.stills.op{margin:0 0 18px}
+.stills.op{margin:0}
 .apv video.pv{flex:none;width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#111}
 .yr-more{margin-top:14px}
+.subhd{display:flex;align-items:baseline;gap:8px;margin:28px 0 12px;font-size:17px;font-weight:800}
+.sec-head+.subhd{margin-top:6px}
+.subhd span{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--muted)}
 .yr-more>summary{cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);padding:8px 0;list-style:none}
 .yr-more>summary::-webkit-details-marker{display:none}
 .yr-more>summary::before{content:"+ "}
@@ -143,6 +146,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media (max-width:480px){.pair{grid-template-columns:118px 14px 118px}.pair img{width:118px}}
 .apv img.web{height:120px;width:auto;max-width:none}
 @media (max-width:480px){.apv img.web{height:96px}}
+.shorts .vid video{aspect-ratio:9/16;border-radius:6px}
 .vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px 14px;margin-bottom:22px}
 .vid{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
 .vid video{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:var(--ink);display:block}
@@ -390,7 +394,9 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
   <section class="sec" id="offpitch">
     <div class="sec-head"><h2>경기장 밖</h2><span class="label">Off the Pitch</span></div>
-    <div class="vids">
+
+    <h3 class="subhd">영상 <span>12</span></h3>
+    <div class="shorts">
       <figure class="vid">
         <video controls playsinline preload="none" poster="assets/video/relay-2026-10-14.jpg" src="assets/video/relay-2026-10-14.mp4"></video>
         <figcaption><span class="tmeta"><time>2026.10.14</time> · 운동회</span><span class="ttl">람보르주니 질주, 계주 역전</span></figcaption>
@@ -399,22 +405,6 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <video controls playsinline preload="none" poster="assets/video/charging.jpg" src="assets/video/charging.mp4"></video>
         <figcaption><span class="tmeta"><time>2026.10</time> · 일상</span><span class="ttl">풀타임 뛰고 충전 중</span></figcaption>
       </figure>
-    </div>
-    <div class="stills op">
-      <figure><img src="assets/photo/o2609-rest-s.jpg" data-full="assets/photo/o2609-rest.jpg" alt="2026.09.28 경기 끝나고 휴식 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.28</time><b>경기 끝나고 휴식</b></figcaption></figure>
-      <figure><img src="assets/photo/o2609-car-s.jpg" data-full="assets/photo/o2609-car.jpg" alt="2026.09.16 동탄이든전 가는 길 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.16</time><b>동탄이든전 가는 길</b></figcaption></figure>
-      <figure><img src="assets/photo/o2608-icing-s.jpg" data-full="assets/photo/o2608-icing.jpg" alt="2026.08.08 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>경기 끝나고 아이싱</span></figcaption></figure>
-      <figure><img style="object-position:50% 0" src="assets/photo/o2608-meal-s.jpg" data-full="assets/photo/o2608-meal.jpg" alt="2026.08.05 원정 전 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.05</time><b>원정 전 한 끼</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-ball-s.jpg" data-full="assets/photo/o2606-ball.jpg" alt="2026.06.28 새 공 찜 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>새 공 찜</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-jersey-s.jpg" data-full="assets/photo/o2606-jersey.jpg" alt="2026.06.28 유니폼 고르는 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>유니폼 고르는 중</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-shopping-s.jpg" data-full="assets/photo/o2606-shopping.jpg" alt="2026.06.28 쇼핑 끝 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>쇼핑 끝</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-meal-s.jpg" data-full="assets/photo/o2606-meal.jpg" alt="2026.06.13 든든한 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>든든한 한 끼</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-order-s.jpg" data-full="assets/photo/o2606-order.jpg" alt="2026.06.13 간식 주문 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>간식 주문</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-walk-s.jpg" data-full="assets/photo/o2606-walk.jpg" alt="2026.06.07 숲길 산책 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.07</time><b>숲길 산책</b></figcaption></figure>
-      <figure><img src="assets/photo/o2511-car-s.jpg" data-full="assets/photo/o2511-car.jpg" alt="2025.11.25 이동 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.11.25</time><b>이동 중</b></figcaption></figure>
-      <figure><img src="assets/photo/o2507-sleep-s.jpg" data-full="assets/photo/o2507-sleep.jpg" alt="2025.07.30 풀타임 뒤 꿀잠 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.07.30</time><b>풀타임 뒤 꿀잠</b></figcaption></figure>
-    </div>
-    <div class="shorts">
       <a class="tile short" href="https://youtube.com/shorts/gBw5GQTdWK8" target="_blank" rel="noopener">
         <img src="assets/img/1efb2e1d71.jpg" alt="귀요미" loading="lazy" width="297" height="528">
         <span class="tmeta"><time>2026.09</time></span>
@@ -450,6 +440,9 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <span class="tmeta"><time>2026.02</time></span>
         <span class="ttl">동계 쉬는타임</span>
       </a>
+    </div>
+    <details class="yr-more"><summary>2025 영상 3개 보기</summary>
+    <div class="shorts">
       <a class="tile short" href="https://youtube.com/shorts/jeGS9dx1PAs" target="_blank" rel="noopener">
         <img src="assets/img/e262a9ab63.jpg" alt="축구공 대신 스노우보드" loading="lazy" width="297" height="528">
         <span class="tmeta"><time>2025.12</time></span>
@@ -466,6 +459,27 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <span class="ttl">평영 2위 은메달</span>
       </a>
     </div>
+    </details>
+
+    <h3 class="subhd">사진 <span>12</span></h3>
+    <div class="stills op">
+      <figure><img src="assets/photo/o2609-rest-s.jpg" data-full="assets/photo/o2609-rest.jpg" alt="2026.09.28 경기 끝나고 휴식 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.28</time><b>경기 끝나고 휴식</b></figcaption></figure>
+      <figure><img src="assets/photo/o2609-car-s.jpg" data-full="assets/photo/o2609-car.jpg" alt="2026.09.16 동탄이든전 가는 길 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.16</time><b>동탄이든전 가는 길</b></figcaption></figure>
+      <figure><img src="assets/photo/o2608-icing-s.jpg" data-full="assets/photo/o2608-icing.jpg" alt="2026.08.08 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>경기 끝나고 아이싱</span></figcaption></figure>
+      <figure><img style="object-position:50% 0" src="assets/photo/o2608-meal-s.jpg" data-full="assets/photo/o2608-meal.jpg" alt="2026.08.05 원정 전 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.05</time><b>원정 전 한 끼</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-ball-s.jpg" data-full="assets/photo/o2606-ball.jpg" alt="2026.06.28 새 공 찜 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>새 공 찜</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-jersey-s.jpg" data-full="assets/photo/o2606-jersey.jpg" alt="2026.06.28 유니폼 고르는 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>유니폼 고르는 중</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-shopping-s.jpg" data-full="assets/photo/o2606-shopping.jpg" alt="2026.06.28 쇼핑 끝 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>쇼핑 끝</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-meal-s.jpg" data-full="assets/photo/o2606-meal.jpg" alt="2026.06.13 든든한 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>든든한 한 끼</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-order-s.jpg" data-full="assets/photo/o2606-order.jpg" alt="2026.06.13 간식 주문 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>간식 주문</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-walk-s.jpg" data-full="assets/photo/o2606-walk.jpg" alt="2026.06.07 숲길 산책 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.07</time><b>숲길 산책</b></figcaption></figure>
+    </div>
+    <details class="yr-more"><summary>2025 사진 2장 보기</summary>
+    <div class="stills op">
+      <figure><img src="assets/photo/o2511-car-s.jpg" data-full="assets/photo/o2511-car.jpg" alt="2025.11.25 이동 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.11.25</time><b>이동 중</b></figcaption></figure>
+      <figure><img src="assets/photo/o2507-sleep-s.jpg" data-full="assets/photo/o2507-sleep.jpg" alt="2025.07.30 풀타임 뒤 꿀잠 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.07.30</time><b>풀타임 뒤 꿀잠</b></figcaption></figure>
+    </div>
+    </details>
   </section>
 
   <section class="sec" id="archive">
