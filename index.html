@@ -20,21 +20,22 @@
 <title>Lamborjuni Studio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
 <style>
-/* Layout: 사이드라인 촬영 노트. 뷰파인더 히어로 + 테이프 로그처럼 쌓이는 아카이브 목록 */
+/* Layout: 일자 워드마크 브랜드. 남색 워드마크 히어로 + 차분한 아카이브 목록 */
 :root{
-  --bg:#eef1ec;        /* 라인 분필 먼지 낀 잔디 회녹색 */
-  --surface:#e3e8e1;
-  --ink:#16261f;       /* 진한 잔디 잉크 */
-  --muted:#5c6b63;
-  --line:#c6cfc7;
-  --accent:#f2601d;    /* 훈련 콘 주황 */
-  --rec:#d8262c;
+  --bg:#f4f4f2;        /* 차분한 오프화이트 */
+  --surface:#e9e9e6;
+  --ink:#0e1424;       /* 워드마크 남색 */
+  --muted:#5f6678;
+  --line:#d5d7dc;
+  --accent:#24396b;    /* 밝은 남색 포인트 */
+  --soft:#8e96a8;      /* STUDIO 회청색 */
   color-scheme:light;
   --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --brand:"Syncopate","Noto Sans KR",sans-serif;
 }
 
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word;
@@ -42,23 +43,15 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16p
 .wrap{max-width:760px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:56px}
 a{color:inherit}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.label{font-family:var(--brand);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 
-/* 뷰파인더 히어로 */
-.vf{position:relative;padding:44px 28px 36px;}
-.vf::before,.vf::after,.vf .c1,.vf .c2{content:"";position:absolute;width:26px;height:26px;border:0 solid var(--ink)}
-.vf::before{top:0;left:0;border-top-width:3px;border-left-width:3px}
-.vf::after{top:0;right:0;border-top-width:3px;border-right-width:3px}
-.vf .c1{bottom:0;left:0;border-bottom-width:3px;border-left-width:3px}
-.vf .c2{bottom:0;right:0;border-bottom-width:3px;border-right-width:3px}
-.rec{position:absolute;top:14px;right:40px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--rec);display:flex;align-items:center;gap:6px}
-.rec i{width:9px;height:9px;border-radius:50%;background:var(--rec);animation:blink 1.4s steps(1) infinite}
-@keyframes blink{50%{opacity:.15}}
-@media (prefers-reduced-motion:reduce){.rec i{animation:none}}
-.tc{position:absolute;bottom:12px;right:40px;font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-h1{font-family:var(--display);font-weight:900;font-size:clamp(40px,10vw,76px);line-height:.95;letter-spacing:-.02em;margin:10px 0 18px;text-wrap:balance}
-h1 span{color:var(--accent)}
-.motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
+/* 워드마크 히어로 */
+.hero{display:flex;flex-direction:column;gap:22px}
+.mark{background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
+.mark h1{margin:0;font-family:var(--brand);font-weight:700;font-size:clamp(20px,6.8vw,56px);line-height:1;letter-spacing:.05em;white-space:nowrap;padding-left:.05em}
+.mark .sub{font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;padding-left:.9em;color:var(--soft)}
+.hero .label{margin-top:6px}
+.hero .motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
 .lede{font-size:18px;max-width:34ch;margin:0}
 
 h2{font-family:var(--display);font-weight:900;font-size:24px;margin:0;letter-spacing:-.01em}
@@ -89,10 +82,10 @@ h2{font-family:var(--display);font-weight:900;font-size:24px;margin:0;letter-spa
 .tile img{width:100%;max-width:100%;height:auto;aspect-ratio:480/265;object-fit:cover;border-radius:4px;display:block;transition:transform .2s}
 .tile:hover img{transform:translateY(-2px)}
 .feat{aspect-ratio:480/265;max-width:100%;border-radius:4px;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:0 18px;position:relative;overflow:hidden}
-.feat::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;border:10px solid var(--accent);opacity:.9}
+.feat::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;border:10px solid rgba(255,255,255,.12)}
 .feat.off{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
 .feat.off::after{border-color:var(--line)}
-.fk{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.fk{font-family:var(--brand);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
 .fb{font-family:var(--display);font-weight:900;font-size:clamp(28px,6vw,40px);line-height:1.1}
 .fs{font-size:13px;opacity:.75}
 .tile:hover .feat{transform:translateY(-2px)}
@@ -139,7 +132,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .lb{position:fixed;inset:0;z-index:50;background:rgba(10,18,14,.88);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
 .lb img{max-width:100%;max-height:100%;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
 .lbx{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:calc(env(safe-area-inset-right,0px) + 14px);font:700 14px var(--body);color:var(--bg);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 14px;cursor:pointer}
-.lbx:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lbx:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .apv.prs{gap:14px}
 .pair{flex:none;margin:0;display:grid;grid-template-columns:150px 18px 150px;align-items:center;gap:4px}
 .pair img{width:150px;aspect-ratio:16/9;object-fit:cover}
@@ -197,14 +190,14 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
 <div class="wrap">
 
-  <header class="vf">
-    <span class="c1"></span><span class="c2"></span>
-    <div class="rec"><i></i>REC</div>
-    <div class="label" style="color:var(--accent)">Off the Pitch</div>
-    <h1>Lamborjuni<br><span>Studio</span></h1>
+  <header class="hero">
+    <div class="mark">
+      <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
+      <div class="sub" aria-hidden="true">STUDIO</div>
+    </div>
+    <div class="label">Off the Pitch</div>
     <p class="motto">경기장 안은 주니 몫<br>경기장 밖은 스튜디오 몫</p>
     <p class="lede">찍고 편집하고, 사이트를 만들고 커뮤니티를 운영하는 람보르주니의 작업실</p>
-    <div class="tc" id="tc">00:00:00:00</div>
   </header>
 
   <nav class="jump" aria-label="바로가기">
@@ -714,20 +707,10 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
   </section>
 
   <footer>
-    <span class="label">© 2026 Lamborjuni Studio</span>
+    <span class="label">© 2026 LAMBORJUNI STUDIO</span>
     <a class="label" href="https://www.instagram.com/lamborjuni.studio/" target="_blank" rel="noopener">@lamborjuni.studio</a>
   </footer>
 </div>
-
-<script>
-(function(){
-  var el=document.getElementById('tc');var t0=Date.now();
-  function pad(n){return String(n).padStart(2,'0')}
-  function tick(){var ms=Date.now()-t0;var s=Math.floor(ms/1000);
-    el.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)+':'+pad(Math.floor(ms%1000/1000*30));}
-  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(tick,1000/30)}
-})();
-</script>
 
 <div class="lb" id="lb" hidden><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><img id="lbimg" alt=""></div>
 <script>
