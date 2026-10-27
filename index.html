@@ -22,16 +22,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
 <style>
-/* Layout: 일자 워드마크 브랜드. 남색 워드마크 히어로 + 차분한 아카이브 목록 */
+/* Layout: 일자 워드마크 브랜드. 카본 블랙 워드마크 히어로 + 연두(경기)·주황(경기 외) 포인트 */
 :root{
-  --bg:#f4f4f2;        /* 차분한 오프화이트 */
+  --bg:#f4f4f2;        /* 밝은 오프화이트 (밝은 화면 고정) */
   --surface:#e9e9e6;
-  --ink:#0e1424;       /* 워드마크 남색 */
-  --muted:#5f6678;
-  --line:#d5d7dc;
-  --accent:#24396b;    /* 밝은 남색 포인트 */
-  --soft:#8e96a8;      /* STUDIO 회청색 */
-  --rec:#e5333a;       /* 녹화 점 */
+  --ink:#0b0b0c;       /* 카본 블랙 */
+  --muted:#5f6066;
+  --line:#d6d6d3;
+  --accent:#3b6a00;    /* 글자용 진한 연두 (밝은 바탕 대비) */
+  --lime:#9be01e;      /* 경기 포인트 연두 */
+  --orange:#ff5a1f;    /* 경기 외 포인트 주황 */
+  --soft:#9a9a9e;
+  --rec:#9be01e;       /* REC 점 */
   color-scheme:light;
   --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
@@ -193,6 +195,8 @@ details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px
 .otp{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.6}
 
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+#offpitch .tmeta time,#offpitch .fk,#offpitch .chip{color:#c2410c}
+#offpitch .chip{border-color:#c2410c}
 </style>
 
 <div class="wrap">
@@ -545,7 +549,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <time>2026.10</time>
         <div class="body">
           <h3>Lamborjuni Studio 브랜딩</h3>
-          <p>스튜디오의 얼굴. 'LAMBORJUNI' 한 줄 워드마크와 빨간 REC 점, 남색 하나로 홈페이지, 인스타 프로필과 하이라이트 커버, 링크 미리보기, 영상 워터마크까지 묶은 정체성</p>
+          <p>스튜디오의 얼굴. 'LAMBORJUNI' 한 줄 워드마크와 카본 블랙, 연두(경기)·주황(경기 외) 포인트로 홈페이지, 인스타 프로필과 하이라이트 커버, 링크 미리보기, 영상 워터마크까지 묶은 정체성</p>
           <div class="apv sq"><img src="assets/img/brand-profile-2026.jpg" alt="인스타 프로필 사진 LAMBORJUNI STUDIO" loading="lazy"><img src="assets/img/brand-hl-studio.jpg" alt="하이라이트 커버 Studio" loading="lazy"><img src="assets/img/brand-hl-goals.jpg" alt="하이라이트 커버 Goals" loading="lazy"><img src="assets/img/brand-hl-matches.jpg" alt="하이라이트 커버 Matches" loading="lazy"><img class="wide" src="assets/og.jpg" alt="링크 미리보기 이미지" loading="lazy"><img class="wide" src="assets/img/brand-watermark.jpg" alt="영상용 워터마크" loading="lazy"></div>
           <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span></div>
         </div>
