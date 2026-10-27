@@ -50,7 +50,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
 /* 워드마크 히어로 */
 .hero{display:flex;flex-direction:column;gap:22px}
-.mark{position:relative;background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
+.mark{position:relative;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
 .mark h1{margin:0;font-family:var(--brand);font-weight:700;font-size:clamp(20px,6.8vw,56px);line-height:1;letter-spacing:.05em;white-space:nowrap;padding-left:.05em}
 .mark .sub{display:flex;align-items:center;gap:.9em;font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;color:var(--soft)}
 .mark .sub i,.rec i{flex:none;width:.75em;height:.75em;border-radius:50%;background:var(--rec)}
@@ -60,6 +60,16 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .tc{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:11px;color:var(--soft);font-variant-numeric:tabular-nums}
 @media (prefers-reduced-motion:reduce){.rec i{animation:none}}
 .hero .label{margin-top:6px}
+.mark .bg{position:absolute;inset:0;z-index:-1}
+.mark .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:0;animation:heroFade 18s infinite}
+.mark .bg img:nth-child(2){animation-delay:6s}
+.mark .bg img:nth-child(3){animation-delay:12s}
+.mark .bg img:nth-child(1){object-position:50% 26%}.mark .bg img:nth-child(2){object-position:50% 72%}.mark .bg img:nth-child(3){object-position:50% 68%}
+@media (max-width:600px){.mark .bg img:nth-child(1){object-position:50% 40%}.mark .bg img:nth-child(2){object-position:50% 85%}}
+.mark .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.72),rgba(11,11,12,.86))}
+@keyframes heroFade{0%{opacity:0;transform:scale(1)}6%{opacity:1}33%{opacity:1}40%{opacity:0;transform:scale(1.08)}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.mark .bg img{animation:none}.mark .bg img:first-child{opacity:1}}
+@media (max-width:600px){.mark{aspect-ratio:1/1;justify-content:center;padding:20px}.mark h1{font-size:calc((100vw - 72px)/9.6);letter-spacing:.04em}.mark .sub{font-size:calc((100vw - 72px)/38)}}
 .hero .motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
 .lede{font-size:18px;max-width:34ch;margin:0}
 
@@ -204,6 +214,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
   <header class="hero">
     <div class="mark">
+      <div class="bg" aria-hidden="true"><img src="assets/img/hero-1.jpg" alt=""><img src="assets/img/hero-2.jpg" alt=""><img src="assets/img/hero-3.jpg" alt=""></div>
       <div class="rec" aria-hidden="true"><i></i>REC</div>
       <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
       <div class="sub" aria-hidden="true"><i></i>STUDIO</div>
