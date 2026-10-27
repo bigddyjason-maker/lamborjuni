@@ -31,6 +31,7 @@
   --line:#d5d7dc;
   --accent:#24396b;    /* 밝은 남색 포인트 */
   --soft:#8e96a8;      /* STUDIO 회청색 */
+  --rec:#e5333a;       /* 녹화 점 */
   color-scheme:light;
   --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
@@ -47,9 +48,15 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
 /* 워드마크 히어로 */
 .hero{display:flex;flex-direction:column;gap:22px}
-.mark{background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
+.mark{position:relative;background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
 .mark h1{margin:0;font-family:var(--brand);font-weight:700;font-size:clamp(20px,6.8vw,56px);line-height:1;letter-spacing:.05em;white-space:nowrap;padding-left:.05em}
-.mark .sub{font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;padding-left:.9em;color:var(--soft)}
+.mark .sub{display:flex;align-items:center;gap:.9em;font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;color:var(--soft)}
+.mark .sub i,.rec i{flex:none;width:.75em;height:.75em;border-radius:50%;background:var(--rec)}
+.rec{position:absolute;top:14px;right:16px;font-family:var(--brand);font-size:10px;font-weight:700;letter-spacing:.2em;color:#fff;display:flex;align-items:center;gap:7px}
+.rec i{width:8px;height:8px;animation:blink 1.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+.tc{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:11px;color:var(--soft);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.rec i{animation:none}}
 .hero .label{margin-top:6px}
 .hero .motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
 .lede{font-size:18px;max-width:34ch;margin:0}
@@ -192,8 +199,10 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
   <header class="hero">
     <div class="mark">
+      <div class="rec" aria-hidden="true"><i></i>REC</div>
       <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
-      <div class="sub" aria-hidden="true">STUDIO</div>
+      <div class="sub" aria-hidden="true"><i></i>STUDIO</div>
+      <div class="tc" id="tc" aria-hidden="true">00:00:00:00</div>
     </div>
     <div class="label">Off the Pitch</div>
     <p class="motto">경기장 안은 주니 몫<br>경기장 밖은 스튜디오 몫</p>
@@ -536,7 +545,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <time>2026.10</time>
         <div class="body">
           <h3>Lamborjuni Studio 브랜딩</h3>
-          <p>스튜디오의 얼굴. 'LAMBORJUNI' 한 줄 워드마크와 남색 하나로 홈페이지, 인스타 프로필과 하이라이트 커버, 링크 미리보기, 영상 워터마크까지 묶은 정체성</p>
+          <p>스튜디오의 얼굴. 'LAMBORJUNI' 한 줄 워드마크와 빨간 REC 점, 남색 하나로 홈페이지, 인스타 프로필과 하이라이트 커버, 링크 미리보기, 영상 워터마크까지 묶은 정체성</p>
           <div class="apv sq"><img src="assets/img/brand-profile-2026.jpg" alt="인스타 프로필 사진 LAMBORJUNI STUDIO" loading="lazy"><img src="assets/img/brand-hl-studio.jpg" alt="하이라이트 커버 Studio" loading="lazy"><img src="assets/img/brand-hl-goals.jpg" alt="하이라이트 커버 Goals" loading="lazy"><img src="assets/img/brand-hl-matches.jpg" alt="하이라이트 커버 Matches" loading="lazy"><img class="wide" src="assets/og.jpg" alt="링크 미리보기 이미지" loading="lazy"><img class="wide" src="assets/img/brand-watermark.jpg" alt="영상용 워터마크" loading="lazy"></div>
           <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span></div>
         </div>
@@ -711,6 +720,16 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
     <a class="label" href="https://www.instagram.com/lamborjuni.studio/" target="_blank" rel="noopener">@lamborjuni.studio</a>
   </footer>
 </div>
+
+<script>
+(function(){
+  var el=document.getElementById('tc');var t0=Date.now();
+  function pad(n){return String(n).padStart(2,'0')}
+  function tick(){var ms=Date.now()-t0;var s=Math.floor(ms/1000);
+    el.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)+':'+pad(Math.floor(ms%1000/1000*30));}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(tick,1000/30)}
+})();
+</script>
 
 <div class="lb" id="lb" hidden><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><img id="lbimg" alt=""></div>
 <script>
