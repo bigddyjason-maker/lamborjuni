@@ -758,7 +758,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
   var v=document.querySelector('.mark .hv'),ph=document.querySelector('.mark .hp');if(!v||!ph)return;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var sq=window.matchMedia('(max-width:600px)').matches;
-  v.src=sq?'assets/video/hero-goal-sq.mp4':'assets/video/hero-goal-wide.mp4';
+  v.src=sq?'assets/video/hero-goal-sq.mp4?v=2':'assets/video/hero-goal-wide.mp4';
   function showPhoto(){ph.classList.remove('on');void ph.offsetWidth;ph.classList.add('on');v.classList.remove('on');setTimeout(showVideo,4500);}
   function showVideo(){try{v.currentTime=0}catch(e){}var p=v.play();if(p&&p.catch)p.catch(function(){});v.classList.add('on');ph.classList.remove('on');}
   v.addEventListener('ended',showPhoto);
