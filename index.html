@@ -66,7 +66,12 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .mark .bg img:nth-child(3){animation-delay:12s}
 .mark .bg img:nth-child(1){object-position:50% 26%}.mark .bg img:nth-child(2){object-position:50% 46%}.mark .bg img:nth-child(3){object-position:50% 40%}
 @media (max-width:600px){.mark .bg img:nth-child(1){object-position:50% 40%}.mark .bg img:nth-child(2){object-position:50% 11%}.mark .bg img:nth-child(3){object-position:50% 5%}}
-.mark .bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.mark .bg video,.mark .bg .hp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease;animation:none}
+.mark .bg video{object-position:50% 55%}
+.mark .bg .hp{object-position:50% 26%}.mark .bg .hp.on{animation:heroZoom 5s ease-out forwards}
+.mark .bg .on{opacity:1}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.06)}}
+@media (max-width:600px){.mark .bg .hp{object-position:50% 40%}}
 .mark .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.6),rgba(11,11,12,.78))}
 @keyframes heroFade{0%{opacity:0;transform:scale(1)}6%{opacity:1}33%{opacity:1}40%{opacity:0;transform:scale(1.08)}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.mark .bg img{animation:none}.mark .bg img:first-child{opacity:1}}
@@ -215,7 +220,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
 
   <header class="hero">
     <div class="mark">
-      <div class="bg" aria-hidden="true"><video class="hv" src="assets/video/hero-goal.mp4" poster="assets/video/hero-goal.jpg" autoplay muted loop playsinline preload="auto"></video></div>
+      <div class="bg" aria-hidden="true"><img class="hp on" src="assets/img/hero-1.jpg" alt=""><video class="hv" muted playsinline preload="auto"></video></div>
       <div class="rec" aria-hidden="true"><i></i>REC</div>
       <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
       <div class="sub" aria-hidden="true"><i></i>STUDIO</div>
@@ -748,7 +753,16 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
   function tick(){var ms=Date.now()-t0;var s=Math.floor(ms/1000);
     el.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)+':'+pad(Math.floor(ms%1000/1000*30));}
   if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(tick,1000/30)}
-  else{var hv=document.querySelector('.mark .hv');if(hv){hv.removeAttribute('autoplay');hv.pause();}}
+})();
+(function(){
+  var v=document.querySelector('.mark .hv'),ph=document.querySelector('.mark .hp');if(!v||!ph)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var sq=window.matchMedia('(max-width:600px)').matches;
+  v.src=sq?'assets/video/hero-goal-sq.mp4':'assets/video/hero-goal-wide.mp4';
+  function showPhoto(){ph.classList.remove('on');void ph.offsetWidth;ph.classList.add('on');v.classList.remove('on');setTimeout(showVideo,4500);}
+  function showVideo(){try{v.currentTime=0}catch(e){}var p=v.play();if(p&&p.catch)p.catch(function(){});v.classList.add('on');ph.classList.remove('on');}
+  v.addEventListener('ended',showPhoto);
+  setTimeout(showVideo,4500);
 })();
 </script>
 
