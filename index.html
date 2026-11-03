@@ -148,6 +148,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .stills figcaption span{display:block;color:var(--accent);font-size:12px}
 .stills.op{margin:0}
 .apv video.pv{flex:none;width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#111}
+.apv video.pv.wd{width:300px;aspect-ratio:16/9}@media (max-width:480px){.apv video.pv.wd{width:200px}}
 .yr-more{margin-top:14px}
 .subhd{display:flex;align-items:baseline;gap:8px;margin:28px 0 12px;font-size:17px;font-weight:800}
 .sec-head+.subhd{margin-top:6px}
@@ -597,6 +598,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
         <div class="body">
           <h3>안양AFA 2017 채널 오프닝·엔딩</h3>
           <p>모든 영상의 처음과 끝. 금빛 사선 위로 AFA 방패가 날아와 쾅 박히는 1.8초 오프닝(숏츠는 1.2초), 구독·좋아요를 눌러주고 "다음 경기도 함께해요"로 닫는 3.5초 엔딩. 휙·쿵·반짝·딸깍 효과음까지 직접 입혀 가로·숏츠 두 세트로 제작</p>
+          <div class="apv pt"><video class="pv wd" src="assets/video/afa-open-end-wide.mp4" poster="assets/video/afa-open-end-wide.jpg" autoplay muted loop playsinline aria-label="가로 오프닝·엔딩 재생 예시"></video><video class="pv" src="assets/video/afa-open-end-shorts.mp4" poster="assets/video/afa-open-end-shorts.jpg" autoplay muted loop playsinline aria-label="숏츠 오프닝·엔딩 재생 예시"></video></div>
           <div class="tags"><span>OPENING</span><span>ENDING</span><span>MOTION</span><span>SOUND</span><span>1920×1080 · 1080×1920</span></div>
         </div>
       </li>
