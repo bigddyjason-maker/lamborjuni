@@ -220,6 +220,35 @@ details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:16px}
 #offpitch .tmeta time,#offpitch .fk,#offpitch .chip{color:#c2410c}
 #offpitch .chip{border-color:#c2410c}
+
+/* 시인성 개선 (2026-11): 작은 글자·연한 회색을 한 단계씩 키우고 진하게, 접기 버튼을 눈에 띄게 */
+:root{--muted:#4a4b51;--soft:#76767c}
+body{-webkit-text-size-adjust:100%}
+.label{font-size:12px;letter-spacing:.18em}
+.tags span{font-size:12px;color:#3a3b40;padding:3px 9px}
+.tmeta{font-size:12px}
+.tile.short .tmeta{font-size:12px!important}
+.ttl{font-size:16px}
+@media (max-width:480px){.ttl,.tile.short .ttl{font-size:14.5px!important}}
+.stills figcaption{font-size:14px}
+.stills figcaption time{font-size:12px}
+.stills figcaption b{font-size:15px}
+.stills figcaption span{font-size:13.5px}
+.stills h4{font-size:14px;color:var(--ink);font-weight:700}
+.subhd span{font-size:13px}
+.log time{font-size:14px}
+.log p{font-size:15.5px;line-height:1.65}
+.games .ev span{font-size:15px}
+details.yr>summary .yl{font-size:13.5px;font-weight:700}
+.season h3 span{font-size:13.5px}
+.chip{font-size:13px;padding:3px 11px}
+.fk{font-size:11.5px}
+.kit .label{font-size:12px}
+.yr-more{margin-top:18px}
+.yr-more>summary{display:inline-block;font-family:inherit;font-size:14px;font-weight:700;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;background:#fff}
+.yr-more>summary:hover{background:var(--ink);color:#fff}
+.yr-more[open]>summary{margin-bottom:12px}
+details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--ink);background:#fff;padding:8px 16px}
 </style>
 
 <div class="wrap">
@@ -444,7 +473,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-
       <figure class="wide"><img src="assets/photo/w2601-snow-team-s.jpg" data-full="assets/photo/w2601-snow-team.jpg" alt="2026.01.02 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.02</time><b>목포 스토브리그</b><span>눈 내린 첫날 · 앞줄 오른쪽에서 세 번째가 주니</span></figcaption></figure>
     </div>
     </details>
-    <details class="yr-more"><summary>2025 시즌 사진 18장 보기 · 레인보우·율곡대기·태백산배 우승 포함</summary>
+    <details class="yr-more"><summary>2025 사진 18장 보기 · 우승 3회</summary>
     <div class="stills">
       <h4>2025</h4>
       <figure><img src="assets/photo/j2509-jincheon-c-s.jpg" data-full="assets/photo/j2509-jincheon-c.jpg" alt="2025.09.21 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.21</time><b>진천 스토브리그</b></figcaption></figure>
