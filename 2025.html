@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>2025 시즌 · Lamborjuni Studio</title>
+<link rel="canonical" href="https://lamborjuni.com/2025.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="경기장 안은 주니 몫, 경기장 밖은 스튜디오 몫. #6 JUNI PAK의 골과 경기 기록을 쌓아가는 Lamborjuni Studio">
+<meta property="og:title" content="Lamborjuni Studio">
+<meta property="og:description" content="경기장 안은 주니 몫, 경기장 밖은 스튜디오 몫">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lamborjuni.com/">
+<meta property="og:image" content="https://lamborjuni.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Lamborjuni Studio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lamborjuni.com/assets/og.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0b0c">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}*{box-sizing:border-box}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}.y25{display:flex;flex-direction:column;gap:10px}.y25 h1{margin:0;font-family:var(--brand);font-size:clamp(28px,7vw,48px);letter-spacing:.04em}.y25 .lede{margin:0;color:var(--muted)}.y25 a{text-decoration:none;padding-block:8px}
+</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
+<style>
+/* Layout: 일자 워드마크 브랜드. 카본 블랙 워드마크 히어로 + 연두(경기)·주황(경기 외) 포인트 */
+:root{
+  --bg:#f4f4f2;        /* 밝은 오프화이트 (밝은 화면 고정) */
+  --surface:#e9e9e6;
+  --ink:#0b0b0c;       /* 카본 블랙 */
+  --muted:#5f6066;
+  --line:#d6d6d3;
+  --accent:#3b6a00;    /* 글자용 진한 연두 (밝은 바탕 대비) */
+  --lime:#9be01e;      /* 경기 포인트 연두 */
+  --orange:#ff5a1f;    /* 경기 외 포인트 주황 */
+  --soft:#9a9a9e;
+  --rec:#9be01e;       /* REC 점 */
+  color-scheme:light;
+  --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --brand:"Syncopate","Noto Sans KR",sans-serif;
+}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:56px}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.label{font-family:var(--brand);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* 워드마크 히어로 */
+.hero{display:flex;flex-direction:column;gap:22px}
+.mark{position:relative;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
+.mark h1{margin:0;font-family:var(--brand);font-weight:700;font-size:clamp(20px,6.8vw,56px);line-height:1;letter-spacing:.05em;white-space:nowrap;padding-left:.05em}
+.mark .sub{display:flex;align-items:center;gap:.9em;font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;color:var(--soft)}
+.mark .sub i,.rec i{flex:none;width:.75em;height:.75em;border-radius:50%;background:var(--rec)}
+.rec{position:absolute;top:14px;right:16px;font-family:var(--brand);font-size:10px;font-weight:700;letter-spacing:.2em;color:#fff;display:flex;align-items:center;gap:7px}
+.rec i{width:8px;height:8px;animation:blink 1.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+.tc{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:11px;color:var(--soft);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.rec i{animation:none}}
+.hero .label{margin-top:6px}
+.mark .bg{position:absolute;inset:0;z-index:-1}
+.mark .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:0;animation:heroFade 18s infinite}
+.mark .bg img:nth-child(2){animation-delay:6s}
+.mark .bg img:nth-child(3){animation-delay:12s}
+.mark .bg img:nth-child(1){object-position:50% 26%}.mark .bg img:nth-child(2){object-position:50% 46%}.mark .bg img:nth-child(3){object-position:50% 40%}
+@media (max-width:600px){.mark .bg img:nth-child(1){object-position:50% 40%}.mark .bg img:nth-child(2){object-position:50% 11%}.mark .bg img:nth-child(3){object-position:50% 5%}}
+.mark .bg video,.mark .bg .hp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease;animation:none}
+.mark .bg video{object-position:50% 55%}
+.mark .bg .hp{object-position:50% 26%}.mark .bg .hp.on{animation:heroZoom 5s ease-out forwards}
+.mark .bg .on{opacity:1}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.06)}}
+@media (max-width:600px){.mark .bg .hp{object-position:50% 40%}}
+.mark .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.6),rgba(11,11,12,.78))}
+@keyframes heroFade{0%{opacity:0;transform:scale(1)}6%{opacity:1}33%{opacity:1}40%{opacity:0;transform:scale(1.08)}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.mark .bg img{animation:none}.mark .bg img:first-child{opacity:1}}
+@media (max-width:600px){.mark{aspect-ratio:1/1;justify-content:center;padding:20px}.mark h1{font-size:calc((100vw - 72px)/9.6);letter-spacing:.04em}.mark .sub{font-size:calc((100vw - 72px)/38)}}
+.hero .motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
+.lede{font-size:18px;max-width:34ch;margin:0}
+
+h2{font-family:var(--display);font-weight:900;font-size:24px;margin:0;letter-spacing:-.01em}
+.sec{display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+
+/* 채널 */
+.channel{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:var(--surface);padding:20px;border-radius:4px}
+.channel .meta{flex:1 1 240px;min-width:0}
+.own{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.channel strong{font-size:19px;display:block}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:999px;font-size:15px}
+.btn:hover{filter:brightness(1.07)}
+
+/* 테이프 로그 */
+.log{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.log li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.log time{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:3px}
+.log .body{min-width:0}
+.log h3{margin:0 0 4px;font-size:18px;font-weight:700}
+.log p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tags span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;border:1px solid var(--line);padding:2px 8px;border-radius:3px;color:var(--muted)}
+@media (max-width:480px){.log li{grid-template-columns:1fr;gap:4px}}
+
+.reel{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px 16px}
+.tile{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;min-width:0}
+.tile img{width:100%;max-width:100%;height:auto;aspect-ratio:480/265;object-fit:cover;border-radius:4px;display:block;transition:transform .2s}
+.tile:hover img{transform:translateY(-2px)}
+.feat{aspect-ratio:480/265;max-width:100%;border-radius:4px;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:0 18px;position:relative;overflow:hidden}
+.feat::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;border:10px solid rgba(255,255,255,.12)}
+.feat.off{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.feat.off::after{border-color:var(--line)}
+.fk{font-family:var(--brand);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+.fb{font-family:var(--display);font-weight:900;font-size:clamp(28px,6vw,40px);line-height:1.1}
+.fs{font-size:13px;opacity:.75}
+.tile:hover .feat{transform:translateY(-2px)}
+.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;padding-block:10px;margin-top:-24px;background:var(--bg);scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;text-decoration:none;font-size:13px;font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--bg)}
+.jump a:hover{border-color:var(--accent);color:var(--accent)}
+.sec{scroll-margin-top:64px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.apv{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none}
+.apv::-webkit-scrollbar{display:none}
+.apv img{flex:none;border-radius:4px;border:1px solid var(--line);display:block;height:auto}
+.apv.sq img.wide{width:auto;height:96px;aspect-ratio:auto;object-fit:contain;background:#283c30}
+.apv.sq img{width:96px;aspect-ratio:1;object-fit:cover}
+.apv.pt img{width:96px;aspect-ratio:200/356;object-fit:cover}
+.apv.ls img{width:170px;aspect-ratio:16/9;object-fit:cover}
+.jump{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:28px}
+@media (max-width:480px){.jump a{padding:6px 11px;font-size:12.5px}}
+.apv img{cursor:zoom-in}
+.stills{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.stills figure{margin:0}
+.stills figure.wide{grid-column:span 2}
+.stills figure.wide img{aspect-ratio:4/3}
+.stills img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;cursor:zoom-in}
+.stills figcaption{margin-top:6px;font-size:13px;line-height:1.35}
+.stills figcaption time{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.stills figcaption b{display:block}
+.stills figcaption span{display:block;color:var(--accent);font-size:12px}
+.stills.op{margin:0}
+.apv video.pv{flex:none;width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#111}
+.apv video.pv.wd{width:300px;aspect-ratio:16/9}@media (max-width:480px){.apv video.pv.wd{width:200px}}
+.yr-more{margin-top:14px}
+.subhd{display:flex;align-items:baseline;gap:8px;margin:28px 0 12px;font-size:17px;font-weight:800}
+.sec-head+.subhd{margin-top:6px}
+.subhd span{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--muted)}
+.yr-more>summary{cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);padding:8px 0;list-style:none}
+.yr-more>summary::-webkit-details-marker{display:none}
+.yr-more>summary::before{content:"+ "}
+.yr-more[open]>summary::before{content:"− "}
+.stills h4{grid-column:1/-1;margin:6px 0 0;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
+.apv.bts img{width:120px;aspect-ratio:3/4;object-fit:cover}
+
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,10,9,.95);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.lb img{max-width:100%;max-height:100%;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lbx{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:calc(env(safe-area-inset-right,0px) + 14px);font:700 14px var(--body);color:var(--bg);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 14px;cursor:pointer}
+.lbx:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.apv.prs{gap:14px}
+.pair{flex:none;margin:0;display:grid;grid-template-columns:150px 18px 150px;align-items:center;gap:4px}
+.pair img{width:150px;aspect-ratio:16/9;object-fit:cover}
+.pair .arr{text-align:center;color:var(--accent);font-weight:900}
+.pair figcaption{grid-column:1/-1;font-size:12px;color:var(--muted)}
+.apv.pt img.r34{width:120px;aspect-ratio:3/4}.apv.sq .pair{grid-template-columns:110px 18px 110px}.apv.sq .pair img{width:110px}
+@media (max-width:480px){.pair{grid-template-columns:118px 14px 118px}.pair img{width:118px}}
+.apv img.web{height:120px;width:auto;max-width:none}
+@media (max-width:480px){.apv img.web{height:96px}}
+.shorts .vid video{aspect-ratio:9/16;border-radius:6px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px 14px;margin-bottom:22px}
+.vid{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.vid video{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:var(--ink);display:block}
+.vid figcaption{display:flex;flex-direction:column;gap:4px}
+@media (max-width:480px){.vids{grid-template-columns:1fr 1fr;gap:16px 10px}}
+.shorts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
+.tile.short img{aspect-ratio:200/356}
+@media (max-width:480px){.shorts{grid-template-columns:repeat(2,1fr);gap:16px 10px}.tile.short .ttl{font-size:14px}.tile.short .tmeta{font-size:11.5px}}
+.tmeta{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.tmeta time{color:var(--accent);font-weight:700}
+.ttl{font-weight:700;font-size:15px;line-height:1.4}
+@media (max-width:480px){.reel{grid-template-columns:1fr 1fr;gap:16px 10px}.ttl{font-size:13px}}
+@media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+details.yr{border-top:2px solid var(--ink)}
+details.yr>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:10px;padding:12px 0}
+details.yr>summary::-webkit-details-marker,details.minor>summary::-webkit-details-marker{display:none}
+details.yr>summary .y{font-family:var(--display);font-weight:900;font-size:22px}
+details.yr>summary .yl{font-family:var(--mono);font-size:12px;color:var(--accent)}
+details.yr>summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:20px;color:var(--muted)}
+details.yr[open]>summary::after{content:"−"}
+details.minor{margin:4px 0 20px}
+details.minor>summary{list-style:none;cursor:pointer;display:inline-block;font-size:13px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+details.minor[open]>summary{margin-bottom:6px}
+details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.season h3{font-family:var(--display);font-weight:900;font-size:18px;margin:8px 0 0;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.season h3 span{font-family:var(--mono);font-size:12px;color:var(--accent);margin-left:6px}
+.games{list-style:none;margin:0 0 18px;padding:0}
+.games li{display:grid;grid-template-columns:84px 1fr auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.games time{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.games .ev{min-width:0;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline}
+.games .ev b{font-size:15px}
+.games .ev span{color:var(--muted);font-size:14px}
+.chip{font-size:12px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 10px;white-space:nowrap}
+@media (max-width:480px){.games li{grid-template-columns:64px 1fr}.games .chip{grid-column:2;justify-self:start}}
+/* 장비 / 소개 */
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.kit div{border:1px solid var(--line);padding:14px 16px;border-radius:4px}
+.kit .label{display:block;font-size:11px;margin-bottom:4px}
+.kit b{display:block;font-size:16px}
+.kit small{color:var(--muted);font-size:14px}
+.about p{margin:0;max-width:62ch}
+.otp{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.6}
+
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+#offpitch .tmeta time,#offpitch .fk,#offpitch .chip{color:#c2410c}
+#offpitch .chip{border-color:#c2410c}
+
+/* 시인성 개선 (2026-11): 작은 글자·연한 회색을 한 단계씩 키우고 진하게, 접기 버튼을 눈에 띄게 */
+:root{--muted:#4a4b51;--soft:#76767c}
+body{-webkit-text-size-adjust:100%}
+.label{font-size:12px;letter-spacing:.18em}
+.tags span{font-size:12px;color:#3a3b40;padding:3px 9px}
+.tmeta{font-size:12px}
+.tile.short .tmeta{font-size:12px!important}
+.ttl{font-size:16px}
+@media (max-width:480px){.ttl,.tile.short .ttl{font-size:14.5px!important}}
+.stills figcaption{font-size:14px}
+.stills figcaption time{font-size:12px}
+.stills figcaption b{font-size:15px}
+.stills figcaption span{font-size:13.5px}
+.stills h4{font-size:14px;color:var(--ink);font-weight:700}
+.subhd span{font-size:13px}
+.log time{font-size:14px}
+.log p{font-size:15.5px;line-height:1.65}
+.games .ev span{font-size:15px}
+details.yr>summary .yl{font-size:13.5px;font-weight:700}
+.season h3 span{font-size:13.5px}
+.chip{font-size:13px;padding:3px 11px}
+.fk{font-size:11.5px}
+.kit .label{font-size:12px}
+.yr-more{margin-top:18px}
+.yr-more>summary{display:inline-block;font-family:inherit;font-size:14px;font-weight:700;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;background:#fff}
+.yr-more>summary:hover{background:var(--ink);color:#fff}
+.yr-more[open]>summary{margin-bottom:12px}
+details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--ink);background:#fff;padding:8px 16px}
+
+/* 90+ pass */
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 18px}
+.stat div{background:var(--ink);color:#fff;border-radius:6px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat dt{font-size:12px;font-weight:700;color:#b9bbb4}
+.stat dd{margin:0;font-family:var(--brand);font-weight:700;font-size:30px;line-height:1.15;color:var(--lime)}
+.stat dd i{font-style:normal;font-family:var(--body);font-size:15px;margin-left:2px}
+.stat small{font-size:11.5px;line-height:1.35;color:#a3a5a0}
+@media(max-width:600px){.stat{grid-template-columns:repeat(2,1fr)}}
+.log h3 a,.log p a,footer a{display:inline-block;padding-block:6px}
+.prof{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:20px;align-items:center}
+.prof img{width:100%;height:auto;border-radius:6px;display:block}
+.prof b{display:block;font-family:var(--brand);font-size:22px;letter-spacing:.06em;margin:4px 0 10px}
+.prof .otp{margin:0 0 6px}.prof .pl{color:var(--muted);margin:0 0 14px}
+@media(max-width:460px){.prof{grid-template-columns:110px 1fr;gap:14px}.prof b{font-size:17px}.prof .otp{font-size:16px}}
+.top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:20;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--lime);font:700 18px var(--body);box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s}
+.top.on{opacity:1;pointer-events:auto;transform:none}
+.jump a.cur{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lbn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:64px;border:0;border-radius:6px;background:rgba(255,255,255,.14);color:#fff;font:700 26px var(--body);cursor:pointer}
+.lbn.p{left:max(10px,env(safe-area-inset-left,0px))}.lbn.n{right:max(10px,env(safe-area-inset-right,0px))}
+.lbc{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);text-align:center;color:#e9eae6;font-size:13px;padding:0 70px}
+.lb figure{margin:0;max-width:100%;max-height:calc(100% - 60px);display:flex}
+.lb img{max-height:calc(100vh - 120px);object-fit:contain}
+html.lock{overflow:hidden}
+.more25{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;padding:0 18px;border:1px solid var(--ink);border-radius:999px;font-size:14px;font-weight:700;text-decoration:none}.more25:hover{background:var(--ink);color:#fff}
+</style>
+
+<div class="wrap">
+  <header class="y25">
+    <a class="label" href="/">← Lamborjuni Studio</a>
+    <h1>2025 시즌</h1>
+    <p class="lede">U8 · 대회 12 · 우승 3회 — 태백산배 · 강릉 율곡대기 · 레인보우 레드컵</p>
+  </header>
+  <nav class="jump" aria-label="바로가기"><a href="#season">시즌 기록</a><a href="#photos">사진</a><a href="#offpitch">경기장 밖</a><a href="/">2026 시즌 →</a></nav>
+  <section class="sec" id="season">
+    <div class="sec-head"><h2>시즌 기록</h2><span class="label">Match Log</span></div>
+    <div class="season">
+      <details class="yr" open>
+        <summary><span class="y">2025</span><span class="yl">U8 · 대회 12 · 연습·기타 24</span></summary>
+        <ol class="games">
+        <li><time>12.19–21</time><div class="ev"><b>진천 스토브리그</b><span>vs 충암 · PEC · PEC 레드 · 진천</span></div></li>
+        <li><time>10.10–12</time><div class="ev"><b>양구 드림풋볼 U8</b></div></li>
+        <li><time>09.19–21</time><div class="ev"><b>진천 스토브리그</b><span>vs 구미LM · 김영후FC · PEC · 니케 · DOO FC · 진천FC</span></div></li>
+        <li><time>08.23–24</time><div class="ev"><b>리틀K 보은</b><span>vs 울산FC리버스 · BSJ축구클럽 · 레브유소년</span></div></li>
+        <li><time>08.01–03</time><div class="ev"><b>진천 스토브리그 8대8</b><span>vs 니케FC · DOO FC · 진천FC · 8경기</span></div></li>
+        <li><time>07.06</time><div class="ev"><b>드림풋볼컵 U8</b><span>vs 춘천스포츠클럽 · 염기훈주니어</span></div></li>
+        <li><time>07.05</time><div class="ev"><b>드림풋볼컵 U8 조별</b><span>vs 동탄이든 0:0 · 진건FC 2:3 · 하남FC 3:0</span></div><span class="chip">1승 1무 1패</span></li>
+        <li><time>06.27–29</time><div class="ev"><b>U9 스토브리그</b><span>8대8 첫 참가 · vs 진천FC · 청주Doo · 샬롬코리아 · 동탄DTI · 김영후</span></div></li>
+        <li><time>05.24–25</time><div class="ev"><b>태백산배 U8</b><span>예선 vs GS경수 · 샬롬코리아싸커 · 태백유나이티드 · 4강 승부차기 · 결승 vs 샬롬코리아싸커</span></div><span class="chip">우승 · 주니 결승골</span></li>
+        <li><time>05.03–05</time><div class="ev"><b>강릉 율곡대기 U8</b><span>vs 청주DOO · 강릉시민축구단 · 여주SD · 온리원FC · 4강 vs 니케FC · 결승 vs 강남주니어</span></div><span class="chip">우승</span></li>
+        <li><time>03.22</time><div class="ev"><b>레인보우 레드컵 U8</b><span>예선 vs 트리즈FC · 수지위너스 · 꿈그림FC · 브이엑스 · 4강 vs First FC · 결승 vs JJ CLAN</span></div><span class="chip">우승</span></li>
+        <li><time>03.02–03</time><div class="ev"><b>양구 드림풋볼 U8</b><span>vs 동탄이든축구클럽 · 속초신태용FC · 청주Doo FC</span></div></li>
+        </ol>
+        <details class="minor">
+          <summary>연습경기·기타 24개 보기</summary>
+          <ol class="games">
+        <li><time>12.17</time><div class="ev"><b>8대8 경기</b><span>vs 대동초</span></div></li>
+        <li><time>12.03</time><div class="ev"><b>연습경기</b><span>vs 니케FC</span></div></li>
+        <li><time>12.01</time><div class="ev"><b>8대8 경기</b><span>vs 염기훈주니어</span></div></li>
+        <li><time>11.05</time><div class="ev"><b>연습경기</b><span>vs 화성시</span></div></li>
+        <li><time>07.30</time><div class="ev"><b>U8 경기</b><span>vs 니케FC</span></div></li>
+        <li><time>07.29</time><div class="ev"><b>U8 경기</b><span>vs 화성FC</span></div></li>
+        <li><time>07.24</time><div class="ev"><b>U8 경기</b><span>vs PEC</span></div></li>
+        <li><time>07.19</time><div class="ev"><b>U8 경기</b><span>vs 킹주니어</span></div></li>
+        <li><time>07.10</time><div class="ev"><b>U8 경기</b><span>vs 상해 호퍼FC</span></div></li>
+        <li><time>07.03</time><div class="ev"><b>U8 경기</b><span>vs 성남시티</span></div></li>
+        <li><time>06.25</time><div class="ev"><b>연습경기</b><span>vs 염기훈주니어</span></div></li>
+        <li><time>06.18</time><div class="ev"><b>연습경기</b><span>vs 니케FC</span></div></li>
+        <li><time>06.14</time><div class="ev"><b>연습경기</b><span>vs PEC레드 · PEC블랙 · GS경수 · 팀식스</span></div></li>
+        <li><time>05.21</time><div class="ev"><b>연습경기</b><span>vs PEC 레드·블랙</span></div></li>
+        <li><time>05.14</time><div class="ev"><b>연습경기</b><span>vs 화성FC</span></div></li>
+        <li><time>04.26</time><div class="ev"><b>연습경기</b><span>vs 브이엑스 VEXX</span></div></li>
+        <li><time>04.16</time><div class="ev"><b>연습경기</b><span>vs 니케FC</span></div></li>
+        <li><time>04.12</time><div class="ev"><b>연습경기</b><span>vs 난우FC</span></div></li>
+        <li><time>04.05</time><div class="ev"><b>연습경기</b><span>vs 하남키커스</span></div></li>
+        <li><time>04.02</time><div class="ev"><b>연습경기</b><span>vs 박지성 축구클럽</span></div></li>
+        <li><time>03.29</time><div class="ev"><b>연습경기</b><span>vs 스포츠몬스터</span></div></li>
+        <li><time>02.17–18</time><div class="ev"><b>U8 경기</b><span>vs 관악유소년</span></div></li>
+        <li><time>02.13</time><div class="ev"><b>U8 경기</b><span>vs 하남KSA · 청주CTS · SN FC · 구성PEC</span></div></li>
+        <li><time>02.11</time><div class="ev"><b>U8 경기</b><span>vs 하남KSA · 구성PEC · SN FC</span></div></li>
+          </ol>
+        </details>
+      </details>
+    </div>
+  </section>
+  <section class="sec" id="photos">
+    <div class="sec-head"><h2>사진 기록</h2><span class="label">Stills</span></div>
+    
+    <div class="stills">
+      <h4>2025</h4>
+      <figure><img src="assets/photo/j2509-jincheon-c-s.jpg" data-full="assets/photo/j2509-jincheon-c.jpg" alt="2025.09.21 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.21</time><b>진천 스토브리그</b></figcaption></figure>
+      <figure><img src="assets/photo/h2509-huddle-s.jpg" data-full="assets/photo/h2509-huddle.jpg" alt="2025.09.21 허들 사진" loading="lazy" width="420" height="560"><figcaption><time>2025.09.21</time><b>진천 스토브리그</b><span>허들 · 오른쪽 아래가 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/j2509-jincheon-a-s.jpg" data-full="assets/photo/j2509-jincheon-a.jpg" alt="2025.09.20 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.09.20</time><b>진천 스토브리그</b></figcaption></figure>
+      <figure><img src="assets/photo/w2508-jincheon-close-s.jpg" data-full="assets/photo/w2508-jincheon-close.jpg" alt="2025.08.03 진천 스토브리그 8대8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.08.03</time><b>진천 스토브리그 8대8</b><span>경기 사이 한숨 돌리기</span></figcaption></figure>
+      <figure><img src="assets/photo/j2508-jincheon-s.jpg" data-full="assets/photo/j2508-jincheon.jpg" alt="2025.08.02 진천 스토브리그 8대8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.08.02</time><b>진천 스토브리그 8대8</b></figcaption></figure>
+      <figure><img src="assets/photo/j2508-close-a-s.jpg" data-full="assets/photo/j2508-close-a.jpg" alt="2025.08.03 진천 스토브리그 8대8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.08.03</time><b>진천 스토브리그 8대8</b></figcaption></figure>
+      <figure><img src="assets/photo/j2508-close-b-s.jpg" data-full="assets/photo/j2508-close-b.jpg" alt="2025.08.03 진천 스토브리그 8대8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.08.03</time><b>진천 스토브리그 8대8</b></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/j2508-jincheon-team-s.jpg" data-full="assets/photo/j2508-jincheon-team.jpg" alt="2025.08.01 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.08.01</time><b>진천 스토브리그 8대8</b><span>첫날 저녁 · 가운데가 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/j2506-stove-s.jpg" data-full="assets/photo/j2506-stove.jpg" alt="2025.06.27 U9 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.06.27</time><b>U9 스토브리그</b><span>8대8 첫 참가</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/s2506-practice-team-s.jpg" data-full="assets/photo/s2506-practice-team.jpg" alt="2025.06.14 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.06.14</time><b>연습경기</b><span>뒷줄 맨 왼쪽이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/t2505-taebaek-trophy-s.jpg" data-full="assets/photo/t2505-taebaek-trophy.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>우승 · 주니 결승골</span></figcaption></figure>
+      <figure><img src="assets/photo/t2505-taebaek-pose-s.jpg" data-full="assets/photo/t2505-taebaek-pose.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>결승 날 아침</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/t2505-taebaek-team-s.jpg" data-full="assets/photo/t2505-taebaek-team.jpg" alt="2025.05.25 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>우승 날 단체 · 앞줄 오른쪽 끝이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2505-taebaek-ball-s.jpg" data-full="assets/photo/w2505-taebaek-ball.jpg" alt="2025.05.25 태백산배 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.25</time><b>태백산배 U8</b><span>경기장 위 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2505-gangneung-team-s.jpg" data-full="assets/photo/g2505-gangneung-team.jpg" alt="2025.05.05 강릉 율곡대기 U8 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.05.05</time><b>강릉 율곡대기 U8</b><span>우승 · 시상대 위 6번이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/g2505-gangneung-s.jpg" data-full="assets/photo/g2505-gangneung.jpg" alt="2025.05.05 강릉 율곡대기 U8 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.05</time><b>강릉 율곡대기 U8</b><span>우승</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2505-lineup-s.jpg" data-full="assets/photo/g2505-lineup.jpg" alt="2025.05.04 입장 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.05.04</time><b>강릉 율곡대기 U8</b><span>경기 전 입장 · 왼쪽에서 네 번째가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2503-rainbow-team-s.jpg" data-full="assets/photo/g2503-rainbow-team.jpg" alt="2025.03.22 레인보우 레드컵 U8 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2025.03.22</time><b>레인보우 레드컵 U8</b><span>우승 · 오른쪽에서 두 번째 6번이 주니</span></figcaption></figure>
+    </div>
+    
+  </section>
+  <section class="sec" id="offpitch">
+    <div class="sec-head"><h2>경기장 밖</h2><span class="label">Off the Pitch</span></div>
+    <h3 class="subhd">영상 <span>3</span></h3>
+    
+    <div class="shorts">
+      <a class="tile short" href="https://youtube.com/shorts/jeGS9dx1PAs" target="_blank" rel="noopener">
+        <img src="assets/img/e262a9ab63.jpg" alt="축구공 대신 스노우보드" loading="lazy" width="297" height="528">
+        <span class="tmeta"><time>2025.12</time></span>
+        <span class="ttl">축구공 대신 스노우보드</span>
+      </a>
+      <a class="tile short" href="https://youtube.com/shorts/pYdzc4qF-6U" target="_blank" rel="noopener">
+        <img src="assets/img/dfbf646752.jpg" alt="푸쉬업 챌린지 실패" loading="lazy" width="297" height="528">
+        <span class="tmeta"><time>2025.12</time></span>
+        <span class="ttl">푸쉬업 챌린지 실패</span>
+      </a>
+      <a class="tile short" href="https://youtube.com/shorts/v5YRaevGqnc" target="_blank" rel="noopener">
+        <img src="assets/img/a520614944.jpg" alt="평영 2위 은메달" loading="lazy" width="297" height="528">
+        <span class="tmeta"><time>2025.09</time></span>
+        <span class="ttl">평영 2위 은메달</span>
+      </a>
+    </div>
+    
+    <h3 class="subhd">사진 <span>10</span></h3>
+    
+    <div class="stills op">
+      <figure><img src="assets/photo/w2512-car-s.jpg" data-full="assets/photo/w2512-car.jpg" alt="2025.12.01 이동 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.12.01</time><b>이동 중</b></figcaption></figure>
+      <figure><img src="assets/photo/o2511-car-s.jpg" data-full="assets/photo/o2511-car.jpg" alt="2025.11.25 이동 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.11.25</time><b>이동 중</b></figcaption></figure>
+      <figure><img src="assets/photo/o2507-sleep-s.jpg" data-full="assets/photo/o2507-sleep.jpg" alt="2025.07.30 풀타임 뒤 꿀잠 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.07.30</time><b>풀타임 뒤 꿀잠</b></figcaption></figure>
+      <figure><img src="assets/photo/w2506-sofa-s.jpg" data-full="assets/photo/w2506-sofa.jpg" alt="2025.06.13 숙소에서 수박 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.06.13</time><b>숙소에서 수박</b><span>소파 아래가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2505-car-snack-s.jpg" data-full="assets/photo/w2505-car-snack.jpg" alt="2025.05.21 차 안에서 빵 준이" loading="lazy" width="900" height="675"><figcaption><time>2025.05.21</time><b>차 안에서 빵</b><span>왼쪽이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2505-burger-s.jpg" data-full="assets/photo/w2505-burger.jpg" alt="2025.05.20 햄버거 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.05.20</time><b>햄버거</b></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2505-car-sleep-s.jpg" data-full="assets/photo/w2505-car-sleep.jpg" alt="2025.05.14 원정 끝나고 기절 준이" loading="lazy" width="900" height="675"><figcaption><time>2025.05.14</time><b>원정 끝나고 기절</b><span>오른쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2502-ramen-s.jpg" data-full="assets/photo/w2502-ramen.jpg" alt="2025.02.17 라면 타임 준이" loading="lazy" width="900" height="675"><figcaption><time>2025.02.17</time><b>라면 타임</b><span>오른쪽 아래가 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2502-walk-s.jpg" data-full="assets/photo/w2502-walk.jpg" alt="2025.02.14 친구랑 걸어가는 길 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.02.14</time><b>친구랑 걸어가는 길</b><span>왼쪽이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2502-snack-s.jpg" data-full="assets/photo/w2502-snack.jpg" alt="2025.02.13 간식 고르기 준이" loading="lazy" width="420" height="560"><figcaption><time>2025.02.13</time><b>간식 고르기</b></figcaption></figure>
+    </div>
+    
+  </section>
+  <a class="more25" href="/">← 2026 시즌으로 돌아가기</a>
+  <footer>
+    <span class="label">© 2026 LAMBORJUNI STUDIO</span>
+    <a class="label" href="https://www.instagram.com/lamborjuni.studio/" target="_blank" rel="noopener">@lamborjuni.studio</a>
+  </footer>
+</div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="사진 보기"><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><button type="button" class="lbn p" id="lbp" aria-label="이전 사진">‹</button><img id="lbimg" alt=""><button type="button" class="lbn n" id="lbn" aria-label="다음 사진">›</button><div class="lbc" id="lbc"></div></div>
+<button type="button" class="top" id="top" aria-label="맨 위로">↑</button>
+<script>
+(function(){var lb=document.getElementById('lb'),im=document.getElementById('lbimg'),cap=document.getElementById('lbc'),set=[],i=0,last;
+function show(){var x=set[i];im.src=x.dataset.full||x.src;im.alt=x.alt;cap.textContent=(set.length>1?(i+1)+' / '+set.length+'  ·  ':'')+x.alt;
+document.getElementById('lbp').hidden=document.getElementById('lbn').hidden=set.length<2;}
+function open(x){var g=x.closest('.stills,.apv');var sec=x.closest('section')||document;set=[].slice.call((g&&g.classList.contains('stills')?sec:g||sec).querySelectorAll(g&&g.classList.contains('stills')?'.stills img':'img'));i=Math.max(0,set.indexOf(x));last=x;show();lb.hidden=false;document.documentElement.classList.add('lock');document.getElementById('lbx').focus();}
+function close(){lb.hidden=true;document.documentElement.classList.remove('lock');if(last)last.focus();}
+function go(d){i=(i+d+set.length)%set.length;show();}
+document.querySelectorAll('.apv img, .stills img, .prof img').forEach(function(x){x.tabIndex=0;x.setAttribute('role','button');
+x.addEventListener('click',function(){open(x)});x.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(x);}});});
+lb.addEventListener('click',function(e){if(e.target===lb)close();});
+document.getElementById('lbx').addEventListener('click',close);
+document.getElementById('lbp').addEventListener('click',function(e){e.stopPropagation();go(-1)});
+document.getElementById('lbn').addEventListener('click',function(e){e.stopPropagation();go(1)});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?1:-1);sx=null;});
+var tp=document.getElementById('top');addEventListener('scroll',function(){tp.classList.toggle('on',scrollY>900)},{passive:true});
+tp.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+var links={};document.querySelectorAll('.jump a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('cur',k===e.target.id);var a=links[e.target.id];if(a&&a.scrollIntoView)a.parentNode.scrollTo({left:a.offsetLeft-20,behavior:'smooth'});}})},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)io.observe(el)});}
+})();
+</script>
+
+</body>
+</html>
