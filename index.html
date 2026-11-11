@@ -25,7 +25,8 @@
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
 <style>
 /* Layout: 일자 워드마크 브랜드. 카본 블랙 워드마크 히어로 + 연두(경기)·주황(경기 외) 포인트 */
 :root{
@@ -40,10 +41,10 @@
   --soft:#9a9a9e;
   --rec:#9be01e;       /* REC 점 */
   color-scheme:light;
-  --display:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --display:"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
+  --body:"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
-  --brand:"Syncopate","Noto Sans KR",sans-serif;
+  --brand:"Syncopate","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
 }
 
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word;
@@ -280,7 +281,7 @@ html.lock{overflow:hidden}
 
   <header class="hero">
     <div class="mark">
-      <div class="bg" aria-hidden="true"><img class="hp on" src="assets/img/hero-1.jpg?v=2" alt="" width="626" height="835"><video class="hv" muted playsinline preload="auto"></video></div>
+      <div class="bg" aria-hidden="true"><img class="hp on" src="assets/img/hero-1.jpg?v=2" alt="" width="626" height="835"><video class="hv" muted playsinline preload="none"></video></div>
       <div class="rec" aria-hidden="true"><i></i>REC</div>
       <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
       <div class="sub" aria-hidden="true"><i></i>STUDIO</div>
@@ -424,39 +425,39 @@ html.lock{overflow:hidden}
     <div class="sec-head"><h2>사진 기록</h2><span class="label">Stills</span></div>
     <div class="stills">
       <h4>2026</h4>
-      <figure><img style="aspect-ratio:auto;object-fit:contain" src="assets/photo/p2611-card-s.jpg" data-full="assets/photo/p2611-card.jpg" alt="2026 안양AFA U9 #6 박준이 선수 카드" loading="lazy" width="560" height="784"><figcaption><time>2026.11</time><b>2026 선수 카드</b><span>#6 MF · JUNI PAK</span></figcaption></figure>
+      <figure><img style="aspect-ratio:auto;object-fit:contain" src="assets/photo/p2611-card-s.webp" data-full="assets/photo/p2611-card.webp" alt="2026 안양AFA U9 #6 박준이 선수 카드" loading="lazy" width="560" height="784"><figcaption><time>2026.11</time><b>2026 선수 카드</b><span>#6 MF · JUNI PAK</span></figcaption></figure>
       <figure><img style="aspect-ratio:auto;object-fit:contain;background:#e9ebe6" src="assets/photo/p2611-cutout-s.webp" data-full="assets/photo/p2611-cutout.webp" alt="2026 금색 유니폼 입은 준이" loading="lazy" width="560" height="747"><figcaption><time>2026.11</time><b>2026 프로필</b><span>금색 유니폼 · 팔짱</span></figcaption></figure>
-      <figure><img src="assets/photo/m2610-night-a-s.jpg" data-full="assets/photo/m2610-night-a.jpg" alt="2026.10.30 찬희와 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>경기 끝나고 찬희랑 · 오른쪽이 주니</span></figcaption></figure>
-      <figure><img src="assets/photo/m2610-night-b-s.jpg" data-full="assets/photo/m2610-night-b.jpg" alt="2026.10.30 찬희와 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>찬희랑 브이 · 오른쪽이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/m2610-meal-a-s.jpg" data-full="assets/photo/m2610-meal-a.jpg" alt="2026.10.30 유준이와 점심 먹는 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>유준이랑 점심 · 왼쪽이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/m2610-meal-b-s.jpg" data-full="assets/photo/m2610-meal-b.jpg" alt="2026.10.30 유준이와 점심 먹는 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>유준이랑 점심 · 오른쪽이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2610-yanggu-award-s.jpg" data-full="assets/photo/w2610-yanggu-award.jpg" alt="2026.10.11 양구사과배 드림풋볼 시상식 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.11</time><b>양구사과배 · 시상식</b><span>AFA 형·동생들과 트로피 앞에서</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/y2610-yanggu-team-s.jpg" data-full="assets/photo/y2610-yanggu-team.jpg" alt="2026.10.11 양구사과배 드림풋볼 U9 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.11</time><b>양구사과배 드림풋볼 U9</b><span>결승 진출 · 주니 4골 · 트로피 든 6번이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/m2610-night-a-s.webp" data-full="assets/photo/m2610-night-a.webp" alt="2026.10.30 찬희와 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>경기 끝나고 찬희랑 · 오른쪽이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/m2610-night-b-s.webp" data-full="assets/photo/m2610-night-b.webp" alt="2026.10.30 찬희와 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>찬희랑 브이 · 오른쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/m2610-meal-a-s.webp" data-full="assets/photo/m2610-meal-a.webp" alt="2026.10.30 유준이와 점심 먹는 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>유준이랑 점심 · 왼쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/m2610-meal-b-s.webp" data-full="assets/photo/m2610-meal-b.webp" alt="2026.10.30 유준이와 점심 먹는 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.10.30</time><b>진천 스토브리그 둘째날</b><span>유준이랑 점심 · 오른쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2610-yanggu-award-s.webp" data-full="assets/photo/w2610-yanggu-award.webp" alt="2026.10.11 양구사과배 드림풋볼 시상식 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.11</time><b>양구사과배 · 시상식</b><span>AFA 형·동생들과 트로피 앞에서</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/y2610-yanggu-team-s.webp" data-full="assets/photo/y2610-yanggu-team.webp" alt="2026.10.11 양구사과배 드림풋볼 U9 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.11</time><b>양구사과배 드림풋볼 U9</b><span>결승 진출 · 주니 4골 · 트로피 든 6번이 주니</span></figcaption></figure>
     </div>
     <details class="yr-more"><summary>2026 사진 21장 더 보기</summary>
     <div class="stills">
-      <figure><img src="assets/photo/y2610-beach-s.jpg" data-full="assets/photo/y2610-beach.jpg" alt="2026.10.02 양양 슈퍼리그 2차 바닷가의 팀" loading="lazy" width="420" height="560"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>첫날 저녁, 바다 앞에서</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/i2610-inje-team-s.jpg" data-full="assets/photo/i2610-inje-team.jpg" alt="2026.10.01 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.01</time><b>인제 · 원정 단체</b><span>앞줄 가운데가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/s2608-team-s.jpg" data-full="assets/photo/s2608-team.jpg" alt="2026.08.22 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.08.22</time><b>양양 슈퍼리그</b><span>경기 전 단체 · 가운데가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/s2608-skyblue-team-s.jpg" data-full="assets/photo/s2608-skyblue-team.jpg" alt="2026.08.08 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>하늘색 유니폼 · 앞줄 오른쪽이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2607-line-s.jpg" data-full="assets/photo/w2607-line.jpg" alt="2026.07.02 AFA U9 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.07.02</time><b>AFA U9</b><span>경기 전 · 왼쪽에서 일곱 번째가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2607-team-s.jpg" data-full="assets/photo/w2607-team.jpg" alt="2026.07.02 AFA U9 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.07.02</time><b>AFA U9</b><span>단체 · 앞줄 왼쪽에서 네 번째가 주니</span></figcaption></figure>
-      <figure><img src="assets/photo/b2605-boeun-s.jpg" data-full="assets/photo/b2605-boeun.jpg" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>결승 진출 · 주니 동점골</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2605-boeun-team-s.jpg" data-full="assets/photo/w2605-boeun-team.jpg" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>시상식 단체 · 앞줄 왼쪽에서 네 번째가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2605-boeun-eight-s.jpg" data-full="assets/photo/w2605-boeun-eight.jpg" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>경기 끝나고 · 맨 왼쪽이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2605-gangneung-beach-s.jpg" data-full="assets/photo/w2605-gangneung-beach.jpg" alt="2026.05.02 강릉 율곡대기 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.02</time><b>강릉 율곡대기</b><span>바닷가 단체 사진</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/g2602-deck-team-s.jpg" data-full="assets/photo/g2602-deck-team.jpg" alt="2026.02.22 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.02.22</time><b>겨울 단체 사진</b><span>롱패딩 입고 다 같이</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/c2601-team-s.jpg" data-full="assets/photo/c2601-team.jpg" alt="2026.01.24 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.24</time><b>제5회 생거진천배</b><span>대회장 단체 사진</span></figcaption></figure>
-      <figure><img src="assets/photo/c2601-koo-s.jpg" data-full="assets/photo/c2601-koo.jpg" alt="2026.01.24 제5회 생거진천배 구자철 특별초청강연" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>제5회 생거진천배</b><span>전 국가대표 구자철 특별초청강연</span></figcaption></figure>
-      <figure><img src="assets/photo/p2601-pyeongtaek-s.jpg" data-full="assets/photo/p2601-pyeongtaek.jpg" alt="2026.01.24 생거진천배 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>생거진천배</b><span>vs 평택유나이티드</span></figcaption></figure>
-      <figure><img src="assets/photo/m2601-mokpo-b-s.jpg" data-full="assets/photo/m2601-mokpo-b.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
-      <figure><img src="assets/photo/m2601-mokpo-a-s.jpg" data-full="assets/photo/m2601-mokpo-a.jpg" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
-      <figure><img src="assets/photo/m2601-duo-s.jpg" data-full="assets/photo/m2601-duo.jpg" alt="2026.01.09 준이와 친구" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>둘이 한 컷 · 왼쪽 6번이 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/m2601-shout-team-s.jpg" data-full="assets/photo/m2601-shout-team.jpg" alt="2026.01.09 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>다 같이 함성 · 왼쪽에서 세 번째가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/m2601-mokpo-four-s.jpg" data-full="assets/photo/m2601-mokpo-four.jpg" alt="2026.01.09 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>어깨동무 · 왼쪽 6번이 주니</span></figcaption></figure>
-      <figure><img src="assets/photo/m2601-grass-s.jpg" data-full="assets/photo/m2601-grass.jpg" alt="2026.01.08 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.08</time><b>목포 스토브리그</b><span>잔디 위에서 브이</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/m2601-jump-team-s.jpg" data-full="assets/photo/m2601-jump-team.jpg" alt="2026.01.05 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.05</time><b>목포 스토브리그</b><span>뒤에서 점프한 게 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2601-snow-team-s.jpg" data-full="assets/photo/w2601-snow-team.jpg" alt="2026.01.02 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.02</time><b>목포 스토브리그</b><span>눈 내린 첫날 · 앞줄 오른쪽에서 세 번째가 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/y2610-beach-s.webp" data-full="assets/photo/y2610-beach.webp" alt="2026.10.02 양양 슈퍼리그 2차 바닷가의 팀" loading="lazy" width="420" height="560"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>첫날 저녁, 바다 앞에서</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/i2610-inje-team-s.webp" data-full="assets/photo/i2610-inje-team.webp" alt="2026.10.01 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.10.01</time><b>인제 · 원정 단체</b><span>앞줄 가운데가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/s2608-team-s.webp" data-full="assets/photo/s2608-team.webp" alt="2026.08.22 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.08.22</time><b>양양 슈퍼리그</b><span>경기 전 단체 · 가운데가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/s2608-skyblue-team-s.webp" data-full="assets/photo/s2608-skyblue-team.webp" alt="2026.08.08 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>하늘색 유니폼 · 앞줄 오른쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2607-line-s.webp" data-full="assets/photo/w2607-line.webp" alt="2026.07.02 AFA U9 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.07.02</time><b>AFA U9</b><span>경기 전 · 왼쪽에서 일곱 번째가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2607-team-s.webp" data-full="assets/photo/w2607-team.webp" alt="2026.07.02 AFA U9 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.07.02</time><b>AFA U9</b><span>단체 · 앞줄 왼쪽에서 네 번째가 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/b2605-boeun-s.webp" data-full="assets/photo/b2605-boeun.webp" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>결승 진출 · 주니 동점골</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2605-boeun-team-s.webp" data-full="assets/photo/w2605-boeun-team.webp" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>시상식 단체 · 앞줄 왼쪽에서 네 번째가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2605-boeun-eight-s.webp" data-full="assets/photo/w2605-boeun-eight.webp" alt="2026.05.25 리틀K 보은 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.25</time><b>리틀K 보은</b><span>경기 끝나고 · 맨 왼쪽이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2605-gangneung-beach-s.webp" data-full="assets/photo/w2605-gangneung-beach.webp" alt="2026.05.02 강릉 율곡대기 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.05.02</time><b>강릉 율곡대기</b><span>바닷가 단체 사진</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/g2602-deck-team-s.webp" data-full="assets/photo/g2602-deck-team.webp" alt="2026.02.22 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.02.22</time><b>겨울 단체 사진</b><span>롱패딩 입고 다 같이</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/c2601-team-s.webp" data-full="assets/photo/c2601-team.webp" alt="2026.01.24 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.24</time><b>제5회 생거진천배</b><span>대회장 단체 사진</span></figcaption></figure>
+      <figure><img src="assets/photo/c2601-koo-s.webp" data-full="assets/photo/c2601-koo.webp" alt="2026.01.24 제5회 생거진천배 구자철 특별초청강연" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>제5회 생거진천배</b><span>전 국가대표 구자철 특별초청강연</span></figcaption></figure>
+      <figure><img src="assets/photo/p2601-pyeongtaek-s.webp" data-full="assets/photo/p2601-pyeongtaek.webp" alt="2026.01.24 생거진천배 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.24</time><b>생거진천배</b><span>vs 평택유나이티드</span></figcaption></figure>
+      <figure><img src="assets/photo/m2601-mokpo-b-s.webp" data-full="assets/photo/m2601-mokpo-b.webp" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
+      <figure><img src="assets/photo/m2601-mokpo-a-s.webp" data-full="assets/photo/m2601-mokpo-a.webp" alt="2026.01.09 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b></figcaption></figure>
+      <figure><img src="assets/photo/m2601-duo-s.webp" data-full="assets/photo/m2601-duo.webp" alt="2026.01.09 준이와 친구" loading="lazy" width="420" height="560"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>둘이 한 컷 · 왼쪽 6번이 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/m2601-shout-team-s.webp" data-full="assets/photo/m2601-shout-team.webp" alt="2026.01.09 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>다 같이 함성 · 왼쪽에서 세 번째가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/m2601-mokpo-four-s.webp" data-full="assets/photo/m2601-mokpo-four.webp" alt="2026.01.09 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.09</time><b>목포 스토브리그</b><span>어깨동무 · 왼쪽 6번이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/m2601-grass-s.webp" data-full="assets/photo/m2601-grass.webp" alt="2026.01.08 목포 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.08</time><b>목포 스토브리그</b><span>잔디 위에서 브이</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/m2601-jump-team-s.webp" data-full="assets/photo/m2601-jump-team.webp" alt="2026.01.05 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.05</time><b>목포 스토브리그</b><span>뒤에서 점프한 게 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2601-snow-team-s.webp" data-full="assets/photo/w2601-snow-team.webp" alt="2026.01.02 단체 사진" loading="lazy" width="900" height="675"><figcaption><time>2026.01.02</time><b>목포 스토브리그</b><span>눈 내린 첫날 · 앞줄 오른쪽에서 세 번째가 주니</span></figcaption></figure>
     </div>
     </details>
     <a class="more25" href="2025.html#photos">2025 사진 18장 보기 →</a>
@@ -525,40 +526,40 @@ html.lock{overflow:hidden}
 
     <h3 class="subhd">사진 <span>31</span></h3>
     <div class="stills op">
-      <figure><img src="assets/photo/o2610-stove-bed-s.jpg" data-full="assets/photo/o2610-stove-bed.jpg" alt="2026.10.29 진천 스토브리그 첫날 이불 위 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>하루 끝, 이불 위에서 브이</span></figcaption></figure>
-      <figure><img src="assets/photo/o2610-stove-snack-s.jpg" data-full="assets/photo/o2610-stove-snack.jpg" alt="2026.10.29 진천 스토브리그 첫날 간식 먹는 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>숙소 간식 시간</span></figcaption></figure>
-      <figure><img src="assets/photo/o2610-stove-room-s.jpg" data-full="assets/photo/o2610-stove-room.jpg" alt="2026.10.29 진천 스토브리그 첫날 숙소의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>숙소에서 한숨 돌리기</span></figcaption></figure>
-      <figure><img src="assets/photo/o2610-stove-meal-s.jpg" data-full="assets/photo/o2610-stove-meal.jpg" alt="2026.10.29 진천 스토브리그 첫날 식당의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>첫날 · 식당에서 한 끼</span></figcaption></figure>
-      <figure><img src="assets/photo/w2610-harbor-s.jpg" data-full="assets/photo/w2610-harbor.jpg" alt="2026.10.04 양양 슈퍼리그 2차 밤 항구의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.04</time><b>양양 슈퍼리그 2차</b><span>대회 끝난 밤, 항구 산책</span></figcaption></figure>
-      <figure class="wide"><img style="aspect-ratio:auto;object-fit:contain;background:#fff" src="assets/photo/o2610-letter-s.jpg" data-full="assets/photo/o2610-letter.jpg" alt="2026.10.02 양양 슈퍼리그 2차 첫날 밤 준이 반성문" loading="lazy" width="900" height="412"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>리그 첫날 밤, 인생 첫 반성문</span></figcaption></figure>
-      <figure><img src="assets/photo/o2609-rest-s.jpg" data-full="assets/photo/o2609-rest.jpg" alt="2026.09.28 경기 끝나고 휴식 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.28</time><b>경기 끝나고 휴식</b></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2608-pool-s.jpg" data-full="assets/photo/w2608-pool.jpg" alt="2026.08.24 양양 수영장 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.08.24</time><b>양양 수영장</b></figcaption></figure>
+      <figure><img src="assets/photo/o2610-stove-bed-s.webp" data-full="assets/photo/o2610-stove-bed.webp" alt="2026.10.29 진천 스토브리그 첫날 이불 위 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>하루 끝, 이불 위에서 브이</span></figcaption></figure>
+      <figure><img src="assets/photo/o2610-stove-snack-s.webp" data-full="assets/photo/o2610-stove-snack.webp" alt="2026.10.29 진천 스토브리그 첫날 간식 먹는 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>숙소 간식 시간</span></figcaption></figure>
+      <figure><img src="assets/photo/o2610-stove-room-s.webp" data-full="assets/photo/o2610-stove-room.webp" alt="2026.10.29 진천 스토브리그 첫날 숙소의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>숙소에서 한숨 돌리기</span></figcaption></figure>
+      <figure><img src="assets/photo/o2610-stove-meal-s.webp" data-full="assets/photo/o2610-stove-meal.webp" alt="2026.10.29 진천 스토브리그 첫날 식당의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.29</time><b>진천 스토브리그</b><span>첫날 · 식당에서 한 끼</span></figcaption></figure>
+      <figure><img src="assets/photo/w2610-harbor-s.webp" data-full="assets/photo/w2610-harbor.webp" alt="2026.10.04 양양 슈퍼리그 2차 밤 항구의 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.10.04</time><b>양양 슈퍼리그 2차</b><span>대회 끝난 밤, 항구 산책</span></figcaption></figure>
+      <figure class="wide"><img style="aspect-ratio:auto;object-fit:contain;background:#fff" src="assets/photo/o2610-letter-s.webp" data-full="assets/photo/o2610-letter.webp" alt="2026.10.02 양양 슈퍼리그 2차 첫날 밤 준이 반성문" loading="lazy" width="900" height="412"><figcaption><time>2026.10.02</time><b>양양 슈퍼리그 2차</b><span>리그 첫날 밤, 인생 첫 반성문</span></figcaption></figure>
+      <figure><img src="assets/photo/o2609-rest-s.webp" data-full="assets/photo/o2609-rest.webp" alt="2026.09.28 경기 끝나고 휴식 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.09.28</time><b>경기 끝나고 휴식</b></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2608-pool-s.webp" data-full="assets/photo/w2608-pool.webp" alt="2026.08.24 양양 수영장 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.08.24</time><b>양양 수영장</b></figcaption></figure>
     </div>
     <details class="yr-more"><summary>2026 사진 22장 더 보기</summary>
     <div class="stills op">
-      <figure><img src="assets/photo/w2608-pool-b-s.jpg" data-full="assets/photo/w2608-pool-b.jpg" alt="2026.08.24 바다 보이는 수영장 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.24</time><b>바다 보이는 수영장</b></figcaption></figure>
-      <figure><img src="assets/photo/o2608-galbi-s.jpg" data-full="assets/photo/o2608-galbi.jpg" alt="2026.08.23 양양 슈퍼리그 끝나고 갈비" loading="lazy" width="420" height="560"><figcaption><time>2026.08.23</time><b>양양 슈퍼리그</b><span>대회 끝나고 하루 더 · 갈비</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2608-watch-s.jpg" data-full="assets/photo/w2608-watch.jpg" alt="2026.08.23 양양 슈퍼리그 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.08.23</time><b>양양 슈퍼리그</b><span>다른 경기 구경 · 6번이 주니</span></figcaption></figure>
-      <figure><img src="assets/photo/w2608-sea-s.jpg" data-full="assets/photo/w2608-sea.jpg" alt="2026.08.23 양양 바다 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.23</time><b>양양 바다</b><span>대회 끝나고 하루 더</span></figcaption></figure>
-      <figure><img src="assets/photo/w2608-barber-s.jpg" data-full="assets/photo/w2608-barber.jpg" alt="2026.08.13 이발하러 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.13</time><b>이발하러</b></figcaption></figure>
-      <figure><img src="assets/photo/o2608-icing-s.jpg" data-full="assets/photo/o2608-icing.jpg" alt="2026.08.08 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>경기 끝나고 아이싱</span></figcaption></figure>
-      <figure><img style="object-position:50% 0" src="assets/photo/o2608-meal-s.jpg" data-full="assets/photo/o2608-meal.jpg" alt="2026.08.05 원정 전 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.05</time><b>원정 전 한 끼</b></figcaption></figure>
-      <figure><img src="assets/photo/w2607-peace-s.jpg" data-full="assets/photo/w2607-peace.jpg" alt="2026.07.03 브이 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.07.03</time><b>브이</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-ball-s.jpg" data-full="assets/photo/o2606-ball.jpg" alt="2026.06.28 새 공 찜 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>새 공 찜</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-jersey-s.jpg" data-full="assets/photo/o2606-jersey.jpg" alt="2026.06.28 유니폼 고르는 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>유니폼 고르는 중</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-shopping-s.jpg" data-full="assets/photo/o2606-shopping.jpg" alt="2026.06.28 쇼핑 끝 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>쇼핑 끝</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-meal-s.jpg" data-full="assets/photo/o2606-meal.jpg" alt="2026.06.13 든든한 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>든든한 한 끼</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-order-s.jpg" data-full="assets/photo/o2606-order.jpg" alt="2026.06.13 간식 주문 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>간식 주문</b></figcaption></figure>
-      <figure><img src="assets/photo/o2606-walk-s.jpg" data-full="assets/photo/o2606-walk.jpg" alt="2026.06.07 숲길 산책 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.07</time><b>숲길 산책</b></figcaption></figure>
-      <figure><img src="assets/photo/w2605-bus-s.jpg" data-full="assets/photo/w2605-bus.jpg" alt="2026.05.22 보은 가는 버스 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.22</time><b>보은 가는 버스</b></figcaption></figure>
-      <figure><img src="assets/photo/w2605-haircut-s.jpg" data-full="assets/photo/w2605-haircut.jpg" alt="2026.05.19 대회 앞두고 이발 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.19</time><b>대회 앞두고 이발</b></figcaption></figure>
-      <figure><img src="assets/photo/w2605-armband-s.jpg" data-full="assets/photo/w2605-armband.jpg" alt="2026.05.17 주장 완장 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.17</time><b>주장 완장</b></figcaption></figure>
-      <figure><img src="assets/photo/w2605-pizza-gn-s.jpg" data-full="assets/photo/w2605-pizza-gn.jpg" alt="2026.05.01 강릉 도착 첫 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.01</time><b>강릉 도착 첫 끼</b></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2604-cot-s.jpg" data-full="assets/photo/w2604-cot.jpg" alt="2026.04.21 경기 전 낮잠 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.04.21</time><b>경기 전 낮잠</b></figcaption></figure>
-      <figure><img src="assets/photo/w2602-cleats-s.jpg" data-full="assets/photo/w2602-cleats.jpg" alt="2026.02.25 새 축구화 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.02.25</time><b>새 축구화</b></figcaption></figure>
-      <figure><img src="assets/photo/w2602-pizza-s.jpg" data-full="assets/photo/w2602-pizza.jpg" alt="2026.02.21 진천 숙소 피자 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.02.21</time><b>진천 숙소 피자</b><span>왼쪽에서 두 번째가 주니</span></figcaption></figure>
-      <figure class="wide"><img src="assets/photo/w2602-bench-s.jpg" data-full="assets/photo/w2602-bench.jpg" alt="2026.02.05 벤치에서 간식 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.02.05</time><b>벤치에서 간식</b><span>맨 왼쪽이 주니</span></figcaption></figure>
-      <figure><img src="assets/photo/w2601-packing-s.jpg" data-full="assets/photo/w2601-packing.jpg" alt="2026.01.01 목포 갈 짐 싸기 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.01</time><b>목포 갈 짐 싸기</b><span>스토브리그 출발 전날</span></figcaption></figure>
+      <figure><img src="assets/photo/w2608-pool-b-s.webp" data-full="assets/photo/w2608-pool-b.webp" alt="2026.08.24 바다 보이는 수영장 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.24</time><b>바다 보이는 수영장</b></figcaption></figure>
+      <figure><img src="assets/photo/o2608-galbi-s.webp" data-full="assets/photo/o2608-galbi.webp" alt="2026.08.23 양양 슈퍼리그 끝나고 갈비" loading="lazy" width="420" height="560"><figcaption><time>2026.08.23</time><b>양양 슈퍼리그</b><span>대회 끝나고 하루 더 · 갈비</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2608-watch-s.webp" data-full="assets/photo/w2608-watch.webp" alt="2026.08.23 양양 슈퍼리그 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.08.23</time><b>양양 슈퍼리그</b><span>다른 경기 구경 · 6번이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2608-sea-s.webp" data-full="assets/photo/w2608-sea.webp" alt="2026.08.23 양양 바다 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.23</time><b>양양 바다</b><span>대회 끝나고 하루 더</span></figcaption></figure>
+      <figure><img src="assets/photo/w2608-barber-s.webp" data-full="assets/photo/w2608-barber.webp" alt="2026.08.13 이발하러 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.13</time><b>이발하러</b></figcaption></figure>
+      <figure><img src="assets/photo/o2608-icing-s.webp" data-full="assets/photo/o2608-icing.webp" alt="2026.08.08 진천 스토브리그 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.08</time><b>진천 스토브리그</b><span>경기 끝나고 아이싱</span></figcaption></figure>
+      <figure><img style="object-position:50% 0" src="assets/photo/o2608-meal-s.webp" data-full="assets/photo/o2608-meal.webp" alt="2026.08.05 원정 전 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.08.05</time><b>원정 전 한 끼</b></figcaption></figure>
+      <figure><img src="assets/photo/w2607-peace-s.webp" data-full="assets/photo/w2607-peace.webp" alt="2026.07.03 브이 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.07.03</time><b>브이</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-ball-s.webp" data-full="assets/photo/o2606-ball.webp" alt="2026.06.28 새 공 찜 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>새 공 찜</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-jersey-s.webp" data-full="assets/photo/o2606-jersey.webp" alt="2026.06.28 유니폼 고르는 중 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>유니폼 고르는 중</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-shopping-s.webp" data-full="assets/photo/o2606-shopping.webp" alt="2026.06.28 쇼핑 끝 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.28</time><b>쇼핑 끝</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-meal-s.webp" data-full="assets/photo/o2606-meal.webp" alt="2026.06.13 든든한 한 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>든든한 한 끼</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-order-s.webp" data-full="assets/photo/o2606-order.webp" alt="2026.06.13 간식 주문 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.13</time><b>간식 주문</b></figcaption></figure>
+      <figure><img src="assets/photo/o2606-walk-s.webp" data-full="assets/photo/o2606-walk.webp" alt="2026.06.07 숲길 산책 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.06.07</time><b>숲길 산책</b></figcaption></figure>
+      <figure><img src="assets/photo/w2605-bus-s.webp" data-full="assets/photo/w2605-bus.webp" alt="2026.05.22 보은 가는 버스 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.22</time><b>보은 가는 버스</b></figcaption></figure>
+      <figure><img src="assets/photo/w2605-haircut-s.webp" data-full="assets/photo/w2605-haircut.webp" alt="2026.05.19 대회 앞두고 이발 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.19</time><b>대회 앞두고 이발</b></figcaption></figure>
+      <figure><img src="assets/photo/w2605-armband-s.webp" data-full="assets/photo/w2605-armband.webp" alt="2026.05.17 주장 완장 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.17</time><b>주장 완장</b></figcaption></figure>
+      <figure><img src="assets/photo/w2605-pizza-gn-s.webp" data-full="assets/photo/w2605-pizza-gn.webp" alt="2026.05.01 강릉 도착 첫 끼 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.05.01</time><b>강릉 도착 첫 끼</b></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2604-cot-s.webp" data-full="assets/photo/w2604-cot.webp" alt="2026.04.21 경기 전 낮잠 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.04.21</time><b>경기 전 낮잠</b></figcaption></figure>
+      <figure><img src="assets/photo/w2602-cleats-s.webp" data-full="assets/photo/w2602-cleats.webp" alt="2026.02.25 새 축구화 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.02.25</time><b>새 축구화</b></figcaption></figure>
+      <figure><img src="assets/photo/w2602-pizza-s.webp" data-full="assets/photo/w2602-pizza.webp" alt="2026.02.21 진천 숙소 피자 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.02.21</time><b>진천 숙소 피자</b><span>왼쪽에서 두 번째가 주니</span></figcaption></figure>
+      <figure class="wide"><img src="assets/photo/w2602-bench-s.webp" data-full="assets/photo/w2602-bench.webp" alt="2026.02.05 벤치에서 간식 준이" loading="lazy" width="900" height="675"><figcaption><time>2026.02.05</time><b>벤치에서 간식</b><span>맨 왼쪽이 주니</span></figcaption></figure>
+      <figure><img src="assets/photo/w2601-packing-s.webp" data-full="assets/photo/w2601-packing.webp" alt="2026.01.01 목포 갈 짐 싸기 준이" loading="lazy" width="420" height="560"><figcaption><time>2026.01.01</time><b>목포 갈 짐 싸기</b><span>스토브리그 출발 전날</span></figcaption></figure>
     </div>
     </details>
     <a class="more25" href="2025.html#offpitch">2025 경기장 밖 영상 3 · 사진 10 보기 →</a>
@@ -591,7 +592,7 @@ html.lock{overflow:hidden}
           <h3>경기 전 라인업 영상</h3>
           <p>킥오프 전 우리 팀 소개. 선발 명단을 등번호·포지션·이름이 들어간 선수 카드로 한 명씩 띄워 경기 시작 분위기를 만든 영상</p>
           <p class="links"><a href="https://youtu.be/RFYYR_Dkw6Y" target="_blank" rel="noopener">라인업 영상 1 ↗</a> · <a href="https://youtu.be/pds8DkuNwPQ" target="_blank" rel="noopener">라인업 영상 2 ↗</a></p>
-          <div class="apv pt"><img style="aspect-ratio:1080/1512;object-fit:cover" src="assets/photo/p2611-card-s.jpg" alt="#6 박준이 선수 카드" loading="lazy" width="560" height="784"></div>
+          <div class="apv pt"><img style="aspect-ratio:1080/1512;object-fit:cover" src="assets/photo/p2611-card-s.webp" alt="#6 박준이 선수 카드" loading="lazy" width="560" height="784"></div>
           <div class="tags"><span>LINEUP</span><span>PLAYER CARD</span><span>MOTION</span></div>
         </div>
       </li>
@@ -752,25 +753,25 @@ html.lock{overflow:hidden}
       <div><span class="label">Edit</span><b>직접 편집</b><small>프레임·자막·모션 직접 제작</small></div>
     </div>
     <div class="apv bts" aria-label="촬영 현장">
-      <img src="assets/photo/k-falcon-box-s.jpg" data-full="assets/photo/k-falcon-box.jpg" alt="XBOTGO 팔콘 박스, 2026.10" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-falcon-2610-s.jpg" data-full="assets/photo/k-falcon-2610.jpg" alt="XBOTGO 팔콘 본체, 2026.10" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-falcon-2607-b-s.jpg" data-full="assets/photo/k-falcon-2607-b.jpg" alt="NT4 삼각대에 올린 XBOTGO 팔콘, 2026.07" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-falcon-2607-a-s.jpg" data-full="assets/photo/k-falcon-2607-a.jpg" alt="경기장 라인 옆 팔콘 세팅, 2026.07" loading="lazy" width="560" height="315">
-      <img src="assets/photo/k-falcon-pole-a-s.jpg" data-full="assets/photo/k-falcon-pole-a.jpg" alt="골대 뒤 높이 세운 XBOTGO 팔콘, 2026.08 진천" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-falcon-pole-b-s.jpg" data-full="assets/photo/k-falcon-pole-b.jpg" alt="높이 세운 팔콘 촬영 세팅, 2026.08 진천" loading="lazy" width="420" height="560">
-      <img src="assets/photo/k-falcon-case-s.jpg" data-full="assets/photo/k-falcon-case.jpg" alt="XBOTGO 팔콘과 케이스, 2026.05" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-falcon-2602-s.jpg" data-full="assets/photo/k-falcon-2602.jpg" alt="XBOTGO 팔콘 삼각대 세팅, 2026.02" loading="lazy" width="315" height="560">
-      <img src="assets/photo/k-rig-2509-s.jpg" data-full="assets/photo/k-rig-2509.jpg" alt="빨간 우산 아래 촬영 리그, 2025.09 진천" loading="lazy" width="420" height="560">
-      <img src="assets/photo/k-rig-2507-s.jpg" data-full="assets/photo/k-rig-2507.jpg" alt="DJI RS 4 Mini 짐벌 리그, 2025.07" loading="lazy" width="420" height="560">
-      <img src="assets/photo/k-rig-2506-s.jpg" data-full="assets/photo/k-rig-2506.jpg" alt="관중석 위 촬영 세팅, 2025.06" loading="lazy" width="420" height="560">
-      <img src="assets/photo/k-rig-2504-s.jpg" data-full="assets/photo/k-rig-2504.jpg" alt="우산 아래 첫 촬영 리그, 2025.04" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-falcon-box-s.webp" data-full="assets/photo/k-falcon-box.webp" alt="XBOTGO 팔콘 박스, 2026.10" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2610-s.webp" data-full="assets/photo/k-falcon-2610.webp" alt="XBOTGO 팔콘 본체, 2026.10" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2607-b-s.webp" data-full="assets/photo/k-falcon-2607-b.webp" alt="NT4 삼각대에 올린 XBOTGO 팔콘, 2026.07" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2607-a-s.webp" data-full="assets/photo/k-falcon-2607-a.webp" alt="경기장 라인 옆 팔콘 세팅, 2026.07" loading="lazy" width="560" height="315">
+      <img src="assets/photo/k-falcon-pole-a-s.webp" data-full="assets/photo/k-falcon-pole-a.webp" alt="골대 뒤 높이 세운 XBOTGO 팔콘, 2026.08 진천" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-pole-b-s.webp" data-full="assets/photo/k-falcon-pole-b.webp" alt="높이 세운 팔콘 촬영 세팅, 2026.08 진천" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-falcon-case-s.webp" data-full="assets/photo/k-falcon-case.webp" alt="XBOTGO 팔콘과 케이스, 2026.05" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2602-s.webp" data-full="assets/photo/k-falcon-2602.webp" alt="XBOTGO 팔콘 삼각대 세팅, 2026.02" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-rig-2509-s.webp" data-full="assets/photo/k-rig-2509.webp" alt="빨간 우산 아래 촬영 리그, 2025.09 진천" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2507-s.webp" data-full="assets/photo/k-rig-2507.webp" alt="DJI RS 4 Mini 짐벌 리그, 2025.07" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2506-s.webp" data-full="assets/photo/k-rig-2506.webp" alt="관중석 위 촬영 세팅, 2025.06" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2504-s.webp" data-full="assets/photo/k-rig-2504.webp" alt="우산 아래 첫 촬영 리그, 2025.04" loading="lazy" width="420" height="560">
     </div>
   </section>
 
   <section class="sec about">
     <div class="sec-head"><h2>Off the Pitch</h2><span class="label">About</span></div>
     <div class="prof">
-      <img src="assets/photo/p2611-card-s.jpg" alt="2026 안양AFA U9 #6 박준이 선수 카드" loading="lazy" width="560" height="784">
+      <img src="assets/photo/p2611-card-s.webp" alt="2026 안양AFA U9 #6 박준이 선수 카드" loading="lazy" width="560" height="784">
       <div>
         <span class="label" style="color:var(--accent)">#6 · MF · 안양AFA U9</span>
         <b>JUNI PAK</b>
@@ -799,9 +800,13 @@ html.lock{overflow:hidden}
   var v=document.querySelector('.mark .hv'),ph=document.querySelector('.mark .hp');if(!v||!ph)return;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var sq=window.matchMedia('(max-width:600px)').matches;
-  v.src=sq?'assets/video/hero-goal-sq.mp4?v=2':'assets/video/hero-goal-wide.mp4';
+  var c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||'')))return;
+  var src=sq?'assets/video/hero-goal-sq.mp4?v=2':'assets/video/hero-goal-wide.mp4';
+  function load(){if(!v.src){v.preload='auto';v.src=src;}}
+  if(document.readyState==='complete')setTimeout(load,1500);else addEventListener('load',function(){setTimeout(load,1500)});
   function showPhoto(){ph.classList.remove('on');void ph.offsetWidth;ph.classList.add('on');v.classList.remove('on');setTimeout(showVideo,4500);}
-  function showVideo(){try{v.currentTime=0}catch(e){}var p=v.play();if(p&&p.catch)p.catch(function(){});v.classList.add('on');ph.classList.remove('on');}
+  function reveal(){v.classList.add('on');ph.classList.remove('on');}
+  function showVideo(){load();try{v.currentTime=0}catch(e){}var p=v.play();if(p&&p.catch)p.catch(function(){});if(v.readyState>=3&&!v.paused)reveal();else v.addEventListener('playing',reveal,{once:true});}
   v.addEventListener('ended',showPhoto);
   setTimeout(showVideo,4500);
 })();
