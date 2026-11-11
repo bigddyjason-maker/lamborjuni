@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<title>Lamborjuni Studio · #6 JUNI PAK</title>
+<link rel="canonical" href="https://lamborjuni.com/">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="경기장 안은 주니 몫, 경기장 밖은 스튜디오 몫. #6 JUNI PAK의 골과 경기 기록을 쌓아가는 Lamborjuni Studio">
 <meta property="og:title" content="Lamborjuni Studio">
@@ -22,8 +24,6 @@
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}*{box-sizing:border-box}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>Lamborjuni Studio</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
 <style>
@@ -160,7 +160,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .stills h4{grid-column:1/-1;margin:6px 0 0;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
 .apv.bts img{width:120px;aspect-ratio:3/4;object-fit:cover}
 
-.lb{position:fixed;inset:0;z-index:50;background:rgba(10,18,14,.88);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,10,9,.95);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
 .lb img{max-width:100%;max-height:100%;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
 .lbx{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:calc(env(safe-area-inset-right,0px) + 14px);font:700 14px var(--body);color:var(--bg);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 14px;cursor:pointer}
 .lbx:focus-visible{outline:2px solid #fff;outline-offset:2px}
@@ -249,13 +249,37 @@ details.yr>summary .yl{font-size:13.5px;font-weight:700}
 .yr-more>summary:hover{background:var(--ink);color:#fff}
 .yr-more[open]>summary{margin-bottom:12px}
 details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--ink);background:#fff;padding:8px 16px}
+
+/* 90+ pass */
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 18px}
+.stat div{background:var(--ink);color:#fff;border-radius:6px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat dt{font-size:12px;font-weight:700;color:#b9bbb4}
+.stat dd{margin:0;font-family:var(--brand);font-weight:700;font-size:30px;line-height:1.15;color:var(--lime)}
+.stat dd i{font-style:normal;font-family:var(--body);font-size:15px;margin-left:2px}
+.stat small{font-size:11.5px;line-height:1.35;color:#a3a5a0}
+@media(max-width:600px){.stat{grid-template-columns:repeat(2,1fr)}}
+.log h3 a,.log p a,footer a{display:inline-block;padding-block:6px}
+.prof{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:20px;align-items:center}
+.prof img{width:100%;height:auto;border-radius:6px;display:block}
+.prof b{display:block;font-family:var(--brand);font-size:22px;letter-spacing:.06em;margin:4px 0 10px}
+.prof .otp{margin:0 0 6px}.prof .pl{color:var(--muted);margin:0 0 14px}
+@media(max-width:460px){.prof{grid-template-columns:110px 1fr;gap:14px}.prof b{font-size:17px}.prof .otp{font-size:16px}}
+.top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:20;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--lime);font:700 18px var(--body);box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s}
+.top.on{opacity:1;pointer-events:auto;transform:none}
+.jump a.cur{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lbn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:64px;border:0;border-radius:6px;background:rgba(255,255,255,.14);color:#fff;font:700 26px var(--body);cursor:pointer}
+.lbn.p{left:max(10px,env(safe-area-inset-left,0px))}.lbn.n{right:max(10px,env(safe-area-inset-right,0px))}
+.lbc{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);text-align:center;color:#e9eae6;font-size:13px;padding:0 70px}
+.lb figure{margin:0;max-width:100%;max-height:calc(100% - 60px);display:flex}
+.lb img{max-height:calc(100vh - 120px);object-fit:contain}
+html.lock{overflow:hidden}
 </style>
 
 <div class="wrap">
 
   <header class="hero">
     <div class="mark">
-      <div class="bg" aria-hidden="true"><img class="hp on" src="assets/img/hero-1.jpg?v=2" alt=""><video class="hv" muted playsinline preload="auto"></video></div>
+      <div class="bg" aria-hidden="true"><img class="hp on" src="assets/img/hero-1.jpg?v=2" alt="" width="626" height="835"><video class="hv" muted playsinline preload="auto"></video></div>
       <div class="rec" aria-hidden="true"><i></i>REC</div>
       <h1 aria-label="Lamborjuni Studio">LAMBORJUNI</h1>
       <div class="sub" aria-hidden="true"><i></i>STUDIO</div>
@@ -339,6 +363,12 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
 
   <section class="sec" id="season">
     <div class="sec-head"><h2>시즌 기록</h2><span class="label">Match Log</span></div>
+    <dl class="stat">
+      <div><dt>대회</dt><dd>22</dd><small>2025–26 · U8·U9</small></div>
+      <div><dt>우승</dt><dd>3</dd><small>2025 태백산배 · 율곡대기 · 레인보우</small></div>
+      <div><dt>결승 진출</dt><dd>6</dd><small>2025 3회 · 2026 3회</small></div>
+      <div><dt>슈퍼리그</dt><dd>3<i>위</i></dd><small>2026 시즌 최종 · 10승 3무 2패</small></div>
+    </dl>
     <div class="season">
       <details class="yr" open>
         <summary><span class="y">2026</span><span class="yl">U9 · 대회 10 · 연습·기타 25</span></summary>
@@ -512,12 +542,12 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <figcaption><span class="tmeta"><time>2026.10</time> · 일상</span><span class="ttl">풀타임 뛰고 충전 중</span></figcaption>
       </figure>
       <a class="tile short" href="https://youtube.com/shorts/M2TNHED61KQ" target="_blank" rel="noopener">
-        <img src="assets/img/op-M2TNHED61KQ.jpg" alt="경기장 밖 숏츠" loading="lazy" width="297" height="528">
+        <img src="https://i.ytimg.com/vi/M2TNHED61KQ/hqdefault.jpg" onerror="this.onerror=null;this.src='assets/img/op-M2TNHED61KQ.jpg'" alt="경기장 밖 숏츠" loading="lazy" width="297" height="528">
         <span class="tmeta"><time>2026.11</time> · 일상</span>
         <span class="ttl">경기장 밖의 주니 #1</span>
       </a>
       <a class="tile short" href="https://youtube.com/shorts/4s2XkY4L0wI" target="_blank" rel="noopener">
-        <img src="assets/img/op-4s2XkY4L0wI.jpg" alt="경기장 밖 숏츠" loading="lazy" width="297" height="528">
+        <img src="https://i.ytimg.com/vi/4s2XkY4L0wI/hqdefault.jpg" onerror="this.onerror=null;this.src='assets/img/op-4s2XkY4L0wI.jpg'" alt="경기장 밖 숏츠" loading="lazy" width="297" height="528">
         <span class="tmeta"><time>2026.11</time> · 일상</span>
         <span class="ttl">경기장 밖의 주니 #2</span>
       </a>
@@ -639,7 +669,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://www.youtube.com/@anyangafa2017" target="_blank" rel="noopener">안양 AFA 2017 채널 리브랜딩 ↗</a></h3>
           <p>2017년생의 경기를 한 권의 앨범처럼. 남색 바탕에 금빛 방패와 '20·17' 엠블럼, "OUR GAME. OUR STORY." 배너로 프로필·배너·워터마크·썸네일을 한 톤으로 묶은 채널 정체성</p>
-          <div class="apv"><img class="web" src="assets/img/afa2017-banner.jpg" alt="안양 AFA 2017 채널 배너" loading="lazy"><img class="web" style="aspect-ratio:1;border-radius:50%" src="assets/img/afa2017-profile.jpg" alt="안양 AFA 2017 프로필" loading="lazy"><img class="web" src="assets/img/afa2017-channel.jpg" alt="안양 AFA 2017 채널 첫 화면" loading="lazy"></div>
+          <div class="apv"><img class="web" src="assets/img/afa2017-banner.jpg" alt="안양 AFA 2017 채널 배너" loading="lazy" width="1200" height="675"><img class="web" style="aspect-ratio:1;border-radius:50%" src="assets/img/afa2017-profile.jpg" alt="안양 AFA 2017 프로필" loading="lazy" width="400" height="400"><img class="web" src="assets/img/afa2017-channel.jpg" alt="안양 AFA 2017 채널 첫 화면" loading="lazy" width="1200" height="774"></div>
           <div class="tags"><span>BRANDING</span><span>YOUTUBE</span><span>PROFILE</span><span>BANNER</span></div>
         </div>
       </li>
@@ -658,7 +688,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
           <h3>경기 전 라인업 영상</h3>
           <p>킥오프 전 우리 팀 소개. 선발 명단을 등번호·포지션·이름이 들어간 선수 카드로 한 명씩 띄워 경기 시작 분위기를 만든 영상</p>
           <p class="links"><a href="https://youtu.be/RFYYR_Dkw6Y" target="_blank" rel="noopener">라인업 영상 1 ↗</a> · <a href="https://youtu.be/pds8DkuNwPQ" target="_blank" rel="noopener">라인업 영상 2 ↗</a></p>
-          <div class="apv pt"><img style="aspect-ratio:1080/1512;object-fit:cover" src="assets/photo/p2611-card-s.jpg" alt="#6 박준이 선수 카드" loading="lazy"></div>
+          <div class="apv pt"><img style="aspect-ratio:1080/1512;object-fit:cover" src="assets/photo/p2611-card-s.jpg" alt="#6 박준이 선수 카드" loading="lazy" width="560" height="784"></div>
           <div class="tags"><span>LINEUP</span><span>PLAYER CARD</span><span>MOTION</span></div>
         </div>
       </li>
@@ -667,10 +697,10 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3>Lamborjuni Studio 브랜딩</h3>
           <p>스튜디오의 얼굴. 람보르기니처럼 빠르고 묵직하게, 'LAMBORJUNI' 한 줄 워드마크를 카본 블랙 위에. 포인트는 하나씩, 경기는 잔디 연두 경기 밖은 주황. 뷰파인더 시절의 REC와 흘러가는 타임코드는 그대로 데려온 정체성</p>
-          <div class="apv sq"><figure class="pair"><img src="assets/img/113a07e050.jpg" alt="이전 인스타 프로필 사진" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/brand-profile-2026.jpg" alt="새 인스타 프로필 사진 LAMBORJUNI" loading="lazy"><figcaption>뷰파인더에서 워드마크로</figcaption></figure></div>
-          <div class="apv sq"><img src="assets/img/brand-hl-studio.jpg" alt="하이라이트 커버 Studio" loading="lazy"><img src="assets/img/brand-hl-goals.jpg" alt="하이라이트 커버 Goals" loading="lazy"><img src="assets/img/brand-hl-matches.jpg" alt="하이라이트 커버 Matches" loading="lazy"><img src="assets/img/brand-hl-offpitch.jpg" alt="하이라이트 커버 Off the Pitch" loading="lazy"><img class="wide" src="assets/img/brand-banner.jpg" alt="유튜브 채널 배너" loading="lazy"><img class="wide" src="assets/og.jpg" alt="링크 미리보기 이미지" loading="lazy"></div>
-          <div class="apv pt" style="align-items:flex-start"><img class="r34" src="assets/img/brand-pinned.jpg" alt="인스타 고정 소개 게시물" loading="lazy"><img src="assets/img/brand-tpl-match.jpg" alt="숏츠 템플릿 경기용 연두" loading="lazy"><img src="assets/img/brand-tpl-offpitch.jpg" alt="숏츠 템플릿 경기 외 주황" loading="lazy"></div>
-          <div class="apv sq"><img class="wide" src="assets/img/brand-watermark.jpg" alt="영상 워터마크 경기용" loading="lazy"><img class="wide" src="assets/img/brand-watermark-offpitch.jpg" alt="영상 워터마크 경기 외" loading="lazy"></div>
+          <div class="apv sq"><figure class="pair"><img src="assets/img/113a07e050.jpg" alt="이전 인스타 프로필 사진" loading="lazy" width="192" height="192"><span class="arr" aria-hidden="true">→</span><img src="assets/img/brand-profile-2026.jpg" alt="새 인스타 프로필 사진 LAMBORJUNI" loading="lazy" width="1080" height="1080"><figcaption>뷰파인더에서 워드마크로</figcaption></figure></div>
+          <div class="apv sq"><img src="assets/img/brand-hl-studio.jpg" alt="하이라이트 커버 Studio" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-goals.jpg" alt="하이라이트 커버 Goals" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-matches.jpg" alt="하이라이트 커버 Matches" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-offpitch.jpg" alt="하이라이트 커버 Off the Pitch" loading="lazy" width="540" height="540"><img class="wide" src="assets/img/brand-banner.jpg" alt="유튜브 채널 배너" loading="lazy" width="960" height="540"><img class="wide" src="assets/og.jpg" alt="링크 미리보기 이미지" loading="lazy" width="1200" height="630"></div>
+          <div class="apv pt" style="align-items:flex-start"><img class="r34" src="assets/img/brand-pinned.jpg" alt="인스타 고정 소개 게시물" loading="lazy" width="540" height="720"><img src="assets/img/brand-tpl-match.jpg" alt="숏츠 템플릿 경기용 연두" loading="lazy" width="270" height="480"><img src="assets/img/brand-tpl-offpitch.jpg" alt="숏츠 템플릿 경기 외 주황" loading="lazy" width="270" height="480"></div>
+          <div class="apv sq"><img class="wide" src="assets/img/brand-watermark.jpg" alt="영상 워터마크 경기용" loading="lazy" width="1076" height="315"><img class="wide" src="assets/img/brand-watermark-offpitch.jpg" alt="영상 워터마크 경기 외" loading="lazy" width="1076" height="315"></div>
           <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span><span>TEMPLATE</span></div>
         </div>
       </li>
@@ -679,7 +709,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 리뉴얼 ↗</a></h3>
           <p>남색 6번에서 경기 장면으로. 실제 장면 위에 남색 제목 띠를 얹어 경기마다 한눈에 구분되게 다시 만든 썸네일</p>
-          <div class="apv ls"><img src="assets/img/fc31746602.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/8c48ea4478.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/61876ba0d1.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/c7324eb702.jpg" alt="리뉴얼 썸네일" loading="lazy"><img src="assets/img/cd549e1852.jpg" alt="리뉴얼 썸네일" loading="lazy"></div>
+          <div class="apv ls"><img src="assets/img/fc31746602.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/8c48ea4478.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/61876ba0d1.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/c7324eb702.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/cd549e1852.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"></div>
           <div class="tags"><span>THUMBNAIL</span><span>RENEWAL</span><span>1280×720</span></div>
         </div>
       </li>
@@ -696,7 +726,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://anyangafa.co.kr" target="_blank" rel="noopener">안양AFA 축구아카데미 홈페이지 ↗</a></h3>
           <p>아카데미의 첫 공식 홈페이지. 기획부터 디자인, 개발, 검색 등록까지 혼자 만들고 지금도 직접 운영 중</p>
-          <div class="apv"><img class="web" src="assets/img/e2561515a4.jpg" alt="안양AFA 홈페이지 첫 화면" loading="lazy"></div>
+          <div class="apv"><img class="web" src="assets/img/e2561515a4.jpg" alt="안양AFA 홈페이지 첫 화면" loading="lazy" width="560" height="210"></div>
           <div class="tags"><span>WEBSITE</span><span>ANYANGAFA.CO.KR</span></div>
         </div>
       </li>
@@ -705,7 +735,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://anyangafa.co.kr/alumni/8/" target="_blank" rel="noopener">안양AFA 8기 진학 프로필 ↗</a></h3>
           <p>선수들의 다음 무대를 위한 첫 프로필. 졸업반 선수들의 진학용 프로필 이미지와 애니메이션을 기획부터 디자인까지 제작</p>
-          <div class="apv ls"><img src="assets/img/afa8-hero.jpg" alt="AFA 8기 진학 현황 페이지" loading="lazy"></div>
+          <div class="apv ls"><img src="assets/img/afa8-hero.jpg" alt="AFA 8기 진학 현황 페이지" loading="lazy" width="648" height="470"></div>
           <div class="tags"><span>PROFILE</span><span>DESIGN</span><span>MOTION</span></div>
         </div>
       </li>
@@ -714,7 +744,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3>GOAL 모션그래픽</h3>
           <p>골 순간을 위한 그래픽. 골이 들어가고 1.3초 뒤 대각선 슬래시와 배너, 선수 이름 칩이 차례로 치고 들어오는 모션</p>
-          <div class="apv pt"><video class="pv" src="assets/video/goal-motion.mp4" poster="assets/video/goal-motion.jpg" autoplay muted loop playsinline aria-label="GOAL 모션 재생 예시"></video><img src="assets/img/b40867f780.jpg" alt="GOAL 그래픽이 들어간 숏츠" loading="lazy"></div>
+          <div class="apv pt"><video class="pv" src="assets/video/goal-motion.mp4" poster="assets/video/goal-motion.jpg" autoplay muted loop playsinline aria-label="GOAL 모션 재생 예시"></video><img src="assets/img/b40867f780.jpg" alt="GOAL 그래픽이 들어간 숏츠" loading="lazy" width="297" height="528"></div>
           <div class="tags"><span>MOTION</span><span>SHORTS</span></div>
         </div>
       </li>
@@ -723,7 +753,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3>숏츠 프레임 템플릿</h3>
           <p>모든 숏츠의 기본 틀. 1080×1920 세로 프레임에 선수명·번호·날짜·대회명을 얹고, 슛 직전부터 2배 슬로 리플레이</p>
-          <div class="apv pt"><img src="assets/img/47b4b1d88f.jpg" alt="숏츠 프레임 적용 예시" loading="lazy"></div>
+          <div class="apv pt"><img src="assets/img/47b4b1d88f.jpg" alt="숏츠 프레임 적용 예시" loading="lazy" width="297" height="528"></div>
           <div class="tags"><span>TEMPLATE</span><span>1080×1920</span></div>
         </div>
       </li>
@@ -740,7 +770,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://fieldmanager.kr" target="_blank" rel="noopener">필드 매니저 · 팔콘 가이드 ↗</a></h3>
           <p>카페에서 가장 많이 받던 질문의 답. 엑스봇고 팔콘 구성 고르기부터 구매, 첫 촬영, 펌웨어 소식까지 한곳에 모은 가이드 사이트</p>
-          <div class="apv"><img class="web" src="assets/img/fieldmanager-home.jpg" alt="필드 매니저 첫 화면" loading="lazy"></div>
+          <div class="apv"><img class="web" src="assets/img/fieldmanager-home.jpg" alt="필드 매니저 첫 화면" loading="lazy" width="1120" height="420"></div>
           <div class="tags"><span>WEBSITE</span><span>GUIDE</span><span>FIELDMANAGER.KR</span></div>
         </div>
       </li>
@@ -749,7 +779,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://cafe.naver.com/asmosa" target="_blank" rel="noopener">XbotGo스포츠AI카메라 카페 ↗</a></h3>
           <p>XBOTGO 직캠 사용자들의 모임. 네이버 카페를 직접 열고 운영하며 촬영 가이드, 펌웨어 소식, 회원 후기를 모으는 중</p>
-          <div class="apv"><img class="web" src="assets/img/92f20a8e36.jpg" alt="카페 배너" loading="lazy"><img class="web" src="assets/img/5f64af56aa.jpg" alt="팔콘 제휴 배너" loading="lazy"></div>
+          <div class="apv"><img class="web" src="assets/img/92f20a8e36.jpg" alt="카페 배너" loading="lazy" width="480" height="300"><img class="web" src="assets/img/5f64af56aa.jpg" alt="팔콘 제휴 배너" loading="lazy" width="640" height="103"></div>
           <div class="tags"><span>COMMUNITY</span><span>NAVER CAFE</span></div>
         </div>
       </li>
@@ -758,7 +788,7 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
         <div class="body">
           <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 시리즈 ↗</a></h3>
           <p>생중계 화면이 썸네일이 되기까지. 원본에서 장면을 고르고 남색 바탕에 금색 큰 6번과 두 줄 제목을 얹은 첫 썸네일 시리즈</p>
-          <div class="apv prs"><figure class="pair"><img src="assets/img/c4d626b2dc.jpg" alt="PEC 레드 맞불 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e26a18f0a7.jpg" alt="PEC 레드 맞불 완성 썸네일" loading="lazy"><figcaption>PEC 레드 맞불</figcaption></figure><figure class="pair"><img src="assets/img/1b410321cb.jpg" alt="대동초 정면승부 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e75fccc4f8.jpg" alt="대동초 정면승부 완성 썸네일" loading="lazy"><figcaption>대동초 정면승부</figcaption></figure><figure class="pair"><img src="assets/img/8a1e9fc2af.jpg" alt="니케FC 맞대결 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/c94ba2528f.jpg" alt="니케FC 맞대결 완성 썸네일" loading="lazy"><figcaption>니케FC 맞대결</figcaption></figure><figure class="pair"><img src="assets/img/ab3b819612.jpg" alt="진천 원정 3일의 기록 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/76b42a624c.jpg" alt="진천 원정 3일의 기록 완성 썸네일" loading="lazy"><figcaption>진천 원정 3일의 기록</figcaption></figure><figure class="pair"><img src="assets/img/e1c2bb7f28.jpg" alt="8대8 첫 출격 원본 화면" loading="lazy"><span class="arr" aria-hidden="true">→</span><img src="assets/img/a342588c5c.jpg" alt="8대8 첫 출격 완성 썸네일" loading="lazy"><figcaption>8대8 첫 출격</figcaption></figure></div>
+          <div class="apv prs"><figure class="pair"><img src="assets/img/c4d626b2dc.jpg" alt="PEC 레드 맞불 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e26a18f0a7.jpg" alt="PEC 레드 맞불 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>PEC 레드 맞불</figcaption></figure><figure class="pair"><img src="assets/img/1b410321cb.jpg" alt="대동초 정면승부 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e75fccc4f8.jpg" alt="대동초 정면승부 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>대동초 정면승부</figcaption></figure><figure class="pair"><img src="assets/img/8a1e9fc2af.jpg" alt="니케FC 맞대결 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/c94ba2528f.jpg" alt="니케FC 맞대결 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>니케FC 맞대결</figcaption></figure><figure class="pair"><img src="assets/img/ab3b819612.jpg" alt="진천 원정 3일의 기록 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/76b42a624c.jpg" alt="진천 원정 3일의 기록 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>진천 원정 3일의 기록</figcaption></figure><figure class="pair"><img src="assets/img/e1c2bb7f28.jpg" alt="8대8 첫 출격 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/a342588c5c.jpg" alt="8대8 첫 출격 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>8대8 첫 출격</figcaption></figure></div>
           <div class="tags"><span>THUMBNAIL</span><span>SERIES</span></div>
         </div>
       </li>
@@ -819,24 +849,33 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
       <div><span class="label">Edit</span><b>직접 편집</b><small>프레임·자막·모션 직접 제작</small></div>
     </div>
     <div class="apv bts" aria-label="촬영 현장">
-      <img src="assets/photo/k-falcon-box-s.jpg" data-full="assets/photo/k-falcon-box.jpg" alt="XBOTGO 팔콘 박스, 2026.10" loading="lazy">
-      <img src="assets/photo/k-falcon-2610-s.jpg" data-full="assets/photo/k-falcon-2610.jpg" alt="XBOTGO 팔콘 본체, 2026.10" loading="lazy">
-      <img src="assets/photo/k-falcon-2607-b-s.jpg" data-full="assets/photo/k-falcon-2607-b.jpg" alt="NT4 삼각대에 올린 XBOTGO 팔콘, 2026.07" loading="lazy">
-      <img src="assets/photo/k-falcon-2607-a-s.jpg" data-full="assets/photo/k-falcon-2607-a.jpg" alt="경기장 라인 옆 팔콘 세팅, 2026.07" loading="lazy">
-      <img src="assets/photo/k-falcon-pole-a-s.jpg" data-full="assets/photo/k-falcon-pole-a.jpg" alt="골대 뒤 높이 세운 XBOTGO 팔콘, 2026.08 진천" loading="lazy">
-      <img src="assets/photo/k-falcon-pole-b-s.jpg" data-full="assets/photo/k-falcon-pole-b.jpg" alt="높이 세운 팔콘 촬영 세팅, 2026.08 진천" loading="lazy">
-      <img src="assets/photo/k-falcon-case-s.jpg" data-full="assets/photo/k-falcon-case.jpg" alt="XBOTGO 팔콘과 케이스, 2026.05" loading="lazy">
-      <img src="assets/photo/k-falcon-2602-s.jpg" data-full="assets/photo/k-falcon-2602.jpg" alt="XBOTGO 팔콘 삼각대 세팅, 2026.02" loading="lazy">
-      <img src="assets/photo/k-rig-2509-s.jpg" data-full="assets/photo/k-rig-2509.jpg" alt="빨간 우산 아래 촬영 리그, 2025.09 진천" loading="lazy">
-      <img src="assets/photo/k-rig-2507-s.jpg" data-full="assets/photo/k-rig-2507.jpg" alt="DJI RS 4 Mini 짐벌 리그, 2025.07" loading="lazy">
-      <img src="assets/photo/k-rig-2506-s.jpg" data-full="assets/photo/k-rig-2506.jpg" alt="관중석 위 촬영 세팅, 2025.06" loading="lazy">
-      <img src="assets/photo/k-rig-2504-s.jpg" data-full="assets/photo/k-rig-2504.jpg" alt="우산 아래 첫 촬영 리그, 2025.04" loading="lazy">
+      <img src="assets/photo/k-falcon-box-s.jpg" data-full="assets/photo/k-falcon-box.jpg" alt="XBOTGO 팔콘 박스, 2026.10" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2610-s.jpg" data-full="assets/photo/k-falcon-2610.jpg" alt="XBOTGO 팔콘 본체, 2026.10" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2607-b-s.jpg" data-full="assets/photo/k-falcon-2607-b.jpg" alt="NT4 삼각대에 올린 XBOTGO 팔콘, 2026.07" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2607-a-s.jpg" data-full="assets/photo/k-falcon-2607-a.jpg" alt="경기장 라인 옆 팔콘 세팅, 2026.07" loading="lazy" width="560" height="315">
+      <img src="assets/photo/k-falcon-pole-a-s.jpg" data-full="assets/photo/k-falcon-pole-a.jpg" alt="골대 뒤 높이 세운 XBOTGO 팔콘, 2026.08 진천" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-pole-b-s.jpg" data-full="assets/photo/k-falcon-pole-b.jpg" alt="높이 세운 팔콘 촬영 세팅, 2026.08 진천" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-falcon-case-s.jpg" data-full="assets/photo/k-falcon-case.jpg" alt="XBOTGO 팔콘과 케이스, 2026.05" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-falcon-2602-s.jpg" data-full="assets/photo/k-falcon-2602.jpg" alt="XBOTGO 팔콘 삼각대 세팅, 2026.02" loading="lazy" width="315" height="560">
+      <img src="assets/photo/k-rig-2509-s.jpg" data-full="assets/photo/k-rig-2509.jpg" alt="빨간 우산 아래 촬영 리그, 2025.09 진천" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2507-s.jpg" data-full="assets/photo/k-rig-2507.jpg" alt="DJI RS 4 Mini 짐벌 리그, 2025.07" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2506-s.jpg" data-full="assets/photo/k-rig-2506.jpg" alt="관중석 위 촬영 세팅, 2025.06" loading="lazy" width="420" height="560">
+      <img src="assets/photo/k-rig-2504-s.jpg" data-full="assets/photo/k-rig-2504.jpg" alt="우산 아래 첫 촬영 리그, 2025.04" loading="lazy" width="420" height="560">
     </div>
   </section>
 
   <section class="sec about">
     <div class="sec-head"><h2>Off the Pitch</h2><span class="label">About</span></div>
-    <p class="otp">경기장 안은 주니 몫<br>경기장 밖은 스튜디오 몫</p>
+    <div class="prof">
+      <img src="assets/photo/p2611-card-s.jpg" alt="2026 안양AFA U9 #6 박준이 선수 카드" loading="lazy" width="560" height="784">
+      <div>
+        <span class="label" style="color:var(--accent)">#6 · MF · 안양AFA U9</span>
+        <b>JUNI PAK</b>
+        <p class="otp">경기장 안은 주니 몫<br>경기장 밖은 스튜디오 몫</p>
+        <p class="pl">골과 경기, 사진과 영상을 시즌마다 쌓아 가는 주니의 기록 보관소</p>
+        <a class="btn" href="https://www.youtube.com/@lambo_rjuni" target="_blank" rel="noopener">람보르주니 채널 ↗</a>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -865,14 +904,30 @@ details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--i
 })();
 </script>
 
-<div class="lb" id="lb" hidden><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><img id="lbimg" alt=""></div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="사진 보기"><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><button type="button" class="lbn p" id="lbp" aria-label="이전 사진">‹</button><img id="lbimg" alt=""><button type="button" class="lbn n" id="lbn" aria-label="다음 사진">›</button><div class="lbc" id="lbc"></div></div>
+<button type="button" class="top" id="top" aria-label="맨 위로">↑</button>
 <script>
-(function(){var lb=document.getElementById('lb'),im=document.getElementById('lbimg');
-document.querySelectorAll('.apv img, .stills img').forEach(function(x){x.tabIndex=0;x.setAttribute('role','button');
-function open(){im.src=x.dataset.full||x.src;im.alt=x.alt;lb.hidden=false;}
-x.addEventListener('click',open);x.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});});
-lb.addEventListener('click',function(){lb.hidden=true;});document.getElementById('lbx').addEventListener('click',function(e){e.stopPropagation();lb.hidden=true;});
-document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true;});})();
+(function(){var lb=document.getElementById('lb'),im=document.getElementById('lbimg'),cap=document.getElementById('lbc'),set=[],i=0,last;
+function show(){var x=set[i];im.src=x.dataset.full||x.src;im.alt=x.alt;cap.textContent=(set.length>1?(i+1)+' / '+set.length+'  ·  ':'')+x.alt;
+document.getElementById('lbp').hidden=document.getElementById('lbn').hidden=set.length<2;}
+function open(x){var g=x.closest('.stills,.apv');var sec=x.closest('section')||document;set=[].slice.call((g&&g.classList.contains('stills')?sec:g||sec).querySelectorAll(g&&g.classList.contains('stills')?'.stills img':'img'));i=Math.max(0,set.indexOf(x));last=x;show();lb.hidden=false;document.documentElement.classList.add('lock');document.getElementById('lbx').focus();}
+function close(){lb.hidden=true;document.documentElement.classList.remove('lock');if(last)last.focus();}
+function go(d){i=(i+d+set.length)%set.length;show();}
+document.querySelectorAll('.apv img, .stills img, .prof img').forEach(function(x){x.tabIndex=0;x.setAttribute('role','button');
+x.addEventListener('click',function(){open(x)});x.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(x);}});});
+lb.addEventListener('click',function(e){if(e.target===lb)close();});
+document.getElementById('lbx').addEventListener('click',close);
+document.getElementById('lbp').addEventListener('click',function(e){e.stopPropagation();go(-1)});
+document.getElementById('lbn').addEventListener('click',function(e){e.stopPropagation();go(1)});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?1:-1);sx=null;});
+var tp=document.getElementById('top');addEventListener('scroll',function(){tp.classList.toggle('on',scrollY>900)},{passive:true});
+tp.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+var links={};document.querySelectorAll('.jump a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('cur',k===e.target.id);var a=links[e.target.id];if(a&&a.scrollIntoView)a.parentNode.scrollTo({left:a.offsetLeft-20,behavior:'smooth'});}})},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)io.observe(el)});}
+})();
 </script>
 
 </body>
