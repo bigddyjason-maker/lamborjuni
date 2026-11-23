@@ -177,7 +177,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .shorts .vid video{aspect-ratio:9/16;border-radius:6px}
 .vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px 14px;margin-bottom:22px}
 .vid{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
-.vid video{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:var(--ink);display:block}
+.vid video{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:var(--ink);display:block}.shorts .vid.wide{grid-column:1/-1}.shorts .vid.wide video{aspect-ratio:16/9}
 .vid figcaption{display:flex;flex-direction:column;gap:4px}
 @media (max-width:480px){.vids{grid-template-columns:1fr 1fr;gap:16px 10px}}
 .shorts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
@@ -299,6 +299,10 @@ html.lock{overflow:hidden}
   <section class="sec" id="highlights">
     <div class="sec-head"><h2>하이라이트</h2><span class="label">Reel</span></div>
     <div class="shorts">
+      <figure class="vid wide">
+        <video controls playsinline preload="none" poster="assets/video/goal2-2026-11-22.jpg" src="assets/video/goal2-2026-11-22.mp4"></video>
+        <figcaption><span class="tmeta"><time>2026.11.22</time> · 청춘양구 왕중왕전 8강 vs 류광하FC</span><span class="ttl">주니 2골 · 2:1 승리</span></figcaption>
+      </figure>
       <figure class="vid">
         <video controls playsinline preload="none" poster="assets/video/goal-2026-10-29.jpg" src="assets/video/goal-2026-10-29.mp4"></video>
         <figcaption><span class="tmeta"><time>2026.10.29</time> · 대전하나시티즌 연습경기</span><span class="ttl">주니 동점골</span></figcaption>
@@ -375,7 +379,7 @@ html.lock{overflow:hidden}
       <details class="yr" open>
         <summary><span class="y">2026</span><span class="yl">U9 · 대회 11 · 연습·기타 25</span></summary>
         <ol class="games">
-        <li><time>11.20–22</time><div class="ev"><b>청춘양구 왕중왕전</b><span>제4회 드림풋볼 챔피언스리그 3학년부 · 예선 B조 vs FC갈현 3:1 승 · FC진건 5:1 승 (조 1위) · 1위 그룹 vs KSA풋볼클럽 1:1 · 대청FC 2:2 · 8강 vs 류광하FC 2:1 승 · 4강 vs KSA풋볼클럽 0:1 패 · 3승 2무 1패</span></div><span class="chip">공동 3위</span></li>
+        <li><time>11.20–22</time><div class="ev"><b>청춘양구 왕중왕전</b><span>제4회 드림풋볼 챔피언스리그 3학년부 · 예선 B조 vs FC갈현 3:1 승 · FC진건 5:1 승 (조 1위) · 1위 그룹 vs KSA풋볼클럽 1:1 · 대청FC 2:2 · 8강 vs 류광하FC 2:1 승 (주니 2골) · 4강 vs KSA풋볼클럽 0:1 패 · 3승 2무 1패</span></div><span class="chip">공동 3위</span></li>
         <li><time>11.07–08</time><div class="ev"><b>양양 슈퍼리그 3차</b><span>11.7 vs 남양주FC · FC서울 구리 · FC TDN / 11.8 vs SC주니어 · PEC · 시즌 최종 10승 3무 2패 · 승점 33 · 32득 11실</span></div><span class="chip">최종 3위</span></li>
         <li><time>11.06</time><div class="ev"><b>연습경기</b><span>vs 청주CTS</span></div></li>
         <li><time>10.30–31</time><div class="ev"><b>진천 주말 연습경기</b><span>광혜원·내수생활체육공원 · vs 다산주니어 · DOO · JNJ</span></div></li>
