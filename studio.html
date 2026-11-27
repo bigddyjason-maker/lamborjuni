@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Lamborjuni Studio · #6 JUNI PAK</title>
+<link rel="canonical" href="https://lamborjuni.com/studio.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="경기장 안은 주니 몫, 경기장 밖은 스튜디오 몫. #6 JUNI PAK의 골과 경기 기록을 쌓아가는 Lamborjuni Studio">
+<meta property="og:title" content="스튜디오 작업 · Lamborjuni Studio">
+<meta property="og:description" content="경기장 안은 주니 몫, 경기장 밖은 스튜디오 몫">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lamborjuni.com/studio.html">
+<meta property="og:image" content="https://lamborjuni.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Lamborjuni Studio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lamborjuni.com/assets/og.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0b0c">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}*{box-sizing:border-box}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>.y25{display:flex;flex-direction:column;gap:10px}.y25 h1{margin:0;font-family:var(--brand);font-size:clamp(28px,7vw,48px);letter-spacing:.02em}.y25 .lede{margin:0;color:var(--muted)}.y25 a{text-decoration:none;padding-block:8px}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Syncopate:wght@400;700&display=swap">
+<style>
+/* Layout: 일자 워드마크 브랜드. 카본 블랙 워드마크 히어로 + 연두(경기)·주황(경기 외) 포인트 */
+:root{
+  --bg:#f4f4f2;        /* 밝은 오프화이트 (밝은 화면 고정) */
+  --surface:#e9e9e6;
+  --ink:#0b0b0c;       /* 카본 블랙 */
+  --muted:#5f6066;
+  --line:#d6d6d3;
+  --accent:#3b6a00;    /* 글자용 진한 연두 (밝은 바탕 대비) */
+  --lime:#9be01e;      /* 경기 포인트 연두 */
+  --orange:#ff5a1f;    /* 경기 외 포인트 주황 */
+  --soft:#9a9a9e;
+  --rec:#9be01e;       /* REC 점 */
+  color-scheme:light;
+  --display:"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
+  --body:"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --brand:"Syncopate","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:56px}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.label{font-family:var(--brand);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* 워드마크 히어로 */
+.hero{display:flex;flex-direction:column;gap:22px}
+.mark{position:relative;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff;border-radius:6px;padding:clamp(44px,10vw,84px) 20px;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.6vw,30px);text-align:center}
+.mark h1{margin:0;font-family:var(--brand);font-weight:700;font-size:clamp(20px,6.8vw,56px);line-height:1;letter-spacing:.05em;white-space:nowrap;padding-left:.05em}
+.mark .sub{display:flex;align-items:center;gap:.9em;font-family:var(--brand);font-size:clamp(9px,1.9vw,14px);letter-spacing:.9em;color:var(--soft)}
+.mark .sub i,.rec i{flex:none;width:.75em;height:.75em;border-radius:50%;background:var(--rec)}
+.rec{position:absolute;top:14px;right:16px;font-family:var(--brand);font-size:10px;font-weight:700;letter-spacing:.2em;color:#fff;display:flex;align-items:center;gap:7px}
+.rec i{width:8px;height:8px;animation:blink 1.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+.tc{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:11px;color:var(--soft);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.rec i{animation:none}}
+.hero .label{margin-top:6px}
+.mark .bg{position:absolute;inset:0;z-index:-1}
+.mark .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:0;animation:heroFade 18s infinite}
+.mark .bg img:nth-child(2){animation-delay:6s}
+.mark .bg img:nth-child(3){animation-delay:12s}
+.mark .bg img:nth-child(1){object-position:50% 26%}.mark .bg img:nth-child(2){object-position:50% 46%}.mark .bg img:nth-child(3){object-position:50% 40%}
+@media (max-width:600px){.mark .bg img:nth-child(1){object-position:50% 40%}.mark .bg img:nth-child(2){object-position:50% 11%}.mark .bg img:nth-child(3){object-position:50% 5%}}
+.mark .bg video,.mark .bg .hp{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease;animation:none}
+.mark .bg video{object-position:50% 55%}
+.mark .bg .hp{object-position:50% 26%}.mark .bg .hp.on{animation:heroZoom 5s ease-out forwards}
+.mark .bg .on{opacity:1}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.06)}}
+@media (max-width:600px){.mark .bg .hp{object-position:50% 40%}}
+.mark .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.6),rgba(11,11,12,.78))}
+@keyframes heroFade{0%{opacity:0;transform:scale(1)}6%{opacity:1}33%{opacity:1}40%{opacity:0;transform:scale(1.08)}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.mark .bg img{animation:none}.mark .bg img:first-child{opacity:1}}
+@media (max-width:600px){.mark{aspect-ratio:1/1;justify-content:center;padding:20px}.mark h1{font-size:calc((100vw - 72px)/9.6);letter-spacing:.04em}.mark .sub{font-size:calc((100vw - 72px)/38)}}
+.hero .motto{font-family:var(--display);font-weight:900;font-size:clamp(20px,4.6vw,26px);line-height:1.35;margin:0 0 10px}
+.lede{font-size:18px;max-width:34ch;margin:0}
+
+h2{font-family:var(--display);font-weight:900;font-size:24px;margin:0;letter-spacing:-.01em}
+.sec{display:flex;flex-direction:column;gap:18px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+
+/* 채널 */
+.channel{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:var(--surface);padding:20px;border-radius:4px}
+.channel .meta{flex:1 1 240px;min-width:0}
+.own{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.channel strong{font-size:19px;display:block}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:999px;font-size:15px}
+.btn:hover{filter:brightness(1.07)}
+
+/* 테이프 로그 */
+.log{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.log li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.log time{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:3px}
+.log .body{min-width:0}
+.log h3{margin:0 0 4px;font-size:18px;font-weight:700}
+.log p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tags span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;border:1px solid var(--line);padding:2px 8px;border-radius:3px;color:var(--muted)}
+@media (max-width:480px){.log li{grid-template-columns:1fr;gap:4px}}
+
+.reel{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px 16px}
+.tile{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;min-width:0}
+.tile img{width:100%;max-width:100%;height:auto;aspect-ratio:480/265;object-fit:cover;border-radius:4px;display:block;transition:transform .2s}
+.tile:hover img{transform:translateY(-2px)}
+.feat{aspect-ratio:480/265;max-width:100%;border-radius:4px;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:0 18px;position:relative;overflow:hidden}
+.feat::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;border:10px solid rgba(255,255,255,.12)}
+.feat.off{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.feat.off::after{border-color:var(--line)}
+.fk{font-family:var(--brand);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+.fb{font-family:var(--display);font-weight:900;font-size:clamp(28px,6vw,40px);line-height:1.1}
+.fs{font-size:13px;opacity:.75}
+.tile:hover .feat{transform:translateY(-2px)}
+.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;padding-block:10px;margin-top:-24px;background:var(--bg);scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:none;text-decoration:none;font-size:13px;font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--bg)}
+.jump a:hover{border-color:var(--accent);color:var(--accent)}
+.sec{scroll-margin-top:64px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.apv{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none}
+.apv::-webkit-scrollbar{display:none}
+.apv img{flex:none;border-radius:4px;border:1px solid var(--line);display:block;height:auto}
+.apv.sq img.wide{width:auto;height:96px;aspect-ratio:auto;object-fit:contain;background:#283c30}
+.apv.sq img{width:96px;aspect-ratio:1;object-fit:cover}
+.apv.pt img{width:96px;aspect-ratio:200/356;object-fit:cover}
+.apv.ls img{width:170px;aspect-ratio:16/9;object-fit:cover}
+.jump{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:28px}
+@media (max-width:480px){.jump a{padding:6px 11px;font-size:12.5px}}
+.apv img{cursor:zoom-in}
+.stills{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.stills figure{margin:0}
+.stills figure.wide{grid-column:span 2}
+.stills figure.wide img{aspect-ratio:4/3}
+.stills img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;cursor:zoom-in}
+.stills figcaption{margin-top:6px;font-size:13px;line-height:1.35}
+.stills figcaption time{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
+.stills figcaption b{display:block}
+.stills figcaption span{display:block;color:var(--accent);font-size:12px}
+.stills.op{margin:0}
+.apv video.pv{flex:none;width:96px;aspect-ratio:9/16;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#111}
+.apv video.pv.wd{width:300px;aspect-ratio:16/9}@media (max-width:480px){.apv video.pv.wd{width:200px}}
+.yr-more{margin-top:14px}
+.subhd{display:flex;align-items:baseline;gap:8px;margin:28px 0 12px;font-size:17px;font-weight:800}
+.sec-head+.subhd{margin-top:6px}
+.subhd span{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--muted)}
+.yr-more>summary{cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);padding:8px 0;list-style:none}
+.yr-more>summary::-webkit-details-marker{display:none}
+.yr-more>summary::before{content:"+ "}
+.yr-more[open]>summary::before{content:"− "}
+.stills h4{grid-column:1/-1;margin:6px 0 0;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
+.apv.bts img{width:120px;aspect-ratio:3/4;object-fit:cover}
+
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,10,9,.95);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.lb img{max-width:100%;max-height:100%;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lbx{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:calc(env(safe-area-inset-right,0px) + 14px);font:700 14px var(--body);color:var(--bg);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 14px;cursor:pointer}
+.lbx:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.apv.prs{gap:14px}
+.pair{flex:none;margin:0;display:grid;grid-template-columns:150px 18px 150px;align-items:center;gap:4px}
+.pair img{width:150px;aspect-ratio:16/9;object-fit:cover}
+.pair .arr{text-align:center;color:var(--accent);font-weight:900}
+.pair figcaption{grid-column:1/-1;font-size:12px;color:var(--muted)}
+.apv.pt img.r34{width:120px;aspect-ratio:3/4}.apv.sq .pair{grid-template-columns:110px 18px 110px}.apv.sq .pair img{width:110px}
+@media (max-width:480px){.pair{grid-template-columns:118px 14px 118px}.pair img{width:118px}}
+.apv img.web{height:120px;width:auto;max-width:none}
+@media (max-width:480px){.apv img.web{height:96px}}
+.shorts .vid video{aspect-ratio:9/16;border-radius:6px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px 14px;margin-bottom:22px}
+.vid{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.vid video{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:6px;background:var(--ink);display:block}.shorts .vid.wide{grid-column:1/-1}.shorts .vid.wide video{aspect-ratio:16/9}
+.vid figcaption{display:flex;flex-direction:column;gap:4px}
+@media (max-width:480px){.vids{grid-template-columns:1fr 1fr;gap:16px 10px}}
+.shorts{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px 12px}
+.tile.short img{aspect-ratio:200/356}
+@media (max-width:480px){.shorts{grid-template-columns:repeat(2,1fr);gap:16px 10px}.tile.short .ttl{font-size:14px}.tile.short .tmeta{font-size:11.5px}}
+.tmeta{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted)}
+.tmeta time{color:var(--accent);font-weight:700}
+.ttl{font-weight:700;font-size:15px;line-height:1.4}
+@media (max-width:480px){.reel{grid-template-columns:1fr 1fr;gap:16px 10px}.ttl{font-size:13px}}
+@media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+details.yr{border-top:2px solid var(--ink)}
+details.yr>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:10px;padding:12px 0}
+details.yr>summary::-webkit-details-marker,details.minor>summary::-webkit-details-marker{display:none}
+details.yr>summary .y{font-family:var(--display);font-weight:900;font-size:22px}
+details.yr>summary .yl{font-family:var(--mono);font-size:12px;color:var(--accent)}
+details.yr>summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-size:20px;color:var(--muted)}
+details.yr[open]>summary::after{content:"−"}
+details.minor{margin:4px 0 20px}
+details.minor>summary{list-style:none;cursor:pointer;display:inline-block;font-size:13px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+details.minor[open]>summary{margin-bottom:6px}
+details summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.season h3{font-family:var(--display);font-weight:900;font-size:18px;margin:8px 0 0;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.season h3 span{font-family:var(--mono);font-size:12px;color:var(--accent);margin-left:6px}
+.games{list-style:none;margin:0 0 18px;padding:0}
+.games li{display:grid;grid-template-columns:84px 1fr auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.games time{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.games .ev{min-width:0;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline}
+.games .ev b{font-size:15px}
+.games .ev span{color:var(--muted);font-size:14px}
+.chip{font-size:12px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 10px;white-space:nowrap}
+@media (max-width:480px){.games li{grid-template-columns:64px 1fr}.games .chip{grid-column:2;justify-self:start}}
+/* 장비 / 소개 */
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.kit div{border:1px solid var(--line);padding:14px 16px;border-radius:4px}
+.kit .label{display:block;font-size:11px;margin-bottom:4px}
+.kit b{display:block;font-size:16px}
+.kit small{color:var(--muted);font-size:14px}
+.about p{margin:0;max-width:62ch}
+.otp{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.6}
+
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+#offpitch .tmeta time,#offpitch .fk,#offpitch .chip{color:#c2410c}
+#offpitch .chip{border-color:#c2410c}
+
+/* 시인성 개선 (2026-11): 작은 글자·연한 회색을 한 단계씩 키우고 진하게, 접기 버튼을 눈에 띄게 */
+:root{--muted:#4a4b51;--soft:#76767c}
+body{-webkit-text-size-adjust:100%}
+.label{font-size:12px;letter-spacing:.18em}
+.tags span{font-size:12px;color:#3a3b40;padding:3px 9px}
+.tmeta{font-size:12px}
+.tile.short .tmeta{font-size:12px!important}
+.ttl{font-size:16px}
+@media (max-width:480px){.ttl,.tile.short .ttl{font-size:14.5px!important}}
+.stills figcaption{font-size:14px}
+.stills figcaption time{font-size:12px}
+.stills figcaption b{font-size:15px}
+.stills figcaption span{font-size:13.5px}
+.stills h4{font-size:14px;color:var(--ink);font-weight:700}
+.subhd span{font-size:13px}
+.log time{font-size:14px}
+.log p{font-size:15.5px;line-height:1.65}
+.games .ev span{font-size:15px}
+details.yr>summary .yl{font-size:13.5px;font-weight:700}
+.season h3 span{font-size:13.5px}
+.chip{font-size:13px;padding:3px 11px}
+.fk{font-size:11.5px}
+.kit .label{font-size:12px}
+.yr-more{margin-top:18px}
+.yr-more>summary{display:inline-block;font-family:inherit;font-size:14px;font-weight:700;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:9px 18px;background:#fff}
+.yr-more>summary:hover{background:var(--ink);color:#fff}
+.yr-more[open]>summary{margin-bottom:12px}
+details.minor>summary{font-size:14px;color:var(--ink);border:1.5px solid var(--ink);background:#fff;padding:8px 16px}
+
+/* 90+ pass */
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 18px}
+.stat div{background:var(--ink);color:#fff;border-radius:6px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stat dt{font-size:12px;font-weight:700;color:#b9bbb4}
+.stat dd{margin:0;font-family:var(--brand);font-weight:700;font-size:30px;line-height:1.15;color:var(--lime)}
+.stat dd i{font-style:normal;font-family:var(--body);font-size:15px;margin-left:2px}
+.stat small{font-size:11.5px;line-height:1.35;color:#a3a5a0}
+@media(max-width:600px){.stat{grid-template-columns:repeat(2,1fr)}}
+.log h3 a,.log p a,footer a{display:inline-block;padding-block:6px}
+.prof{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:20px;align-items:center}
+.prof img{width:100%;height:auto;border-radius:6px;display:block}
+.prof b{display:block;font-family:var(--brand);font-size:22px;letter-spacing:.06em;margin:4px 0 10px}
+.prof .otp{margin:0 0 6px}.prof .pl{color:var(--muted);margin:0 0 14px}
+@media(max-width:460px){.prof{grid-template-columns:110px 1fr;gap:14px}.prof b{font-size:17px}.prof .otp{font-size:16px}}
+.top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:20;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--lime);font:700 18px var(--body);box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s}
+.top.on{opacity:1;pointer-events:auto;transform:none}
+.jump a.cur{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lbn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:64px;border:0;border-radius:6px;background:rgba(255,255,255,.14);color:#fff;font:700 26px var(--body);cursor:pointer}
+.lbn.p{left:max(10px,env(safe-area-inset-left,0px))}.lbn.n{right:max(10px,env(safe-area-inset-right,0px))}
+.lbc{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);text-align:center;color:#e9eae6;font-size:13px;padding:0 70px}
+.lb figure{margin:0;max-width:100%;max-height:calc(100% - 60px);display:flex}
+.lb img{max-height:calc(100vh - 120px);object-fit:contain}
+html.lock{overflow:hidden}
+.more25{display:inline-flex;align-items:center;min-height:44px;margin-top:14px;padding:0 18px;border:1px solid var(--ink);border-radius:999px;font-size:14px;font-weight:700;text-decoration:none}.more25:hover{background:var(--ink);color:#fff}
+
+/* 넓은 화면 (PC): 2단 레이아웃 */
+@media (min-width:1100px){
+  .wrap{max-width:1160px;padding-inline:32px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;row-gap:64px}
+  .wrap>*{grid-column:1/-1;min-width:0}
+  .wrap>#channels,.wrap>#channels~.sec:not(.about){grid-column:auto}
+  .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:1fr auto auto auto 1fr;column-gap:56px;row-gap:14px}
+  .hero .mark{grid-column:1;grid-row:1/-1;min-height:520px;justify-content:center}
+  .hero>.label{grid-column:2;grid-row:2}.hero .motto{grid-column:2;grid-row:3;margin:0}.hero .lede{grid-column:2;grid-row:4;margin:0}
+  .hero .motto{font-size:30px;line-height:1.35}
+  .shorts{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .shorts .vid.wide video{max-height:620px}
+  .stills{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .reel{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .prof{grid-template-columns:280px 1fr;gap:40px}
+  .y25{grid-column:1/-1}
+}
+</style>
+
+<div class="wrap">
+
+  <header class="y25">
+    <a class="label" href="./" style="color:var(--accent)">← LAMBORJUNI STUDIO</a>
+    <h1>스튜디오 작업</h1>
+    <p class="lede">찍고 편집하고, 사이트를 만들고 커뮤니티를 운영하는 람보르주니의 작업 기록 전체</p>
+  </header>
+
+  <section class="sec" id="archive">
+    <div class="sec-head"><h2>전체 작업</h2><span class="label">Tape Log</span></div>
+    <ol class="log">
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr/" target="_blank" rel="noopener">안양AFA 홈페이지 전면 개편 ↗</a></h3>
+          <p>학원 홈페이지에서 프로 구단 홈페이지로. AFA의 남색·금색을 그대로 살려 깊은 남색 바탕에 축구장 잔디결과 센터서클을 깔고, 첫 화면을 'ONE TEAM'으로 다시 짰어요. 모든 하위 페이지를 같은 톤으로 맞추고, 2021년부터의 우승 19회와 국가대표 졸업생을 연도별로 모은 'AFA 기록실'을 새로 열었어요. 인스타·블로그에 흩어진 옛 대회 기록과 기사, 선수반에서 진학까지 이어지는 성장 경로, 지도자 소개, 취미·육성·성인반 이야기까지 채워 내용을 훨씬 풍부하게 키운 개편</p>
+          <div class="apv ls"><img class="web" src="assets/img/afa-home-2611.webp" alt="안양AFA 홈페이지 새 첫 화면" loading="lazy" width="1120" height="630"><img class="web" src="assets/img/afa-history-2611.webp" alt="안양AFA 기록실 페이지" loading="lazy" width="1120" height="630"></div>
+          <div class="tags"><span>WEBSITE</span><span>REDESIGN</span><span>PRO CLUB</span><span>ANYANGAFA.CO.KR</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3>팔콘 원본에서 주니 하이라이트 뽑기 · 테스트</h3>
+          <p>양양 슈퍼리그 이틀치 팔콘 원본(약 15GB)에서 #6 장면만 골라내 경기별 하이라이트 2편, 이틀 합본 1편, 그리고 ATTACK · BUILD UP · DEFENSE · INTERCEPT로 나눈 숏츠 6편까지 한 번에 만들어 본 편집 테스트. 원본을 넣으면 하이라이트가 나오는 흐름을 잡는 첫 단계</p>
+          <p class="links"><a href="https://youtu.be/QsB74FXpdKE" target="_blank" rel="noopener">vs FC TDN 11.07 ↗</a> · <a href="https://youtu.be/OUFWMWO-TJw" target="_blank" rel="noopener">vs PEC 11.08 ↗</a> · <a href="https://youtu.be/_SV0YP3eJFs" target="_blank" rel="noopener">이틀 합본 ↗</a> · <a href="https://www.youtube.com/@lambo_rjuni/shorts" target="_blank" rel="noopener">숏츠 6편 ↗</a></p>
+          <div class="apv ls"><img src="https://i.ytimg.com/vi/OUFWMWO-TJw/hqdefault.jpg" alt="vs PEC 하이라이트" loading="lazy" width="480" height="360"><img src="https://i.ytimg.com/vi/QsB74FXpdKE/hqdefault.jpg" alt="vs FC TDN 하이라이트" loading="lazy" width="480" height="360"></div>
+          <div class="tags"><span>HIGHLIGHT</span><span>SHORTS</span><span>AUTO EDIT</span><span>FALCON</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3><a href="https://fieldmanager.kr" target="_blank" rel="noopener">필드 매니저 리뉴얼 · fieldmanager.kr ↗</a></h3>
+          <p>팔콘 가이드에서 경기 촬영 가이드로. 새 주소로 옮기면서 첫 화면을 다시 짜고, 구독료 없는 카메라의 3년 유지비 비교, 실제 경기 촬영 사례, 현장 설치 사진을 더했어요. '경기 촬영 가이드' 메뉴를 새로 열어 AI 축구 카메라 고르는 법, 조기축구·풋살 촬영, 아이 경기 영상 남기는 법, 오즈모 포켓 촬영, 겨울 경기장 준비물까지 30여 페이지로 키운 가이드 사이트</p>
+          <div class="apv ls"><img class="web" src="assets/img/fieldmanager-2611.webp" alt="필드 매니저 첫 화면" loading="lazy" width="1120" height="630"><img class="web" src="assets/img/fieldmanager-shooting.webp" alt="필드 매니저 경기 촬영 가이드" loading="lazy" width="1120" height="630"></div>
+          <div class="tags"><span>WEBSITE</span><span>GUIDE</span><span>SEO</span><span>FIELDMANAGER.KR</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr/alumni/" target="_blank" rel="noopener">안양AFA 역대 진학 현황 개편 ↗</a></h3>
+          <p>1기부터 8기까지 83명, 26곳. 흩어져 있던 졸업생들의 진학 기록을 한 페이지로 모아 숫자로 먼저 보여 주고, 기수별 명단으로 이어지게 다시 짠 진학 현황</p>
+          <div class="apv ls"><img class="web" src="assets/img/afa-alumni-2611.webp" alt="안양AFA 역대 진학 현황 페이지" loading="lazy" width="1120" height="630"></div>
+          <div class="tags"><span>WEBSITE</span><span>ALUMNI</span><span>ANYANGAFA.CO.KR</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr/elite-team/" target="_blank" rel="noopener">안양AFA 엘리트 선수반 15초 홍보영상 ↗</a></h3>
+          <p>"우리 아이 축구, 어디서 키울까요?"로 시작해 우승 사진, 8기 진학 현황, U-17 국가대표 졸업생으로 이어지는 15초. 실제 경기·대회 사진으로 새로 편집해 선수반 페이지 첫 영상으로 교체</p>
+          <div class="apv pt"><video class="pv" src="assets/video/afa-elite-15s.mp4" poster="assets/video/afa-elite-15s.jpg" autoplay muted loop playsinline preload="none" aria-label="엘리트 선수반 15초 홍보영상"></video></div>
+          <div class="tags"><span>PROMO</span><span>15s</span><span>1080×1920</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3>안양 AFA 2017 채널 리브랜딩</h3>
+          <p>2017년생의 경기를 한 권의 앨범처럼. 남색 바탕에 금빛 방패와 '20·17' 엠블럼, "OUR GAME. OUR STORY." 배너로 프로필·배너·워터마크·썸네일을 한 톤으로 묶은 채널 정체성</p>
+          <div class="apv"><img class="web" src="assets/img/afa2017-banner.jpg" alt="안양 AFA 2017 채널 배너" loading="lazy" width="1200" height="675"><img class="web" style="aspect-ratio:1;border-radius:50%" src="assets/img/afa2017-profile.jpg" alt="안양 AFA 2017 프로필" loading="lazy" width="400" height="400"><img class="web" src="assets/img/afa2017-channel.jpg" alt="안양 AFA 2017 채널 첫 화면" loading="lazy" width="1200" height="774"></div>
+          <div class="tags"><span>BRANDING</span><span>YOUTUBE</span><span>PROFILE</span><span>BANNER</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3>안양AFA 2017 채널 오프닝·엔딩</h3>
+          <p>모든 영상의 처음과 끝. 금빛 사선 위로 AFA 방패가 날아와 쾅 박히는 1.8초 오프닝(숏츠는 1.2초), 구독·좋아요를 눌러주고 "다음 경기도 함께해요"로 닫는 3.5초 엔딩. 휙·쿵·반짝·딸깍 효과음까지 직접 입혀 가로·숏츠 두 세트로 제작</p>
+          <div class="apv pt"><video class="pv wd" src="assets/video/afa-open-end-wide.mp4" poster="assets/video/afa-open-end-wide.jpg" autoplay muted loop playsinline aria-label="가로 오프닝·엔딩 재생 예시"></video><video class="pv" src="assets/video/afa-open-end-shorts.mp4" poster="assets/video/afa-open-end-shorts.jpg" autoplay muted loop playsinline aria-label="숏츠 오프닝·엔딩 재생 예시"></video></div>
+          <div class="tags"><span>OPENING</span><span>ENDING</span><span>MOTION</span><span>SOUND</span><span>1920×1080 · 1080×1920</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.11</time>
+        <div class="body">
+          <h3>경기 전 라인업 영상</h3>
+          <p>킥오프 전 우리 팀 소개. 선발 명단을 등번호·포지션·이름이 들어간 선수 카드로 한 명씩 띄워 경기 시작 분위기를 만든 영상</p>
+          <p class="links"><a href="https://youtu.be/RFYYR_Dkw6Y" target="_blank" rel="noopener">라인업 영상 1 ↗</a> · <a href="https://youtu.be/pds8DkuNwPQ" target="_blank" rel="noopener">라인업 영상 2 ↗</a></p>
+          <div class="apv pt"><img style="aspect-ratio:1080/1512;object-fit:cover" src="assets/photo/p2611-card-s.webp" alt="#6 박준이 선수 카드" loading="lazy" width="560" height="784"></div>
+          <div class="tags"><span>LINEUP</span><span>PLAYER CARD</span><span>MOTION</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>Lamborjuni Studio 브랜딩</h3>
+          <p>스튜디오의 얼굴. 람보르기니처럼 빠르고 묵직하게, 'LAMBORJUNI' 한 줄 워드마크를 카본 블랙 위에. 포인트는 하나씩, 경기는 잔디 연두 경기 밖은 주황. 뷰파인더 시절의 REC와 흘러가는 타임코드는 그대로 데려온 정체성</p>
+          <div class="apv sq"><figure class="pair"><img src="assets/img/113a07e050.jpg" alt="이전 인스타 프로필 사진" loading="lazy" width="192" height="192"><span class="arr" aria-hidden="true">→</span><img src="assets/img/brand-profile-2026.jpg" alt="새 인스타 프로필 사진 LAMBORJUNI" loading="lazy" width="1080" height="1080"><figcaption>뷰파인더에서 워드마크로</figcaption></figure></div>
+          <div class="apv sq"><img src="assets/img/brand-hl-studio.jpg" alt="하이라이트 커버 Studio" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-goals.jpg" alt="하이라이트 커버 Goals" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-matches.jpg" alt="하이라이트 커버 Matches" loading="lazy" width="540" height="540"><img src="assets/img/brand-hl-offpitch.jpg" alt="하이라이트 커버 Off the Pitch" loading="lazy" width="540" height="540"><img class="wide" src="assets/img/brand-banner.jpg" alt="유튜브 채널 배너" loading="lazy" width="960" height="540"><img class="wide" src="assets/og.jpg" alt="링크 미리보기 이미지" loading="lazy" width="1200" height="630"></div>
+          <div class="apv pt" style="align-items:flex-start"><img class="r34" src="assets/img/brand-pinned.jpg" alt="인스타 고정 소개 게시물" loading="lazy" width="540" height="720"><img src="assets/img/brand-tpl-match.jpg" alt="숏츠 템플릿 경기용 연두" loading="lazy" width="270" height="480"><img src="assets/img/brand-tpl-offpitch.jpg" alt="숏츠 템플릿 경기 외 주황" loading="lazy" width="270" height="480"></div>
+          <div class="apv sq"><img class="wide" src="assets/img/brand-watermark.jpg" alt="영상 워터마크 경기용" loading="lazy" width="1076" height="315"><img class="wide" src="assets/img/brand-watermark-offpitch.jpg" alt="영상 워터마크 경기 외" loading="lazy" width="1076" height="315"></div>
+          <div class="tags"><span>BRANDING</span><span>WEBSITE</span><span>INSTAGRAM</span><span>YOUTUBE</span><span>TEMPLATE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 리뉴얼 ↗</a></h3>
+          <p>남색 6번에서 경기 장면으로. 실제 장면 위에 남색 제목 띠를 얹어 경기마다 한눈에 구분되게 다시 만든 썸네일</p>
+          <div class="apv ls"><img src="assets/img/fc31746602.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/8c48ea4478.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/61876ba0d1.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/c7324eb702.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"><img src="assets/img/cd549e1852.jpg" alt="리뉴얼 썸네일" loading="lazy" width="420" height="236"></div>
+          <div class="tags"><span>THUMBNAIL</span><span>RENEWAL</span><span>1280×720</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>양구사과배 드림풋볼 U9</h3>
+          <p>예선부터 결승까지 전 경기 생중계. 대회 기간 매일 찍고 매일 올린 기록, 결승 진출과 주니 4골</p>
+          <div class="tags"><span>TOURNAMENT</span><span>U9</span><span>LIVE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr" target="_blank" rel="noopener">안양AFA 축구아카데미 홈페이지 ↗</a></h3>
+          <p>아카데미의 첫 공식 홈페이지. 기획부터 디자인, 개발, 검색 등록까지 혼자 만들고 지금도 직접 운영 중</p>
+          <div class="apv"><img class="web" src="assets/img/e2561515a4.jpg" alt="안양AFA 홈페이지 첫 화면" loading="lazy" width="560" height="210"></div>
+          <div class="tags"><span>WEBSITE</span><span>ANYANGAFA.CO.KR</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3><a href="https://anyangafa.co.kr/alumni/8/" target="_blank" rel="noopener">안양AFA 8기 진학 프로필 ↗</a></h3>
+          <p>선수들의 다음 무대를 위한 첫 프로필. 졸업반 선수들의 진학용 프로필 이미지와 애니메이션을 기획부터 디자인까지 제작</p>
+          <div class="apv ls"><img src="assets/img/afa8-hero.jpg" alt="AFA 8기 진학 현황 페이지" loading="lazy" width="648" height="470"></div>
+          <div class="tags"><span>PROFILE</span><span>DESIGN</span><span>MOTION</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>GOAL 모션그래픽</h3>
+          <p>골 순간을 위한 그래픽. 골이 들어가고 1.3초 뒤 대각선 슬래시와 배너, 선수 이름 칩이 차례로 치고 들어오는 모션</p>
+          <div class="apv pt"><video class="pv" src="assets/video/goal-motion.mp4" poster="assets/video/goal-motion.jpg" autoplay muted loop playsinline aria-label="GOAL 모션 재생 예시"></video><img src="assets/img/b40867f780.jpg" alt="GOAL 그래픽이 들어간 숏츠" loading="lazy" width="297" height="528"></div>
+          <div class="tags"><span>MOTION</span><span>SHORTS</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>숏츠 프레임 템플릿</h3>
+          <p>모든 숏츠의 기본 틀. 1080×1920 세로 프레임에 선수명·번호·날짜·대회명을 얹고, 슛 직전부터 2배 슬로 리플레이</p>
+          <div class="apv pt"><img src="assets/img/47b4b1d88f.jpg" alt="숏츠 프레임 적용 예시" loading="lazy" width="297" height="528"></div>
+          <div class="tags"><span>TEMPLATE</span><span>1080×1920</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.10</time>
+        <div class="body">
+          <h3>가로 하이라이트 포맷</h3>
+          <p>선수가 잘리지 않는 가로 영상. 전체 화면을 살린 1920×1080 하이라이트에 패스 연결 배지와 자동 썸네일</p>
+          <div class="tags"><span>HIGHLIGHT</span><span>1920×1080</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2026.02</time>
+        <div class="body">
+          <h3><a href="https://cafe.naver.com/asmosa" target="_blank" rel="noopener">XbotGo스포츠AI카메라 카페 ↗</a></h3>
+          <p>XBOTGO 직캠 사용자들의 모임. 네이버 카페를 직접 열고 운영하며 촬영 가이드, 펌웨어 소식, 회원 후기를 모으는 중</p>
+          <div class="apv"><img class="web" src="assets/img/92f20a8e36.jpg" alt="카페 배너" loading="lazy" width="480" height="300"><img class="web" src="assets/img/5f64af56aa.jpg" alt="팔콘 제휴 배너" loading="lazy" width="640" height="103"></div>
+          <div class="tags"><span>COMMUNITY</span><span>NAVER CAFE</span></div>
+        </div>
+      </li>
+      <li>
+        <time>2025.06</time>
+        <div class="body">
+          <h3><a href="https://www.youtube.com/@lambo_rjuni/videos" target="_blank" rel="noopener">플레이모음 썸네일 시리즈 ↗</a></h3>
+          <p>생중계 화면이 썸네일이 되기까지. 원본에서 장면을 고르고 남색 바탕에 금색 큰 6번과 두 줄 제목을 얹은 첫 썸네일 시리즈</p>
+          <div class="apv prs"><figure class="pair"><img src="assets/img/c4d626b2dc.jpg" alt="PEC 레드 맞불 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e26a18f0a7.jpg" alt="PEC 레드 맞불 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>PEC 레드 맞불</figcaption></figure><figure class="pair"><img src="assets/img/1b410321cb.jpg" alt="대동초 정면승부 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/e75fccc4f8.jpg" alt="대동초 정면승부 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>대동초 정면승부</figcaption></figure><figure class="pair"><img src="assets/img/8a1e9fc2af.jpg" alt="니케FC 맞대결 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/c94ba2528f.jpg" alt="니케FC 맞대결 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>니케FC 맞대결</figcaption></figure><figure class="pair"><img src="assets/img/ab3b819612.jpg" alt="진천 원정 3일의 기록 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/76b42a624c.jpg" alt="진천 원정 3일의 기록 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>진천 원정 3일의 기록</figcaption></figure><figure class="pair"><img src="assets/img/e1c2bb7f28.jpg" alt="8대8 첫 출격 원본 화면" loading="lazy" width="640" height="360"><span class="arr" aria-hidden="true">→</span><img src="assets/img/a342588c5c.jpg" alt="8대8 첫 출격 완성 썸네일" loading="lazy" width="480" height="270"><figcaption>8대8 첫 출격</figcaption></figure></div>
+          <div class="tags"><span>THUMBNAIL</span><span>SERIES</span></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="사진 보기"><button type="button" class="lbx" id="lbx" aria-label="닫기">× 닫기</button><button type="button" class="lbn p" id="lbp" aria-label="이전 사진">‹</button><img id="lbimg" alt=""><button type="button" class="lbn n" id="lbn" aria-label="다음 사진">›</button><div class="lbc" id="lbc"></div></div>
+
+<button type="button" class="top" id="top" aria-label="맨 위로">↑</button>
+<footer>
+    <span class="label">© 2026 LAMBORJUNI STUDIO</span>
+    <a class="label" href="https://www.instagram.com/lamborjuni.studio/" target="_blank" rel="noopener">@lamborjuni.studio</a>
+  </footer>
+</div>
+
+<script>
+(function(){var lb=document.getElementById('lb'),im=document.getElementById('lbimg'),cap=document.getElementById('lbc'),set=[],i=0,last;
+function show(){var x=set[i];im.src=x.dataset.full||x.src;im.alt=x.alt;cap.textContent=(set.length>1?(i+1)+' / '+set.length+'  ·  ':'')+x.alt;
+document.getElementById('lbp').hidden=document.getElementById('lbn').hidden=set.length<2;}
+function open(x){var g=x.closest('.stills,.apv');var sec=x.closest('section')||document;set=[].slice.call((g&&g.classList.contains('stills')?sec:g||sec).querySelectorAll(g&&g.classList.contains('stills')?'.stills img':'img'));i=Math.max(0,set.indexOf(x));last=x;show();lb.hidden=false;document.documentElement.classList.add('lock');document.getElementById('lbx').focus();}
+function close(){lb.hidden=true;document.documentElement.classList.remove('lock');if(last)last.focus();}
+function go(d){i=(i+d+set.length)%set.length;show();}
+document.querySelectorAll('.apv img, .stills img, .prof img').forEach(function(x){x.tabIndex=0;x.setAttribute('role','button');
+x.addEventListener('click',function(){open(x)});x.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(x);}});});
+lb.addEventListener('click',function(e){if(e.target===lb)close();});
+document.getElementById('lbx').addEventListener('click',close);
+document.getElementById('lbp').addEventListener('click',function(e){e.stopPropagation();go(-1)});
+document.getElementById('lbn').addEventListener('click',function(e){e.stopPropagation();go(1)});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1);});
+var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?1:-1);sx=null;});
+var tp=document.getElementById('top');addEventListener('scroll',function(){tp.classList.toggle('on',scrollY>900)},{passive:true});
+tp.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})});
+var links={};document.querySelectorAll('.jump a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('cur',k===e.target.id);var a=links[e.target.id];if(a&&a.scrollIntoView)a.parentNode.scrollTo({left:a.offsetLeft-20,behavior:'smooth'});}})},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)io.observe(el)});}
+})();
+</script>
+
+</body>
+</html>

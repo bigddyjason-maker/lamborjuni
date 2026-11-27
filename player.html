@@ -65,8 +65,14 @@ h1 small{display:block;font:800 clamp(18px,2.4vw,24px)/1.4 var(--kr);letter-spac
 .facts dt{font:700 10px/1 var(--mono);letter-spacing:.16em;color:#8d8d92;text-transform:uppercase}
 .facts dd{margin:8px 0 0;font:800 clamp(18px,2.4vw,26px)/1.1 var(--kr)}
 .facts dd b{font-family:var(--brand);color:var(--lime)}
-.card{justify-self:center;width:min(100%,340px);transform:rotate(2.5deg);filter:drop-shadow(0 30px 50px rgba(0,0,0,.6)) drop-shadow(0 0 40px rgba(155,224,30,.15));transition:transform .5s}
-.card:hover{transform:rotate(0) scale(1.02)}
+.card{justify-self:center;width:min(100%,340px);perspective:1100px}
+.tilt{position:relative;border-radius:22px;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,-6deg)) rotateZ(2deg);transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 30px 50px rgba(0,0,0,.6)) drop-shadow(0 0 40px rgba(155,224,30,.15));will-change:transform}
+.tilt img{border-radius:22px}
+.card.on .tilt{transition:transform .08s linear}
+.glare{position:absolute;inset:0;border-radius:22px;pointer-events:none;mix-blend-mode:overlay;opacity:var(--go,.35);background:linear-gradient(115deg,transparent 30%,rgba(255,240,200,.75) var(--gx,45%),transparent calc(var(--gx,45%) + 18%));transition:opacity .4s}
+.card.on .glare{opacity:.9}
+@keyframes idle{0%,100%{transform:rotateX(2deg) rotateY(-8deg) rotateZ(2deg)}50%{transform:rotateX(-2deg) rotateY(6deg) rotateZ(1deg)}}
+.card:not(.on) .tilt{animation:idle 7s ease-in-out infinite}
 .motto{margin:26px 0 0;color:#a9a9ae;font-size:15px}
 
 /* sections */
@@ -155,7 +161,7 @@ footer a{text-decoration:none}
   .bar nav{display:none}
 }
 @media (max-width:420px){.facts{grid-template-columns:repeat(2,1fr);row-gap:14px}.facts div:nth-child(3){border-left:0;padding-left:0}}
-@media (prefers-reduced-motion:reduce){.card,.reel img{transition:none}}
+@media (prefers-reduced-motion:reduce){.tilt,.reel img{transition:none;animation:none!important}}
 </style>
 </head>
 <body>
@@ -179,7 +185,7 @@ footer a{text-decoration:none}
       </dl>
       <p class="motto">패스로 경기를 풀다가, 필요할 땐 왼발로 직접 마무리하는 미드필더</p>
     </div>
-    <img class="card" src="assets/photo/p2611-card.webp" alt="2026 안양AFA U9 #6 JUNI PAK 선수 카드" width="1080" height="1512">
+    <div class="card" id="card"><div class="tilt"><img src="assets/photo/p2611-card.webp" alt="2026 안양AFA U9 #6 JUNI PAK 선수 카드" width="1080" height="1512"><i class="glare" aria-hidden="true"></i></div></div>
   </div>
 </section>
 
@@ -189,7 +195,7 @@ footer a{text-decoration:none}
     <div class="sh"><h2>2026 시즌</h2><span class="label">U9 · Season stats</span></div>
     <div class="stats">
       <div class="st"><b>11</b><span>대회</span><small>목포 스토브리그부터 청춘양구 왕중왕전까지</small></div>
-      <div class="st"><b>12+<i>골</i></b><span>기록된 골</span><small>기록으로 남은 골만 · 실제로는 더 많아요</small></div>
+      <div class="st"><b id="gtotal">12+<i>골</i></b><span>기록된 골</span><small>기록으로 남은 골만 · 실제로는 더 많아요</small></div>
       <div class="st"><b>3</b><span>결승 진출</span><small>강릉 율곡대기 · 리틀K 보은 · 양구사과배</small></div>
       <div class="st"><b>3<i>위</i></b><span>양양 슈퍼리그</span><small>시즌 최종 10승 3무 2패</small></div>
       <div class="st"><b>3<i>위</i></b><span>청춘양구 왕중왕전</span><small>공동 3위 · 8강 결승 2골</small></div>
@@ -218,15 +224,8 @@ footer a{text-decoration:none}
         <figcaption><time>2026.11.22 · 청춘양구 왕중왕전 8강</time><b>류광하FC전 2골, 4강행을 만든 두 골</b></figcaption>
       </figure>
       <div>
-        <ul class="gl">
-          <li><time>11.22</time><div><b>청춘양구 왕중왕전 8강</b><span>vs 류광하FC · 2:1 승</span></div><div class="n">2</div></li>
-          <li><time>10.29</time><div><b>연습경기</b><span>vs 대전하나시티즌 · 동점골</span></div><div class="n">1</div></li>
-          <li><time>10.21</time><div><b>연습경기</b><span>vs 드림싸커</span></div><div class="n"><a href="https://youtube.com/shorts/QyBmpPU2zP8" target="_blank" rel="noopener">3<small>영상 ↗</small></a></div></li>
-          <li><time>10월</time><div><b>양구사과배 드림풋볼 U9</b><span>예선~결승 · 결승 진출</span></div><div class="n">4</div></li>
-          <li><time>10.04</time><div><b>양양 슈퍼리그 2차</b><span>vs 강용FC · 2:0 승</span></div><div class="n"><a href="https://youtube.com/shorts/RJBRsKBOTvQ" target="_blank" rel="noopener">1<small>영상 ↗</small></a></div></li>
-          <li><time>05.25</time><div><b>리틀K 보은 결승</b><span>vs 대구달성 화원초 · 동점골</span></div><div class="n"><a href="https://youtube.com/shorts/5-oFFMjgMC4" target="_blank" rel="noopener">1<small>영상 ↗</small></a></div></li>
-        </ul>
-        <p class="note">기록이나 영상으로 남은 골만 셌어요. 2026.11 말부터는 경기마다 빠짐없이 기록해요</p>
+        <ul class="gl" id="gl"></ul>
+        <p class="note" id="gnote">기록이나 영상으로 남은 골만 셌어요. 2026.11 말부터는 경기마다 빠짐없이 기록해요</p>
       </div>
     </div>
     <div class="reel">
@@ -262,5 +261,42 @@ footer a{text-decoration:none}
 
   <footer><span class="label">© 2026 LAMBORJUNI STUDIO</span><a class="label" href="./">lamborjuni.com</a></footer>
 </main>
+<script src="assets/data/goals.js"></script>
+<script>
+(function(){
+  var S=window.JUNI_STATS;if(!S)return;var ul=document.getElementById('gl');if(!ul)return;
+  var tot=0,ast=0,partial=false,h='';
+  S.goals.slice().sort(function(a,b){return a.d<b.d?1:-1}).forEach(function(g){
+    tot+=g.goals||0;ast+=g.assists||0;if(!S.completeFrom||g.d<S.completeFrom)partial=true;
+    var n=g.video?'<a href="'+g.video+'" target="_blank" rel="noopener">'+g.goals+'<small>영상 ↗</small></a>':g.goals;
+    h+='<li><time>'+g.date+'</time><div><b>'+g.title+'</b><span>'+g.vs+(g.assists?' · 도움 '+g.assists:'')+'</span></div><div class="n">'+n+'</div></li>';
+  });
+  ul.innerHTML=h;
+  var b=document.getElementById('gtotal');if(b)b.innerHTML=tot+(partial?'+':'')+'<i>골</i>';
+})();
+</script>
+<script>
+(function(){
+  var c=document.getElementById('card');if(!c)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var t=c.querySelector('.tilt'),area=document.querySelector('.hero')||c,raf;
+  function set(x,y){ // x,y: -1..1
+    cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){
+      t.style.setProperty('--ry',(x*16).toFixed(2)+'deg');t.style.setProperty('--rx',(-y*12).toFixed(2)+'deg');
+      t.style.setProperty('--gx',(45+x*35).toFixed(1)+'%');
+      t.style.transform='rotateX('+(-y*12).toFixed(2)+'deg) rotateY('+(x*16).toFixed(2)+'deg)';
+      t.querySelector('.glare').style.setProperty('--gx',(45+x*35).toFixed(1)+'%');
+    });
+  }
+  function move(e){var r=c.getBoundingClientRect(),p=e.touches?e.touches[0]:e;
+    var x=((p.clientX-r.left)/r.width-.5)*2,y=((p.clientY-r.top)/r.height-.5)*2;
+    x=Math.max(-1,Math.min(1,x));y=Math.max(-1,Math.min(1,y));c.classList.add('on');set(x,y);}
+  function leave(){c.classList.remove('on');t.style.transform='';}
+  area.addEventListener('pointermove',function(e){if(e.pointerType==='mouse')move(e)});
+  area.addEventListener('pointerleave',leave);
+  c.addEventListener('touchmove',function(e){move(e)},{passive:true});
+  c.addEventListener('touchend',leave);
+})();
+</script>
 </body>
 </html>
